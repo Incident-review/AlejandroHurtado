@@ -1,0 +1,33 @@
+
+
+
+[ ] database must have: 
+    - eventNumber
+    - year
+    - month
+    - day 
+    - building
+    - city
+    - province
+    - country
+    - eventName
+    - luthier
+    - artist2
+    - tourName
+
+
+
+# Data workflow
+
+data.js array holds all event objects, both past and future. 
+Each object is structured according to the interface
+
+eventUtils.js takes the raw data array and translates into numbers
+
+    - getPastEvents filters all events and returns only events that already happened
+        - getTotalConcerts 
+        - getTotalAwards 
+        - getCountriesToured 
+
+Statistics.tsx uses these functions to display the numbers
+// import { getTotalConcerts, getTotalAwards, getCountriesToured } from '../utils/eventUtils';
