@@ -1,17 +1,49 @@
-import { Box, Flex, Heading, Stack, useTheme } from '@chakra-ui/react';
+import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-const HEADER_HEIGHT = 64; 
+const navLinks = [
+  { to: '/', label: 'Home', match: /^\/$/ },
+  { to: '/events', label: 'Events', match: /^\/events/ },
+  { to: '/awards', label: 'Awards', match: /^\/awards/ },
+  { to: '/catalog', label: 'Contact & Booking', match: /^\/catalog/ },
+];
 
 const Header = () => {
-  const theme = useTheme();
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isTitleVisible, setIsTitleVisible] = useState(true);
   const location = useLocation();
-  const navLinks = [
-    { to: '/', label: 'Home', match: /^\/$/ },
-    { to: '/events', label: 'Events', match: /^\/events/ },
-    { to: '/awards', label: 'Awards', match: /^\/awards/ },
-    { to: '/catalog', label: 'Contact & Booking', match: /^\/catalog/ },
-  ];
+  const isEventsPage = location.pathname.startsWith('/events');
+
+  useEffect(() => {
+    // Don't add scroll listener if we're on the events page
+    if (isEventsPage) {
+      setIsTitleVisible(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingUp = prevScrollPos > currentScrollPos;
+      const scrollThreshold = 5;
+      const scrollDelta = 5;
+      
+      // Always show header when at the top of the page
+      if (currentScrollPos < scrollThreshold) {
+        setIsTitleVisible(true);
+      } else {
+        // Only update visibility when scrolling up/down significantly
+        if (Math.abs(prevScrollPos - currentScrollPos) > scrollDelta) {
+          setIsTitleVisible(isScrollingUp);
+        }
+      }
+      
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, isEventsPage]);
 
   return (
     <Box 
@@ -21,36 +53,13 @@ const Header = () => {
       left="0"
       right="0"
       zIndex={1300}
-      height={`${HEADER_HEIGHT}px`}
-      minH={`${HEADER_HEIGHT}px`}
       w="100%"
-      sx={{
-        '--header-height': `${HEADER_HEIGHT}px`,
-        display: 'flex',
-        alignItems: 'center',
-        py: { base: 2, md: 4 },
-        background: 'rgba(0, 0, 0, 0.5)',
-        color: 'white',
-        boxShadow: 'xl',
-        backdropFilter: 'blur(10px)',
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: `
-            radial-gradient(1px 1px at 10px 20px, rgba(139, 115, 85, 0.06), transparent),
-            radial-gradient(1px 1px at 30px 40px, rgba(205, 133, 63, 0.04), transparent),
-            radial-gradient(2px 2px at 50px 60px, rgba(184, 134, 11, 0.03), transparent),
-            radial-gradient(1px 1px at 70px 80px, rgba(139, 115, 85, 0.04), transparent)
-          `,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '100px 100px',
-          zIndex: 0,
-        }
-      }}
+      bg="rgba(0, 0, 0, 0.8)"
+      color="white"
+      boxShadow="xl"
+      backdropFilter="blur(10px)"
+      transition="transform 0.3s ease-in-out"
+      transform={isTitleVisible ? 'translateY(0)' : 'translateY(-50px)'}
     >
       <Flex
         direction={{ base: 'column', md: 'row' }}
@@ -58,85 +67,133 @@ const Header = () => {
         justify="space-between"
         w="100%"
         h="100%"
-        px={{ base: 2, md: 10 }}
+        px={{ base: 4, md: 6 }}
+        gap={{ base: 3, md: 4 }}
         minW={0}
+        py={{ base: 3, md: 2 }}
       >
-        <Box
-          minW={0}
-          flexShrink={1}
-          w={{ base: '100%', md: 'auto' }}
-          mb={{ base: 2, md: 0 }}
-          overflow="hidden"
-        >
-          <Heading 
-            as="h1" 
-            size={{ base: 'md', md: 'lg' }} 
+        {/* Site Title - Hidden on scroll up or on events page */}
+        {!isEventsPage && (
+          <Box
             w="100%"
-            textAlign={{ base: 'center', md: 'left' }}
-            lineHeight={{ base: '1.2', md: '1.4' }}
-            letterSpacing="wider"
-            fontWeight="extrabold"
-            whiteSpace="nowrap"
+            textAlign="center"
+            py={2}
+            borderBottom="1px solid"
+            borderColor="whiteAlpha.200"
+            transition="all 0.3s ease-in-out"
+            transform={isTitleVisible ? 'translateY(0)' : 'translateY(-100%)'}
+            opacity={isTitleVisible ? 1 : 0}
+            height={isTitleVisible ? 'auto' : '0'}
             overflow="hidden"
-            textOverflow="ellipsis"
+            position="relative"
           >
-            Alejandro Hurtado
-          </Heading>
-        </Box>
-        <Box flexGrow={1} minW={0}>
+            <Heading 
+              as="h1" 
+              size={{ base: 'md', md: 'lg' }}
+              whiteSpace="nowrap"
+              overflow="hidden"
+              lineHeight="shorter"
+              letterSpacing="wider"
+              fontWeight="extrabold"
+              textOverflow="ellipsis"
+              display="inline-block"
+              width="auto"
+              maxW="100%"
+            >
+              Alejandro Hurtado
+            </Heading>
+          </Box>
+        )}
+
+        {/* Navigation - Always visible */}
+        <Box 
+          w="100%"
+          overflowX="auto"
+          py={2}
+          minH="50px"
+          display="flex"
+          alignItems="center"
+          css={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            '&::-webkit-scrollbar': {
+              display: 'none',
+            },
+          }}
+        >
           <Stack
+            as="nav"
             direction="row"
-            spacing={{ base: 1, md: 2 }}
-            w="100%"
-            justify={{ base: 'center', md: 'flex-end' }}
+            spacing={{ base: 4, md: 6 }}
+            justify="center"
             align="center"
-            flexWrap="nowrap"
-            overflowX="auto"
-            maxW="100%"
+            h="100%"
+            w="100%"
+            px={4}
           >
             {navLinks.map(link => (
-              <RouterLink to={link.to} key={link.to} style={{ display: 'flex', textDecoration: 'none' }}>
+              <RouterLink 
+                to={link.to} 
+                key={link.to} 
+                style={{ 
+                  display: 'flex', 
+                  textDecoration: 'none',
+                  whiteSpace: 'nowrap'
+                }}
+              >
                 <Box
+                  as="span"
                   position="relative"
-                  px={{ base: 3, md: 4 }}
+                  px={{ base: 2, md: 3 }}
                   py={2}
                   mx={1}
-                  color="white"
-                  fontWeight="medium"
                   fontSize={{ base: 'sm', md: 'md' }}
+                  fontWeight="medium"
+                  color={link.match.test(location.pathname) ? '#faf0c0' : 'whiteAlpha.800'}
                   transition="all 0.2s"
                   _hover={{
-                    color: '#f0d9b5',
-                    '& .nav-underline': {
+                    color: '#faf0c0',
+                    '&::after': {
                       width: '100%',
-                      opacity: 1,
-                      bg: '#d4a76a'
+                      opacity: 0.8
                     }
+                  }}
+                  _after={{
+                    content: '""',
+                    position: 'absolute',
+                    bottom: 0,
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: link.match.test(location.pathname) ? '100%' : '0%',
+                    height: '2px',
+                    bg: '#cd853f',
+                    transition: 'all 0.3s ease',
+                    opacity: link.match.test(location.pathname) ? 0.8 : 0
                   }}
                   _focus={{
                     outline: 'none',
                     color: '#f0d9b5',
-                    '& .nav-underline': {
+                    '&::after': {
                       width: '100%',
-                      opacity: 1,
+                      opacity: 0.8,
                       bg: '#d4a76a'
                     }
                   }}
                   sx={{
                     '&.active': {
                       color: '#f0d9b5',
-                      '& .nav-underline': {
+                      '&::after': {
                         width: '100%',
-                        opacity: 1,
+                        opacity: 0.8,
                         bg: '#d4a76a'
                       }
                     },
                     '&:focus-visible': {
                       outline: 'none',
                       color: '#f0d9b5',
-                      '& .nav-underline': {
+                      '&::after': {
                         width: '100%',
-                        opacity: 1,
+                        opacity: 0.8,
                         bg: '#d4a76a'
                       }
                     }

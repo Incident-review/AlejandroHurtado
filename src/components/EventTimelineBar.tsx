@@ -69,7 +69,7 @@ const EventTimelineBar = ({
       borderBottom="1px solid"
       borderColor="rgba(255, 255, 255, 0.1)"
       py={3}
-      height={`${YEAR_BAR_HEIGHT}px`}
+      height={`${YEAR_BAR_HEIGHT}-1px`}
       minH={`${YEAR_BAR_HEIGHT}px`}
       sx={{
         backdropFilter: 'blur(16px)',

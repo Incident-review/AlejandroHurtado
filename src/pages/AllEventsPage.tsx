@@ -1,9 +1,10 @@
 import { Box, Heading } from '@chakra-ui/react';
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState, useEffect, useCallback } from 'react';
 import { events } from '../data/data';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
-import EventTimelineBar from '../components/EventTimelineBar';
+import ConsolidatedTimelineBar from '../components/ConsolidatedTimelineBar';
+import AnimatedBackground from '../components/AnimatedBackground';
 
 const HEADER_HEIGHT = 64;
 const YEAR_BAR_HEIGHT = 60; // Height of the timeline bars by year, sorted descending
@@ -33,26 +34,42 @@ const AllEventsPage = () => {
   const years = useMemo(() => Array.from(eventsByYear.keys()), [eventsByYear]);
 
   const yearSectionRefs = useRef<{ [year: number]: HTMLDivElement | null }>({});
-  const [currentYear] = useState<number>(years[0]);
+  
+  // Create ref callback for year sections
+  const setYearSectionRef = useCallback((year: number) => (el: HTMLDivElement | null) => {
+    yearSectionRefs.current[year] = el;
+  }, []);
+  const [currentYear, setCurrentYear] = useState<number>(years[0]);
+  const [visibleYear, setVisibleYear] = useState<number | null>(years[0]);
 
   // Handle year click - scroll to the selected year's section
-  const handleYearClick = (year: number) => {
+  const handleYearClick = useCallback((year: number) => {
+    setCurrentYear(year);
     const ref = yearSectionRefs.current[year];
     if (ref) {
       ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  };
+  }, []);
 
-  // Calculate the total height needed for the fixed header and timeline bar
-  const contentTop = 0; // No need for extra top padding since it's handled in App.tsx
+  // Update current year when visible year changes
+  useEffect(() => {
+    if (visibleYear && visibleYear !== currentYear) {
+      setCurrentYear(visibleYear);
+    }
+  }, [visibleYear, currentYear]);
 
+  // Content top padding is handled in App.tsx
   return (
-    <Box minH="100vh" position="relative" overflowX="hidden" bg="transparent">
-      <EventTimelineBar 
-        years={years}
+    <Box minH="100vh" position="relative" overflowX="hidden">
+      <AnimatedBackground />
+      <ConsolidatedTimelineBar 
+        years={years} 
         currentYear={currentYear}
+        visibleYear={visibleYear}
         onYearClick={handleYearClick}
+        onYearVisible={setVisibleYear}
         headerHeight={HEADER_HEIGHT}
+        variant="dark"
       />
       
       {/* Main content */}
@@ -72,8 +89,12 @@ const AllEventsPage = () => {
           return (
             <Box 
               key={year} 
-              ref={el => { yearSectionRefs.current[year] = el; }} 
+              ref={setYearSectionRef(year)} 
+              id={`year-${year}`}
+              data-event-year={year}
+              data-year={year}
               mb={8}
+              pt={2}
               bg="transparent"
             >
               <Heading 

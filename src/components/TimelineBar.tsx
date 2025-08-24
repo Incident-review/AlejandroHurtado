@@ -5,10 +5,9 @@ interface TimelineBarProps {
   years: number[];
   currentYear: number;
   onYearClick: (year: number) => void;
-  isDesktop?: boolean; // Added for responsive style
 }
 
-const TimelineBar = ({ years, currentYear, onYearClick, isDesktop }: TimelineBarProps) => {
+const TimelineBar = ({ years, currentYear, onYearClick }: TimelineBarProps) => {
   const barRef = useRef<HTMLDivElement>(null);
   const yearRefs = useRef<{ [year: number]: HTMLButtonElement | null }>({});
 
@@ -28,13 +27,13 @@ const TimelineBar = ({ years, currentYear, onYearClick, isDesktop }: TimelineBar
     <Box
       id="timeline-bar"
       position="fixed"
-      top="var(--header-height)"
+      top="var(--header-height)+1rem"
       left={0}
       w="100vw"
       zIndex={1200}
-      bg="rgba(26, 15, 10, 0.85)"
-      //borderBottom="1px solid"
-      //borderColor="rgba(139, 115, 85, 0.6)"
+      bg="rgba(255, 84, 5, 0.85)"
+      borderBottom="1px solid"
+      borderColor="rgba(139, 115, 85, 0.6)"
       py={{ base: 0.5, md: 1 }}
       boxShadow="xl"
       overflowX="auto"

@@ -107,7 +107,7 @@ const Statistics = () => {
         left: 0,
         right: 0,
         bottom: 0,
-        /*background: `
+        background: `
           radial-gradient(1px 1px at 15px 25px, rgba(139, 115, 85, 0.06), transparent),
           radial-gradient(1px 1px at 35px 45px, rgba(205, 133, 63, 0.04), transparent),
           radial-gradient(2px 2px at 55px 65px, rgba(184, 134, 11, 0.03), transparent),
@@ -115,7 +115,7 @@ const Statistics = () => {
         `,
         backgroundRepeat: 'repeat',
         backgroundSize: '120px 120px',
-        zIndex: 0,*/
+        zIndex: 0,
       },
       '&::after': {
         content: '""',
@@ -134,7 +134,7 @@ const Statistics = () => {
         zIndex: 0,
       }
     }}>
-      <VStack gap={20}>
+      <VStack gap={20} bg="transparent">
         <StatGroup>
           <SimpleGrid columns={{ base: 1, md: 3 }} gap={100}>
             <AnimatedStat

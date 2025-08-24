@@ -96,7 +96,7 @@ const Hero = () => {
           bottom={0}
         >
           <Image
-            src="/images/imgAlejandro1.jpg"
+            src="/images/imgAlejandro1.webp"
             alt="Artist performing"
             w="100%"
             h="100%"
@@ -180,11 +180,11 @@ const Hero = () => {
           color="#faf0c0"
           fontWeight="semibold"
           _hover={{ 
-            bg: 'rgba(160, 133, 107, 0.95)',
-            transform: 'scale(1.05)',
-            boxShadow: '2xl'
+            bg: 'rgba(139, 115, 85, 0.9)'
           }}
-          transition="all 0.3s ease"
+          _active={{
+            bg: 'rgba(139, 115, 85, 0.9)'
+          }}
           border="2px solid"
           borderColor="#cd853f"
           backdropFilter="blur(10px)"
@@ -195,6 +195,7 @@ const Hero = () => {
           left="50%"
           bottom={{ base: '15%', md: '15%' }}
           transform="translateX(-50%)"
+          transition="none"
         >
           Catalog & Contact
         </Button>

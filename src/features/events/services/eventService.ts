@@ -1,5 +1,32 @@
-import type { Event } from '../../types/events';
-import { events } from '../../data/data';
+import type { Event } from '../../../types/events';
+import { events } from '../../../data/data';
+
+// Define local types that match our main Event type
+type EventFilters = {
+  year?: number | number[];
+  country?: string | string[];
+  city?: string | string[];
+  searchQuery?: string;
+  upcomingOnly?: boolean;
+  pastOnly?: boolean;
+  limit?: number;
+  offset?: number;
+};
+
+type PaginationOptions = {
+  page?: number;
+  pageSize?: number;
+  sortBy?: 'date' | 'eventName' | 'location';
+  sortOrder?: 'asc' | 'desc';
+};
+
+type PaginatedEvents = {
+  data: Event[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+};
 
 /**
  * Service for handling event-related operations
@@ -15,9 +42,9 @@ class EventService {
    * Get all events with optional filtering and pagination
    */
   public getEvents(
-    filters: any = {},
-    pagination: any = { page: 1, pageSize: 10, sortBy: 'date', sortOrder: 'desc' }
-  ): any {
+    filters: Partial<EventFilters> = {},
+    pagination: PaginationOptions = { page: 1, pageSize: 10, sortBy: 'date', sortOrder: 'desc' }
+  ): PaginatedEvents {
     let filteredEvents = this.filterEvents(this.events, filters);
     filteredEvents = this.sortEvents(filteredEvents, pagination.sortBy, pagination.sortOrder);
     
@@ -37,8 +64,8 @@ class EventService {
   /**
    * Get a single event by eventNumber
    */
-  public getEventByNumber(eventNumber: number): Event | undefined {
-    return this.events.find(event => event.eventNumber === eventNumber);
+  public getEventById(id: string | number): Event | undefined {
+    return this.events.find(event => event.eventNumber === Number(id));
   }
 
   /**
@@ -65,9 +92,11 @@ class EventService {
   /**
    * Get past events
    */
-  public getPastEvents(limit?: number): Event[] {
-    const past = this.events.filter(event => new Date(event.date) < new Date());
-    return limit ? past.slice(0, limit) : past;
+  public getEventsByDateRange(startDate: string, endDate: string): Event[] {
+    return this.events.filter(event => {
+      const eventDate = new Date(event.date);
+      return eventDate >= new Date(startDate) && eventDate <= new Date(endDate);
+    });
   }
 
   /**
@@ -140,15 +169,14 @@ class EventService {
   }
 
   // Private helper methods
-  private filterEvents(events: Event[], filters: any): Event[] {
+  private filterEvents(events: Event[], filters: Partial<EventFilters>): Event[] {
     return events.filter(event => {
-      // Filter by year
+      // Filter by year if provided
       if (filters.year) {
         const years = Array.isArray(filters.year) ? filters.year : [filters.year];
         const eventYear = new Date(event.date).getFullYear();
         if (!years.includes(eventYear)) return false;
       }
-      
       // Filter by country
       if (filters.country) {
         const countries = Array.isArray(filters.country) ? filters.country : [filters.country];
@@ -156,7 +184,6 @@ class EventService {
           return false;
         }
       }
-      
       // Search by query
       if (filters.searchQuery) {
         const query = filters.searchQuery.toLowerCase();
@@ -171,30 +198,30 @@ class EventService {
         
         if (!searchFields.includes(query)) return false;
       }
-      
       // Filter by upcoming/past
-      if (filters.upcomingOnly && new Date(event.date) < new Date()) return false;
-      if (filters.pastOnly && new Date(event.date) >= new Date()) return false;
+      if (filters.upcomingOnly && new Date(event.startDate) < new Date()) return false;
+      if (filters.pastOnly && new Date(event.startDate) >= new Date()) return false;
       
       return true;
     });
   }
 
-  private sortEvents(events: Event[], sortBy: string = 'date', sortOrder: 'asc' | 'desc' = 'desc'): Event[] {
+  private sortEvents(events: Event[], sortBy: 'date' | 'eventName' | 'location' = 'date', sortOrder: 'asc' | 'desc' = 'desc'): Event[] {
     return [...events].sort((a, b) => {
       let comparison = 0;
       
       switch (sortBy) {
-        case 'name':
+        case 'date':
+          comparison = new Date(a.date).getTime() - new Date(b.date).getTime();
+          break;
+        case 'eventName':
           comparison = a.eventName.localeCompare(b.eventName);
           break;
         case 'location':
-          comparison = a.location.city.localeCompare(b.location.city) || 
-                      a.location.country.localeCompare(b.location.country);
-          break;
-        case 'date':
         default:
-          comparison = new Date(a.date).getTime() - new Date(b.date).getTime();
+          const locationA = `${a.location.city}, ${a.location.country}`;
+          const locationB = `${b.location.city}, ${b.location.country}`;
+          comparison = locationA.localeCompare(locationB);
           break;
       }
       

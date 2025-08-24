@@ -20,8 +20,8 @@ const AnimatedBackground = () => {
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
-    // Animation variables
-    const particles: Array<{
+    // Define the particle type
+    interface Particle {
       x: number;
       y: number;
       size: number;
@@ -38,7 +38,10 @@ const AnimatedBackground = () => {
       pulseAmount: number;
       fadeSpeed: number;
       lastUpdate: number;
-    }> = [];
+      lastOpacityChange: number;
+    }
+    
+    const particles: Particle[] = [];
 
     // Create particles
     const createParticles = (count: number) => {
@@ -134,7 +137,7 @@ const AnimatedBackground = () => {
           ctx.rotate(p.rotation);
           
           // Use softer blending for smoother edges
-          ctx.globalCompositeOperation = 'plus-lighter';
+          ctx.globalCompositeOperation = 'lighter' as GlobalCompositeOperation;
           
           // Extract base color
           const baseHue = parseInt(p.color.split(',')[0].split('(')[1]);
