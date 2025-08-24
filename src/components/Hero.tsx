@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
+import heroImage from '../assets/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -96,7 +97,7 @@ const Hero = () => {
           bottom={0}
         >
           <Image
-            src="/images/imgAlejandro1.webp"
+            src={heroImage}
             alt="Artist performing"
             w="100%"
             h="100%"
