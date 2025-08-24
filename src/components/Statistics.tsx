@@ -97,7 +97,7 @@ const Statistics = () => {
   return (
     <Box sx={{
       ...theme.sectionStyles.statistics,
-      background: 'linear-gradient(135deg, #1a0f0a 0%, #2d1b0f 20%, #4a2d1a 35%, #6b4c2e 50%, #8b6b3a 65%, #a88a4a 80%, #c4a85a 90%, #e0c66a 100%)',
+      background: 'transparent',
       position: 'relative',
       overflow: 'hidden',
       '&::before': {
@@ -107,7 +107,7 @@ const Statistics = () => {
         left: 0,
         right: 0,
         bottom: 0,
-        background: `
+        /*background: `
           radial-gradient(1px 1px at 15px 25px, rgba(139, 115, 85, 0.06), transparent),
           radial-gradient(1px 1px at 35px 45px, rgba(205, 133, 63, 0.04), transparent),
           radial-gradient(2px 2px at 55px 65px, rgba(184, 134, 11, 0.03), transparent),
@@ -115,7 +115,7 @@ const Statistics = () => {
         `,
         backgroundRepeat: 'repeat',
         backgroundSize: '120px 120px',
-        zIndex: 0,
+        zIndex: 0,*/
       },
       '&::after': {
         content: '""',

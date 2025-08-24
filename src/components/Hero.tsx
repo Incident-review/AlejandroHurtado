@@ -96,7 +96,7 @@ const Hero = () => {
           bottom={0}
         >
           <Image
-            src="./src/assets/imgAlejandro1.jpg"
+            src="/images/imgAlejandro1.jpg"
             alt="Artist performing"
             w="100%"
             h="100%"
