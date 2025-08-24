@@ -4,7 +4,6 @@ import { events } from '../data/data';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
 import EventTimelineBar from '../components/EventTimelineBar';
-import AnimatedBackground from '../components/AnimatedBackground';
 
 const HEADER_HEIGHT = 64;
 const YEAR_BAR_HEIGHT = 60; // Height of the timeline bars by year, sorted descending
@@ -48,9 +47,7 @@ const AllEventsPage = () => {
   const contentTop = 0; // No need for extra top padding since it's handled in App.tsx
 
   return (
-    <Box minH="100vh" position="relative" overflowX="hidden">
-      <AnimatedBackground />
-      
+    <Box minH="100vh" position="relative" overflowX="hidden" bg="transparent">
       <EventTimelineBar 
         years={years}
         currentYear={currentYear}
