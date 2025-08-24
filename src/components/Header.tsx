@@ -1,7 +1,7 @@
-import { Box, Button, Flex, Heading, Stack, useTheme } from '@chakra-ui/react';
+import { Box, Flex, Heading, Stack, useTheme } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 
-const HEADER_HEIGHT = 64; // Define your header height constant
+const HEADER_HEIGHT = 64; 
 
 const Header = () => {
   const theme = useTheme();
@@ -16,22 +16,40 @@ const Header = () => {
   return (
     <Box 
       as="header" 
+      position="fixed"
+      top="0"
+      left="0"
+      right="0"
+      zIndex={1300}
+      height={`${HEADER_HEIGHT}px`}
+      minH={`${HEADER_HEIGHT}px`}
+      w="100%"
       sx={{
-        ...theme.sectionStyles.header,
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1300,
-        height: 'auto', // allow for column stacking
-        minHeight: `${HEADER_HEIGHT}px`,
         '--header-height': `${HEADER_HEIGHT}px`,
         display: 'flex',
         alignItems: 'center',
         py: { base: 2, md: 4 },
-        background: 'linear-gradient(90deg, #1a202c 0%, #319795 100%)',
+        background: 'rgba(0, 0, 0, 0.5)',
         color: 'white',
-        boxShadow: 'md',
+        boxShadow: 'xl',
+        backdropFilter: 'blur(10px)',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: `
+            radial-gradient(1px 1px at 10px 20px, rgba(139, 115, 85, 0.06), transparent),
+            radial-gradient(1px 1px at 30px 40px, rgba(205, 133, 63, 0.04), transparent),
+            radial-gradient(2px 2px at 50px 60px, rgba(184, 134, 11, 0.03), transparent),
+            radial-gradient(1px 1px at 70px 80px, rgba(139, 115, 85, 0.04), transparent)
+          `,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '100px 100px',
+          zIndex: 0,
+        }
       }}
     >
       <Flex
@@ -62,7 +80,7 @@ const Header = () => {
             overflow="hidden"
             textOverflow="ellipsis"
           >
-            The Artist
+            Alejandro Hurtado
           </Heading>
         </Box>
         <Box flexGrow={1} minW={0}>
@@ -77,22 +95,69 @@ const Header = () => {
             maxW="100%"
           >
             {navLinks.map(link => (
-              <RouterLink to={link.to} key={link.to} style={{ display: 'flex' }}>
-                <Button
-                  variant={location.pathname.match(link.match) ? 'solid' : 'ghost'}
-                  colorScheme={location.pathname.match(link.match) ? 'teal' : 'whiteAlpha'}
-                  size={{ base: 'xs', md: 'sm' }}
-                  px={{ base: 2, md: 3 }}
-                  borderRadius="md"
-                  fontWeight={location.pathname.match(link.match) ? 'bold' : 'normal'}
-                  bg={location.pathname.match(link.match) ? 'whiteAlpha.300' : 'transparent'}
-                  _hover={{ bg: location.pathname.match(link.match) ? 'whiteAlpha.400' : 'whiteAlpha.200' }}
+              <RouterLink to={link.to} key={link.to} style={{ display: 'flex', textDecoration: 'none' }}>
+                <Box
+                  position="relative"
+                  px={{ base: 3, md: 4 }}
+                  py={2}
+                  mx={1}
+                  color="white"
+                  fontWeight="medium"
+                  fontSize={{ base: 'sm', md: 'md' }}
                   transition="all 0.2s"
-                  minW="min-content"
-                  whiteSpace="nowrap"
+                  _hover={{
+                    color: '#f0d9b5',
+                    '& .nav-underline': {
+                      width: '100%',
+                      opacity: 1,
+                      bg: '#d4a76a'
+                    }
+                  }}
+                  _focus={{
+                    outline: 'none',
+                    color: '#f0d9b5',
+                    '& .nav-underline': {
+                      width: '100%',
+                      opacity: 1,
+                      bg: '#d4a76a'
+                    }
+                  }}
+                  sx={{
+                    '&.active': {
+                      color: '#f0d9b5',
+                      '& .nav-underline': {
+                        width: '100%',
+                        opacity: 1,
+                        bg: '#d4a76a'
+                      }
+                    },
+                    '&:focus-visible': {
+                      outline: 'none',
+                      color: '#f0d9b5',
+                      '& .nav-underline': {
+                        width: '100%',
+                        opacity: 1,
+                        bg: '#d4a76a'
+                      }
+                    }
+                  }}
+                  className={location.pathname.match(link.match) ? 'active' : ''}
                 >
                   {link.label}
-                </Button>
+                  <Box
+                    className="nav-underline"
+                    position="absolute"
+                    bottom={0}
+                    left="50%"
+                    transform="translateX(-50%)"
+                    w={location.pathname.match(link.match) ? '100%' : '0%'}
+                    h="2px"
+                    bg="#d4a76a"
+                    opacity={location.pathname.match(link.match) ? 1 : 0}
+                    transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+                    borderRadius="full"
+                  />
+                </Box>
               </RouterLink>
             ))}
           </Stack>

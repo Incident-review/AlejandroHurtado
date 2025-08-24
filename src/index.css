@@ -1,68 +1,174 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Estilos personalizados para la paleta de colores profesionales */
+@layer base {
+  /* Efectos de selección de texto */
+  ::selection {
+    background-color: #8b7355;
+    color: #faf0c0;
   }
+  
+  /* Scrollbar personalizado */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2d1b0f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #8b7355;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a0856b;
+  }
+  
+  /* Efectos de hover para enlaces */
   a:hover {
-    color: #747bff;
+    text-shadow: 0 0 8px rgba(139, 115, 85, 0.5);
   }
-  button {
-    background-color: #f9f9f9;
+  
+  /* Efectos de focus para accesibilidad */
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #8b7355;
+    outline-offset: 2px;
+  }
+  
+  /* Animaciones sutiles para elementos interactivos */
+  .guitar-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .guitar-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.15);
+  }
+  
+  /* Efectos de brillo para elementos elegantes */
+  .elegant-glow {
+    box-shadow: 0 0 20px rgba(139, 115, 85, 0.3);
+  }
+  
+  .elegant-glow:hover {
+    box-shadow: 0 0 30px rgba(139, 115, 85, 0.5);
+  }
+  
+  /* Gradientes profesionales */
+  .professional-gradient {
+    background: linear-gradient(135deg, #1a0f0a 0%, #2d1b0f 20%, #4a2d1a 35%, #6b4c2e 50%, #8b6b3a 65%, #a88a4a 80%, #c4a85a 90%, #e0c66a 100%);
+  }
+  
+  .sophisticated-gradient {
+    background: linear-gradient(45deg, #cd7f32 0%, #b8860b 50%, #8b7355 100%);
+  }
+  
+  .horizontal-gradient {
+    background: linear-gradient(90deg, #1a0f0a 0%, #2d1b0f 15%, #4a2d1a 30%, #6b4c2e 45%, #8b6b3a 60%, #a88a4a 75%, #c4a85a 90%, #e0c66a 100%);
+  }
+  
+  /* Efectos de profundidad */
+  .depth-shadow {
+    box-shadow: 
+      0 4px 6px -1px rgba(26, 15, 10, 0.1),
+      0 2px 4px -1px rgba(26, 15, 10, 0.06),
+      inset 0 1px 0 rgba(139, 115, 85, 0.1);
+  }
+  
+  /* Efectos de metal para acentos */
+  .metallic-effect {
+    background: linear-gradient(45deg, #cd7f32 0%, #b8860b 50%, #8b7355 100%);
+    background-size: 200% 200%;
+    animation: metallic-shine 3s ease-in-out infinite;
+  }
+  
+  @keyframes metallic-shine {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  /* Efectos de resplandor para elementos activos */
+  .active-glow {
+    box-shadow: 
+      0 0 20px rgba(139, 115, 85, 0.4),
+      0 0 40px rgba(139, 115, 85, 0.2),
+      0 0 60px rgba(139, 115, 85, 0.1);
+  }
+  
+  /* Efectos de transparencia para elementos superpuestos */
+  .glass-effect {
+    background: rgba(26, 15, 10, 0.8);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(139, 115, 85, 0.2);
+  }
+  
+  /* Efectos de sombra para elementos elegantes */
+  .elegant-shadow {
+    box-shadow: 
+      0 4px 12px rgba(45, 43, 26, 0.3),
+      0 2px 4px rgba(45, 43, 26, 0.2);
+  }
+  
+  /* Efectos de hover para botones */
+  .elegant-button {
+    background: linear-gradient(135deg, #8b7355 0%, #cd853f 100%);
+    color: #faf0c0;
+    border: 2px solid #cd853f;
+    transition: all 0.3s ease;
+  }
+  
+  .elegant-button:hover {
+    background: linear-gradient(135deg, #cd853f 0%, #8b7355 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.3);
+  }
+  
+  /* Texturas de static noise profesionales */
+  .static-noise {
+    background-image: 
+      radial-gradient(1px 1px at 10px 20px, rgba(139, 115, 85, 0.06), transparent),
+      radial-gradient(1px 1px at 30px 40px, rgba(205, 133, 63, 0.04), transparent),
+      radial-gradient(2px 2px at 50px 60px, rgba(184, 134, 11, 0.03), transparent),
+      radial-gradient(1px 1px at 70px 80px, rgba(139, 115, 85, 0.04), transparent);
+    background-repeat: repeat;
+    background-size: 100px 100px;
+  }
+  
+  .static-noise-fine {
+    background-image: 
+      radial-gradient(1px 1px at 5px 10px, rgba(139, 115, 85, 0.05), transparent),
+      radial-gradient(1px 1px at 15px 25px, rgba(205, 133, 63, 0.03), transparent),
+      radial-gradient(2px 2px at 25px 35px, rgba(184, 134, 11, 0.02), transparent);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+  }
+  
+  .static-noise-coarse {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, rgba(139, 115, 85, 0.05), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(205, 133, 63, 0.04), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(184, 134, 11, 0.03), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(139, 115, 85, 0.02), transparent),
+      radial-gradient(2px 2px at 160px 30px, rgba(205, 133, 63, 0.03), transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+  }
+  
+  /* Efectos de hero profesional */
+  .hero-overlay {
+    background: rgba(26, 15, 10, 0.3);
+    backdrop-filter: blur(2px);
+  }
+  
+  .hero-content {
+    background: rgba(26, 15, 10, 0.85);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(139, 115, 85, 0.6);
   }
 }

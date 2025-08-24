@@ -12,7 +12,7 @@ const buttonVariants = {
     bg: 'accent.primary',
     color: 'white',
     _hover: {
-      bg: 'blue.600',
+      bg: 'accent.primaryHover',
     },
   }),
   outline: defineStyle({
@@ -139,32 +139,51 @@ const theme = extendTheme({
   },
   colors: {
     brand: {
-      900: '#1a202c',
-      800: '#2d3748',
-      700: '#4a5568',
-      600: '#718096',
-      500: '#a0aec0',
-      400: '#cbd5e0',
-      300: '#e2e8f0',
-      200: '#edf2f7',
-      100: '#f7fafc',
-      50: '#ffffff',
+      // Paleta de colores cálidos y naturales inspirada en instrumentos de lujo
+      900: '#2d1810', // Marrón muy oscuro como madera de ébano
+      800: '#4a2d1a', // Marrón oscuro como madera de caoba
+      700: '#6b4c2e', // Marrón medio como madera de palisandro
+      600: '#8b6b3a', // Marrón cálido como madera de cedro
+      500: '#a88a4a', // Marrón dorado como madera de roble
+      400: '#c4a85a', // Dorado cálido como madera de pino
+      300: '#d4af37', // Dorado clásico como cuerdas
+      200: '#e0c66a', // Dorado claro como detalles
+      100: '#f0d680', // Dorado muy claro para el texto
+      50: '#faf0c0', // Dorado muy claro para fondos
     },
     accent: {
-      primary: '#3182ce',
-      secondary: '#dd6b20',
+      primary: '#8b7355', // Marrón dorado elegante como madera de caoba
+      primaryHover: '#a0856b', // Marrón dorado más claro para hover
+      secondary: '#6b4423', // Marrón silla de montar elegante
+      strings: '#d4af37', // Dorado clásico para cuerdas
+      fretboard: '#2d1810', // Marrón muy oscuro del diapasón
+      gold: '#b8860b', // Dorado oscuro elegante
+      copper: '#cd7f32', // Cobre elegante para acentos
+      bronze: '#cd853f', // Bronce elegante
+      cream: '#f5f5dc', // Crema elegante para texto
+      ivory: '#fffff0', // Marfil para fondos claros
+      warm: '#f4e4bc', // Beige cálido
+      sand: '#f4d03f', // Arena dorada
     },
     gradients: {
-      awardHero: 'linear(to-r, yellow.200 0%, yellow.400 40%, orange.200 100%)',
+      awardHero: 'linear(to-r, accent.cream 0%, accent.bronze 40%, accent.primary 100%)',
+      guitarBody: 'linear(135deg, brand.800 0%, brand.600 50%, accent.primary 100%)',
+      woodGrain: 'linear(90deg, brand.700 0%, accent.primary 25%, accent.bronze 50%, accent.primary 75%, brand.700 100%)',
+      sunset: 'linear(135deg, brand.900 0%, brand.700 25%, accent.primary 50%, accent.bronze 75%, accent.cream 100%)',
+      metallic: 'linear(45deg, accent.copper 0%, accent.gold 50%, accent.primary 100%)',
+      elegant: 'linear(135deg, brand.900 0%, brand.800 20%, accent.primary 40%, accent.bronze 60%, accent.cream 80%, brand.50 100%)',
+      sophisticated: 'linear(90deg, brand.700 0%, accent.primary 25%, accent.bronze 45%, accent.gold 60%, accent.cream 75%, brand.100 100%)',
     },
   },
   shadows: {
-    awardHero: '0 0 40px 0 rgba(255, 193, 7, 0.25), 0 8px 32px 0 rgba(0,0,0,0.10)',
-    awardBadge: '0 0 0 0 rgba(255, 193, 7, 0.5)',
-    awardBadgePulse: '0 0 24px 8px rgba(255, 193, 7, 0.35)',
-    awardTrophy: '0 0 32px 8px rgba(255, 215, 0, 0.18)',
-    awardTrophyGlow: '0 0 48px 16px rgba(255, 215, 0, 0.32)',
-    awardCard: '0 0 24px 0 rgba(255, 193, 7, 0.15), 0 4px 16px 0 rgba(0,0,0,0.08)',
+    awardHero: '0 0 40px 0 rgba(212, 175, 55, 0.25), 0 8px 32px 0 rgba(0,0,0,0.10)',
+    awardBadge: '0 0 0 0 rgba(212, 175, 55, 0.5)',
+    awardBadgePulse: '0 0 24px 8px rgba(212, 175, 55, 0.35)',
+    awardTrophy: '0 0 32px 8px rgba(212, 175, 55, 0.18)',
+    awardTrophyGlow: '0 0 48px 16px rgba(212, 175, 55, 0.32)',
+    awardCard: '0 0 24px 0 rgba(212, 175, 55, 0.15), 0 4px 16px 0 rgba(0,0,0,0.08)',
+    guitarGlow: '0 0 20px 0 rgba(212, 175, 55, 0.2)',
+    woodShadow: '0 4px 12px 0 rgba(45, 27, 15, 0.3)',
   },
   radii: {
     awardHero: '1.5rem',
@@ -231,10 +250,10 @@ const theme = extendTheme({
     awardCard: {
       p: { base: 3, sm: 4, md: 6 },
       borderWidth: 2,
-      borderColor: 'yellow.400',
+      borderColor: 'accent.primary',
       borderRadius: 'awardCard',
       boxShadow: 'awardCard',
-      bgGradient: 'linear(to-br, white, yellow.50 60%)',
+      bgGradient: 'linear(to-br, brand.50, brand.100 60%)',
       mb: 4,
       w: '100%',
       position: 'relative',
@@ -245,24 +264,24 @@ const theme = extendTheme({
         right: 2,
         width: '32px',
         height: '32px',
-        bg: 'yellow.100',
+        bg: 'accent.primary',
         borderRadius: '50%',
         opacity: 0.15,
         zIndex: 0,
       },
     },
     awardShowcaseBg: {
-      bg: 'linear-gradient(135deg, #232526 0%, #414345 100%)',
+      bg: 'linear-gradient(135deg, brand.900 0%, brand.800 100%)',
       minH: '100vh',
       px: { base: 2, md: 0 },
     },
     awardHeroGlass: {
       textAlign: 'center',
-      bg: 'rgba(32,34,37,0.72)',
+      bg: 'rgba(45, 27, 15, 0.72)',
       boxShadow: '0 12px 48px 0 rgba(0,0,0,0.22), 0 2px 12px 0 rgba(0,0,0,0.10)',
       borderRadius: '2xl',
       backdropFilter: 'blur(28px) saturate(180%)',
-      border: '1.5px solid rgba(255,255,255,0.10)',
+      border: '1.5px solid rgba(212, 175, 55, 0.10)',
       position: 'relative',
       px: { base: 6, sm: 12, md: 20 },
       pt: { base: 12, sm: 18, md: 28 },
@@ -283,32 +302,32 @@ const theme = extendTheme({
       transition: 'opacity 0.3s',
     },
     awardBadgeGlass: {
-      bgGradient: 'linear(to-r, yellow.100, yellow.300 60%, orange.100)',
-      color: 'gray.900',
+      bgGradient: 'linear(to-r, brand.100, brand.200 60%, accent.primary)',
+      color: 'brand.900',
       fontSize: { base: '1.3em', sm: '1.7em', md: '2.2em' },
       px: { base: 5, sm: 8, md: 10 },
       py: { base: 2.5, sm: 3, md: 3.5 },
       borderRadius: 'xl',
       mb: 5,
-      boxShadow: '0 4px 24px 0 rgba(255, 193, 7, 0.16)',
+      boxShadow: '0 4px 24px 0 rgba(212, 175, 55, 0.16)',
       display: 'inline-flex',
       alignItems: 'center',
       fontWeight: 700,
       letterSpacing: '0.045em',
       textTransform: 'uppercase',
       zIndex: 1,
-      border: '1.5px solid rgba(255,255,255,0.18)',
+      border: '1.5px solid rgba(212, 175, 55, 0.18)',
       backdropFilter: 'blur(8px) saturate(180%)',
       transition: 'box-shadow 0.3s',
     },
     awardCardGlass: {
-      bg: 'rgba(32,34,37,0.82)',
+      bg: 'rgba(45, 27, 15, 0.82)',
       borderRadius: 'xl',
       boxShadow: '0 4px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)',
       p: { base: 5, sm: 7, md: 10 },
       position: 'relative',
       overflow: 'hidden',
-      border: '1.5px solid rgba(255,255,255,0.10)',
+      border: '1.5px solid rgba(212, 175, 55, 0.10)',
       backdropFilter: 'blur(16px) saturate(180%)',
       transition: 'box-shadow 0.3s',
       color: 'white',
@@ -322,20 +341,20 @@ const theme = extendTheme({
     awardEventHeading: {
       as: 'h2',
       size: 'lg',
-      color: 'yellow.300',
+      color: 'accent.primary',
       fontWeight: 'bold',
       mb: 1,
       letterSpacing: '-0.01em',
     },
     awardEventMeta: {
-      color: 'gray.300',
+      color: 'brand.300',
       mb: 3,
       fontWeight: 500,
       fontSize: 'md',
     },
     awardEventDesc: {
       fontSize: { base: 'md', sm: 'lg' },
-      color: 'gray.100',
+      color: 'brand.100',
       fontWeight: 400,
     },
   },
@@ -345,12 +364,38 @@ const theme = extendTheme({
         backgroundColor: 'brand.900',
         color: 'brand.100',
         lineHeight: 'tall',
+        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
       },
       a: {
         color: 'accent.primary',
         _hover: {
           textDecoration: 'underline',
+          color: 'accent.gold',
         },
+      },
+      'h1, h2, h3, h4, h5, h6': {
+        color: 'brand.50',
+        fontWeight: 'bold',
+      },
+      'p, span, div': {
+        color: 'brand.100',
+      },
+      '::selection': {
+        backgroundColor: 'accent.primary',
+        color: 'brand.900',
+      },
+      '::-webkit-scrollbar': {
+        width: '8px',
+      },
+      '::-webkit-scrollbar-track': {
+        backgroundColor: 'brand.800',
+      },
+      '::-webkit-scrollbar-thumb': {
+        backgroundColor: 'accent.primary',
+        borderRadius: '4px',
+      },
+      '::-webkit-scrollbar-thumb:hover': {
+        backgroundColor: 'accent.gold',
       },
       ':root': {
         '--header-height': '80px',

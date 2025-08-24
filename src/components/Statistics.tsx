@@ -95,7 +95,45 @@ const Statistics = () => {
   };
 
   return (
-    <Box sx={theme.sectionStyles.statistics}>
+    <Box sx={{
+      ...theme.sectionStyles.statistics,
+      background: 'linear-gradient(135deg, #1a0f0a 0%, #2d1b0f 20%, #4a2d1a 35%, #6b4c2e 50%, #8b6b3a 65%, #a88a4a 80%, #c4a85a 90%, #e0c66a 100%)',
+      position: 'relative',
+      overflow: 'hidden',
+      '&::before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: `
+          radial-gradient(1px 1px at 15px 25px, rgba(139, 115, 85, 0.06), transparent),
+          radial-gradient(1px 1px at 35px 45px, rgba(205, 133, 63, 0.04), transparent),
+          radial-gradient(2px 2px at 55px 65px, rgba(184, 134, 11, 0.03), transparent),
+          radial-gradient(1px 1px at 75px 85px, rgba(139, 115, 85, 0.04), transparent)
+        `,
+        backgroundRepeat: 'repeat',
+        backgroundSize: '120px 120px',
+        zIndex: 0,
+      },
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: `
+          radial-gradient(2px 2px at 25px 35px, rgba(139, 115, 85, 0.03), transparent),
+          radial-gradient(1px 1px at 45px 55px, rgba(205, 133, 63, 0.02), transparent),
+          radial-gradient(1px 1px at 65px 75px, rgba(184, 134, 11, 0.03), transparent)
+        `,
+        backgroundRepeat: 'repeat',
+        backgroundSize: '150px 150px',
+        zIndex: 0,
+      }
+    }}>
       <VStack gap={20}>
         <StatGroup>
           <SimpleGrid columns={{ base: 1, md: 3 }} gap={100}>
@@ -104,8 +142,8 @@ const Statistics = () => {
               value={`${totalConcerts.toLocaleString()}`}
               helpText={
                 <>
-                  <StatArrow type="increase" />
-                  More to come!
+                  <StatArrow type="increase" color="#8b7355" />
+                  <Text color="#f5f5dc" fontWeight="medium">More to come!</Text>
                 </>
               }
             />
@@ -114,22 +152,22 @@ const Statistics = () => {
               value={`${totalAwards}`}
               helpText={
                 <>
-                  <StatArrow type="increase" />
-                  Aiming for more!
+                  <StatArrow type="increase" color="#8b7355" />
+                  <Text color="#f5f5dc" fontWeight="medium">Aiming for more!</Text>
                 </>
               }
             />
             <AnimatedStat
               label="Countries Toured"
               value={`${countriesToured}`}
-              helpText={<>Different cultures, one music!</>}
+              helpText={<Text color="#f5f5dc" fontWeight="medium">Different cultures, one music!</Text>}
             />
           </SimpleGrid>
         </StatGroup>
 
         {uniqueAwards.length > 0 && (
-          <Box ref={awardsRef} w="100%">
-            <Heading size="lg" textAlign="center" mb={8}>
+          <Box ref={awardsRef} w="100%" position="relative" zIndex={1}>
+            <Heading size="lg" textAlign="center" mb={8} color="#f5f5dc">
               Notable Awards
             </Heading>
             <motion.div

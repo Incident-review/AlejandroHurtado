@@ -7,7 +7,7 @@ import { events } from '../../data/data';
 class EventService {
   private events: Event[];
 
-  constructor(initialEvents: Event[]) {
+  constructor(initialEvents: Event[]) { 
     this.events = [...initialEvents];
   }
 
