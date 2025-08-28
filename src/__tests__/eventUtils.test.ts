@@ -8,41 +8,82 @@ import {
   getCountriesToured,
   getUniqueAwards,
 } from '../utils/eventUtils';
-import type { Event } from '../types/events';
+// Import our custom Event type with an alias to avoid conflict with DOM Event
+type AppEvent = import('../types/events').Event;
 
 // Mock current date to ensure tests are deterministic
 const MOCK_DATE = '2025-01-15T00:00:00Z';
 vi.setSystemTime(new Date(MOCK_DATE));
 
-const mockEvents: Event[] = [
-  {
+// Helper function to create properly typed mock events
+const createTestEvent = (overrides: Partial<AppEvent> = {}): AppEvent => ({
+  id: '1',
+  eventNumber: 1,
+  eventName: 'Test Event',
+  slug: 'test-event',
+  type: 'solo',
+  status: 'upcoming',
+  description: 'Test description',
+  date: new Date().toISOString(),
+  location: {
+    country: 'Test Country',
+    city: 'Test City',
+    venue: 'Test Venue',
+  },
+  isOnline: false,
+  media: {
+    imageUrls: ['/test-image.jpg'],
+  },
+  awards: [],
+  program: [],
+  collaborators: [],
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+  ...overrides,
+});
+
+const mockEvents: AppEvent[] = [
+  createTestEvent({
     eventNumber: 1,
     eventName: 'Past Event',
-    date: '2024-12-01T19:00:00Z',
-    location: { country: 'USA', city: 'New York' },
-    awards: [{ name: 'Best Show', year: 2024 }],
-  },
-  {
+    date: '2023-06-01T19:00:00Z',
+    location: {
+      city: 'New York',
+      country: 'USA',
+      venue: 'Carnegie Hall',
+    },
+    awards: [{ id: '1', name: 'Best Show', year: 2023, category: 'Performance' }],
+  }),
+  createTestEvent({
     eventNumber: 2,
     eventName: 'Upcoming Event 1',
     date: '2025-02-01T19:00:00Z',
-    location: { country: 'France', city: 'Paris' },
-    awards: [],
-  },
-  {
+    location: {
+      city: 'Paris',
+      country: 'France',
+      venue: 'Philharmonie de Paris',
+    },
+  }),
+  createTestEvent({
     eventNumber: 3,
     eventName: 'Upcoming Event 2',
     date: '2025-03-01T19:00:00Z',
-    location: { country: 'Japan', city: 'Tokyo' },
-    awards: [],
-  },
-  {
+    location: {
+      city: 'Tokyo',
+      country: 'Japan',
+      venue: 'Suntory Hall',
+    },
+  }),
+  createTestEvent({
     eventNumber: 4,
     eventName: 'Another Past Event',
     date: '2023-11-01T19:00:00Z',
-    location: { country: 'UK', city: 'London' },
-    awards: [],
-  },
+    location: {
+      city: 'London',
+      country: 'UK',
+      venue: 'Royal Albert Hall',
+    },
+  }),
 ];
 
 describe('eventUtils', () => {

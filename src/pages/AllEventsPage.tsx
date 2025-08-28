@@ -1,6 +1,6 @@
 import { Box, Heading } from '@chakra-ui/react';
 import { useMemo, useRef, useState, useEffect, useCallback } from 'react';
-import { events } from '../data/data';
+import events from '../data/data';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
 import ConsolidatedTimelineBar from '../components/ConsolidatedTimelineBar';
@@ -10,9 +10,9 @@ const HEADER_HEIGHT = 64;
 const YEAR_BAR_HEIGHT = 60; // Height of the timeline bars by year, sorted descending
 
 // Utility: group events by year, sorted descending
-const groupEventsByYear = (events: Event[]) => {
+const groupEventsByYear = (eventsList: Event[]) => {
   const map = new Map<number, Event[]>();
-  events.forEach(event => {
+  eventsList.forEach(event => {
     const year = new Date(event.date).getFullYear();
     if (!map.has(year)) map.set(year, []);
     map.get(year)!.push(event);

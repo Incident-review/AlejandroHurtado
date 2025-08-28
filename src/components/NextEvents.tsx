@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Heading } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import { events } from '../data/data';
+import events from '../data/data';
 import { getUpcomingEvents } from '../utils/eventUtils';
 import EventCard from './EventCard';
 

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import type { Event, EventFilters, PaginationOptions, PaginatedEvents } from '../types/events';
+import type { Event, EventFilters, PaginationOptions, PaginatedEvents } from '../../../types/events';
 import eventService from '../services/eventService';
 
 interface UseEventsOptions {
@@ -63,9 +63,14 @@ export const useEvents = (options: UseEventsOptions = {}) => {
   }, []);
 
   // Add a new event
-  const addEvent = useCallback(async (event: Omit<Event, 'id' | 'createdAt' | 'updatedAt'>) => {
+  const addEvent = useCallback(async (eventData: Omit<Event, 'eventNumber' | 'createdAt' | 'updatedAt'>) => {
     try {
-      const newEvent = eventService.addEvent(event);
+      const eventToAdd: Omit<Event, 'eventNumber'> & { eventNumber?: number } = {
+        ...eventData,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+      };
+      const newEvent = eventService.addEvent(eventToAdd);
       if (autoFetch) {
         await fetchEvents();
       }
@@ -76,9 +81,12 @@ export const useEvents = (options: UseEventsOptions = {}) => {
   }, [autoFetch, fetchEvents]);
 
   // Update an event
-  const updateEvent = useCallback(async (id: string, updates: Partial<Omit<Event, 'id' | 'createdAt'>>) => {
+  const updateEvent = useCallback(async (eventNumber: number, updates: Partial<Omit<Event, 'eventNumber'>>) => {
     try {
-      const updatedEvent = eventService.updateEvent(id, updates);
+      const updatedEvent = eventService.updateEvent(eventNumber, {
+        ...updates,
+        updatedAt: new Date().toISOString()
+      });
       if (autoFetch) {
         await fetchEvents();
       }
@@ -89,9 +97,9 @@ export const useEvents = (options: UseEventsOptions = {}) => {
   }, [autoFetch, fetchEvents]);
 
   // Delete an event
-  const deleteEvent = useCallback(async (id: string) => {
+  const deleteEvent = useCallback(async (eventNumber: number) => {
     try {
-      const success = eventService.deleteEvent(id);
+      const success = eventService.deleteEvent(eventNumber);
       if (autoFetch) {
         await fetchEvents();
       }

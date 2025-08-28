@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const navLinks = [
   { to: '/', label: 'Home', match: /^\/$/ },
   { to: '/events', label: 'Events', match: /^\/events/ },
-  { to: '/awards', label: 'Awards', match: /^\/awards/ },
+  { to: '/discography', label: 'Discography', match: /^\/discography/ },
   { to: '/catalog', label: 'Contact & Booking', match: /^\/catalog/ },
 ];
 
@@ -13,11 +13,11 @@ const Header = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isTitleVisible, setIsTitleVisible] = useState(true);
   const location = useLocation();
-  const isEventsPage = location.pathname.startsWith('/events');
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
-    // Don't add scroll listener if we're on the events page
-    if (isEventsPage) {
+    // Don't add scroll listener if we're on the home page
+    if (isHomePage) {
       setIsTitleVisible(true);
       return;
     }
@@ -43,7 +43,7 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, isEventsPage]);
+  }, [prevScrollPos, isHomePage]);
 
   return (
     <Box 
@@ -72,8 +72,8 @@ const Header = () => {
         minW={0}
         py={{ base: 3, md: 2 }}
       >
-        {/* Site Title - Hidden on scroll up or on events page */}
-        {!isEventsPage && (
+        {/* Site Title - Only shown on homepage */}
+        {isHomePage && (
           <Box
             w="100%"
             textAlign="center"
@@ -113,6 +113,8 @@ const Header = () => {
           minH="50px"
           display="flex"
           alignItems="center"
+          px={{ base: 2, md: 0 }}
+          mx="-8px"
           css={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -124,12 +126,12 @@ const Header = () => {
           <Stack
             as="nav"
             direction="row"
-            spacing={{ base: 4, md: 6 }}
-            justify="center"
+            spacing={{ base: 2, md: 6 }}
+            justify="space-between"
             align="center"
             h="100%"
             w="100%"
-            px={4}
+            px={{ base: 2, md: 4 }}
           >
             {navLinks.map(link => (
               <RouterLink 
@@ -138,16 +140,17 @@ const Header = () => {
                 style={{ 
                   display: 'flex', 
                   textDecoration: 'none',
-                  whiteSpace: 'nowrap'
+                  whiteSpace: 'nowrap',
+                  flex: 1
                 }}
               >
                 <Box
                   as="span"
                   position="relative"
-                  px={{ base: 2, md: 3 }}
+                  px={{ base: 1, md: 3 }}
                   py={2}
-                  mx={1}
-                  fontSize={{ base: 'sm', md: 'md' }}
+                  mx={{ base: 0, md: 1 }}
+                  fontSize={{ base: 'xs', md: 'md' }}
                   fontWeight="medium"
                   color={link.match.test(location.pathname) ? '#faf0c0' : 'whiteAlpha.800'}
                   transition="all 0.2s"

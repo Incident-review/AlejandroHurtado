@@ -1,11 +1,10 @@
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
-import heroImage from '../assets/images/imgAlejandro1.webp';
+import heroImage from '/public/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
 // Constants
-const QUOTE_DISPLAY_DURATION = 5000; // 5 seconds
-// Animation duration is handled by the CSS animation
+const QUOTE_DISPLAY_DURATION = 10000; // 10 seconds
 
 
 
@@ -17,9 +16,10 @@ type Quote = {
 
 // Data
 const QUOTES: Quote[] = [
-  { text: 'Music is the shorthand of emotion.', author: 'Leo Tolstoy' },
-  { text: 'Where words fail, music speaks.', author: 'Hans Christian Andersen' },
-  { text: 'Life seems to go on without effort when I am filled with music.', author: 'George Eliot' },
+  { text: 'Alejandro Hurtado Está llamado a ocupar un lugar de privilegio en el mundo de la guitarra flamenca.', author: 'Antonio Fernández Díaz, "Fosforito"' },
+  { text: 'Como todos los grandes intérpretes, Alejandro Hurtado nos hace redescubrir composiciones de las que creíamos saberlo todo.', author: 'Claude Worms' },
+  { text: 'Alejandro confirmó que es el futuro inminente y un guitarrista más efectivo de lo habitual.', author: 'Manuel Martín Martín' },
+  { text: 'El alicantino es un tocaor de una calidad superior, de una dicción perfecta.', author: 'Alejandro Medina' },
 ];
 
 const Hero = () => {

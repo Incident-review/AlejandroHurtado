@@ -1,6 +1,7 @@
-import type { Event } from '../types/events';
+import { convertEvents } from '../utils/eventDataUtils';
 
-export const events: Event[] = [
+// Raw event data that will be converted to proper Event objects
+const rawEvents = [
   {
     eventNumber: 1,
     eventName: 'Classical Guitar Recital',
@@ -178,3 +179,8 @@ export const events: Event[] = [
     description: 'A prestigious New Year\'s performance in the capital of classical music.',
   },
 ];
+
+// Convert raw events to properly typed Event objects
+const events = convertEvents(rawEvents);
+
+export default events;

@@ -1,32 +1,15 @@
-import type { Event } from '../../../types/events';
-import { events } from '../../../data/data';
+import type { 
+  Event, 
+  EventFilters as RootEventFilters, 
+  PaginationOptions as RootPaginationOptions, 
+  PaginatedEvents as RootPaginatedEvents 
+} from '../../../types/events';
+import events from '../../../data/data';
 
-// Define local types that match our main Event type
-type EventFilters = {
-  year?: number | number[];
-  country?: string | string[];
-  city?: string | string[];
-  searchQuery?: string;
-  upcomingOnly?: boolean;
-  pastOnly?: boolean;
-  limit?: number;
-  offset?: number;
-};
-
-type PaginationOptions = {
-  page?: number;
-  pageSize?: number;
-  sortBy?: 'date' | 'eventName' | 'location';
-  sortOrder?: 'asc' | 'desc';
-};
-
-type PaginatedEvents = {
-  data: Event[];
-  total: number;
-  page: number;
-  pageSize: number;
-  totalPages: number;
-};
+// Re-export types for consistency
+export type EventFilters = RootEventFilters;
+export type PaginationOptions = RootPaginationOptions;
+export type PaginatedEvents = RootPaginatedEvents;
 
 /**
  * Service for handling event-related operations
@@ -199,8 +182,8 @@ class EventService {
         if (!searchFields.includes(query)) return false;
       }
       // Filter by upcoming/past
-      if (filters.upcomingOnly && new Date(event.startDate) < new Date()) return false;
-      if (filters.pastOnly && new Date(event.startDate) >= new Date()) return false;
+      if (filters.upcomingOnly && new Date(event.date) < new Date()) return false;
+      if (filters.pastOnly && new Date(event.date) >= new Date()) return false;
       
       return true;
     });

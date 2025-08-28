@@ -1,10 +1,9 @@
-import { Box, SimpleGrid, VStack, Heading, Flex, Badge, Icon, Text, useTheme } from '@chakra-ui/react';
+import { Box, SimpleGrid, VStack, Text, useTheme } from '@chakra-ui/react';
 import { Stat, StatArrow, StatGroup, StatHelpText, StatLabel, StatNumber } from '@chakra-ui/stat';
 import { animate, motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { FaTrophy } from 'react-icons/fa';
-import { events } from '../data/data';
-import { getCountriesToured, getTotalAwards, getTotalConcerts, getUniqueAwards } from '../utils/eventUtils';
+import events from '../data/data';
+import { getCountriesToured, getTotalAwards, getTotalConcerts } from '../utils/eventUtils';
 
 interface AnimatedStatProps {
   label: string;
@@ -73,26 +72,10 @@ const Counter = ({ from, to }: CounterProps) => {
 };
 
 const Statistics = () => {
-  const awardsRef = useRef(null);
-  const awardsInView = useInView(awardsRef, { once: true, amount: 0.5 });
   const totalConcerts = getTotalConcerts(events);
   const totalAwards = getTotalAwards(events);
   const countriesToured = getCountriesToured(events);
-  const uniqueAwards = getUniqueAwards(events);
   const theme = useTheme();
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.2, delayChildren: 0.3 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-  };
 
   return (
     <Box sx={{
@@ -101,7 +84,7 @@ const Statistics = () => {
       position: 'relative',
       overflow: 'hidden',
       '&::before': {
-        content: '""',
+        content: '"\"',
         position: 'absolute',
         top: 0,
         left: 0,
@@ -164,36 +147,6 @@ const Statistics = () => {
             />
           </SimpleGrid>
         </StatGroup>
-
-        {uniqueAwards.length > 0 && (
-          <Box ref={awardsRef} w="100%" position="relative" zIndex={1}>
-            <Heading size="lg" textAlign="center" mb={8} color="#f5f5dc">
-              Notable Awards
-            </Heading>
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={awardsInView ? 'visible' : 'hidden'}
-            >
-              <Flex wrap="wrap" justify="center" gap={4}>
-                {uniqueAwards.map((award) => (
-                  <motion.div key={award.name} variants={itemVariants}>
-                    <Badge
-                      as="a"
-                      href={`/awards/${encodeURIComponent(award.name)}`}
-                      layerStyle="awardsBadge"
-                      cursor="pointer"
-                      _hover={{ boxShadow: 'md', transform: 'scale(1.05)', textDecoration: 'none' }}
-                    >
-                      <Icon as={FaTrophy} />
-                      <Text>{award.name}</Text>
-                    </Badge>
-                  </motion.div>
-                ))}
-              </Flex>
-            </motion.div>
-          </Box>
-        )}
       </VStack>
     </Box>
   );

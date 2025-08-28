@@ -23,7 +23,7 @@ const TimelineBar = ({
   const barRef = useRef<HTMLDivElement>(null);
   const yearRefs = useRef<{ [year: number]: HTMLButtonElement | null }>({});
   const [isScrolling, setIsScrolling] = useState(false);
-  const scrollTimeoutRef = useRef<NodeJS.Timeout>();
+  const scrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Responsive values
   const buttonSize = useBreakpointValue({ base: 'xs', md: 'sm' });

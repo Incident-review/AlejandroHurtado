@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import AllEventsPage from './pages/AllEventsPage';
 import HomePage from './pages/HomePage';
-import AwardsPage from './pages/AwardsPage';
+import DiscographyPage from './pages/DiscographyPage';
+import AlbumDetailPage from './pages/AlbumDetailPage';
 import CatalogPage from './pages/CatalogPage';
-import AwardShowcasePage from './pages/AwardShowcasePage';
+import SpectacleDetailPage from './pages/SpectacleDetailPage';
+
 import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
@@ -19,9 +21,10 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/events" element={<AllEventsPage />} />
-              <Route path="/awards" element={<AwardsPage />} />
+              <Route path="/discography" element={<DiscographyPage />} />
+              <Route path="/discography/:slug" element={<AlbumDetailPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
-              <Route path="/awards/:id" element={<AwardShowcasePage />} />
+              <Route path="/catalog/:slug" element={<SpectacleDetailPage />} />
             </Routes>
           </Box>
         </Router>
