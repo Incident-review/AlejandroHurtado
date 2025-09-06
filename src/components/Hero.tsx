@@ -121,7 +121,7 @@ const Hero = () => {
       <Box position="absolute" top={0} left={0} right={0} bottom={0} zIndex={3}>
         <Box 
           position="absolute"
-          top={{ base: '68%', md: '70%' }}
+          top={{ base: '50%', md: '55%' }}
           left="50%"
           transform="translateX(-50%)"
           w="100%" 
@@ -194,7 +194,7 @@ const Hero = () => {
           py={{ base: 1, md: 2 }}
           position="absolute"
           left="50%"
-          bottom={{ base: '15%', md: '15%' }}
+          bottom={{ base: '25%', md: '25%' }}
           transform="translateX(-50%)"
           transition="none"
         >

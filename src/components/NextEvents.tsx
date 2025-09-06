@@ -1,12 +1,18 @@
 import { Box, Button, Grid, Heading } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import events from '../data/data';
-import { getUpcomingEvents } from '../utils/eventUtils';
+import { useEffect, useState } from 'react';
+import type { Event } from '../types/events';
+import { eventDataService } from '../services/eventDataService';
 import EventCard from './EventCard';
 
 const NextEvents = () => {
-  // Get the first 3 upcoming events
-  const upcomingEvents = getUpcomingEvents(events).slice(0, 3);
+  const [upcomingEvents, setUpcomingEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    // Get the first 3 upcoming events
+    const events = eventDataService.getUpcomingEvents(3);
+    setUpcomingEvents(events);
+  }, []);
 
   return (
     <Box py={10} bg="#1a0f0a" position="relative" overflow="hidden">
@@ -32,12 +38,12 @@ const NextEvents = () => {
         <Heading as="h2" textStyle="sectionTitle" textAlign="center" color="#faf0c0">
           Next Events
         </Heading>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={8}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6} px={4}>
           {upcomingEvents.map((event) => (
-            <EventCard key={event.eventNumber} event={event} />
+            <EventCard key={event.id} event={event} />
           ))}
         </Grid>
-        {events.length > 3 && (
+        {upcomingEvents.length > 3 && (
           <Box textAlign="center" mt={8}>
             <RouterLink to="/events">
               <Button 

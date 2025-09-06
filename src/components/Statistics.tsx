@@ -1,9 +1,8 @@
 import { Box, SimpleGrid, VStack, Text, useTheme } from '@chakra-ui/react';
-import { Stat, StatArrow, StatGroup, StatHelpText, StatLabel, StatNumber } from '@chakra-ui/stat';
-import { animate, motion, useAnimation, useInView } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import events from '../data/data';
-import { getCountriesToured, getTotalAwards, getTotalConcerts } from '../utils/eventUtils';
+import { Stat, StatArrow, StatHelpText, StatLabel, StatNumber, StatGroup } from '@chakra-ui/stat';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { eventDataService } from '../services/eventDataService';
 
 interface AnimatedStatProps {
   label: string;
@@ -52,30 +51,78 @@ interface CounterProps {
 
 const Counter = ({ from, to }: CounterProps) => {
   const nodeRef = useRef<HTMLSpanElement>(null);
+  const controls = useAnimation();
 
   useEffect(() => {
     const node = nodeRef.current;
     if (!node) return;
 
-    const controls = animate(from, to, {
-      duration: 1.5,
-      ease: 'easeOut',
-      onUpdate(value: number) {
-        node.textContent = Math.round(value).toLocaleString();
-      },
+    controls.start({
+      opacity: [0, 1],
+      transition: { duration: 1.5, ease: 'easeOut' }
     });
 
-    return () => controls.stop();
-  }, [from, to]);
+    // Simple counter animation
+    let start: number;
+    const duration = 1500; // 1.5 seconds
+    const startValue = from;
+    const endValue = to;
+    const step = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const value = Math.floor(startValue + progress * (endValue - startValue));
+      node.textContent = value.toLocaleString();
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }, [from, to, controls]);
 
-  return <span ref={nodeRef} />;
+  return <motion.span ref={nodeRef} animate={controls} />;
 };
 
 const Statistics = () => {
-  const totalConcerts = getTotalConcerts(events);
-  const totalAwards = getTotalAwards(events);
-  const countriesToured = getCountriesToured(events);
+  const [stats, setStats] = useState({
+    totalConcerts: 0,
+    citiesVisited: 0,
+    countriesToured: 0
+  });
   const theme = useTheme();
+
+  useEffect(() => {
+    const loadStats = async () => {
+      try {
+        const allEvents = eventDataService.getAllEvents();
+        const now = new Date();
+        const pastEvents = allEvents.filter(event => new Date(event.date) < now);
+        
+        // Count unique cities and countries
+        const uniqueCities = new Set(
+          pastEvents.map(event => `${event.location.city}, ${event.location.country}`)
+        );
+        const uniqueCountries = new Set(
+          pastEvents.map(event => event.location.country)
+        );
+        
+        setStats({
+          totalConcerts: pastEvents.length,
+          citiesVisited: uniqueCities.size,
+          countriesToured: uniqueCountries.size
+        });
+      } catch (error) {
+        console.error('Error loading event statistics:', error);
+        // Fallback to some default values if there's an error
+        setStats({
+          totalConcerts: 50, // Default fallback value
+          citiesVisited: 30,  // Default fallback value
+          countriesToured: 15 // Default fallback value
+        });
+      }
+    };
+
+    loadStats();
+  }, []);
 
   return (
     <Box sx={{
@@ -122,7 +169,7 @@ const Statistics = () => {
           <SimpleGrid columns={{ base: 1, md: 3 }} gap={100}>
             <AnimatedStat
               label="Concerts Played"
-              value={`${totalConcerts.toLocaleString()}`}
+              value={`${stats.totalConcerts.toLocaleString()}`}
               helpText={
                 <>
                   <StatArrow type="increase" color="#8b7355" />
@@ -131,18 +178,18 @@ const Statistics = () => {
               }
             />
             <AnimatedStat
-              label="Awards Won"
-              value={`${totalAwards}`}
+              label="Cities Visited"
+              value={`${stats.citiesVisited}`}
               helpText={
                 <>
                   <StatArrow type="increase" color="#8b7355" />
-                  <Text color="#f5f5dc" fontWeight="medium">Aiming for more!</Text>
+                  <Text color="#f5f5dc" fontWeight="medium">And counting!</Text>
                 </>
               }
             />
             <AnimatedStat
               label="Countries Toured"
-              value={`${countriesToured}`}
+              value={`${stats.countriesToured}`}
               helpText={<Text color="#f5f5dc" fontWeight="medium">Different cultures, one music!</Text>}
             />
           </SimpleGrid>

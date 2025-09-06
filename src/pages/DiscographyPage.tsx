@@ -8,27 +8,28 @@ const albums = [
   {
     title: 'El Primer Llanto',
     slug: 'el-primer-llanto',
-    year: 2023, // Example year, please update if incorrect
-    imageUrl: '/images/ElPrimerLlanto.jpeg',
-    spotifyUrl: '#',
-    appleMusicUrl: '#',
-  },
-  {
-    title: 'Maestros Del Arte Clasico Flamenco',
-    slug: 'maestros-del-arte-clasico-flamenco',
-    year: 2021, // Example year, please update if incorrect
-    imageUrl: '/images/MaestrosDelArteClasicoFlamenco.jpeg',
+    year: 2025,
+    imageUrl: '/images/discography/portada-primer-llanto.jpg',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
   {
     title: 'Tamiz',
     slug: 'tamiz',
-    year: 2019, // Example year, please update if incorrect
-    imageUrl: '/images/Tamiz.jpeg',
+    year: 2023,
+    imageUrl: '/images/discography/portada-tamiz.jpeg',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
+  {
+    title: 'Maestros Del Arte Clasico Flamenco',
+    slug: 'maestros-del-arte-clasico-flamenco',
+    year: 2022,
+    imageUrl: '/images/discography/portada-maestros.jpeg',
+    spotifyUrl: '#',
+    appleMusicUrl: '#',
+  },
+
 ];
 
 const DiscographyPage = () => {
@@ -51,7 +52,17 @@ const DiscographyPage = () => {
             }}
             height="300px" // Set a fixed height for uniform card size
           >
-            <Image src={album.imageUrl} alt={album.title} objectFit="cover" w="100%" h="100%" />
+            <Image 
+              src={album.imageUrl} 
+              alt={album.title} 
+              objectFit="cover" 
+              w="100%" 
+              h="100%"
+              fallbackSrc="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcgYWxidW0gY292ZXIuLi48L3RleHQ+PC9zdmc+"
+              onError={(e) => {
+                e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4=';
+              }}
+            />
             <VStack
               position="absolute"
               bottom="0"

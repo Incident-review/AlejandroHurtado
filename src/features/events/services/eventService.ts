@@ -4,7 +4,13 @@ import type {
   PaginationOptions as RootPaginationOptions, 
   PaginatedEvents as RootPaginatedEvents 
 } from '../../../types/events';
-import events from '../../../data/data';
+import eventsData from '../../../data/events.json';
+import { mapJsonToEvent } from '../../../utils/mapEventData';
+
+// Map the JSON data to the Event type
+const events = eventsData.events.map((event, index) => 
+  mapJsonToEvent(event, index)
+);
 
 // Re-export types for consistency
 export type EventFilters = RootEventFilters;

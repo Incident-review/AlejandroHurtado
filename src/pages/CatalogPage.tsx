@@ -25,7 +25,7 @@ interface Spectacle {
 export const spectacles: Spectacle[] = [
   {
     title: 'Devenir',
-    description: 'A journey through timeless classics featuring masterpieces from the Baroque, Classical, and Romantic periods. Perfect for formal events, galas, and cultural gatherings.',
+    description: 'A dialogue between the guitar and the dance, where the guitar intertwines the deepest flamenco with classical discipline, paving the way for new aesthetics, while the dance reveals what the music suggests.',
     price: 'Contact for pricing',
     gradient: 'linear-gradient(135deg, rgba(199, 144, 129, 0.2), rgba(223, 165, 121, 0.2))',
     images: [
@@ -35,17 +35,17 @@ export const spectacles: Spectacle[] = [
   },
   {
     title: 'El primer llanto',
-    description: 'Smooth and energetic jazz performances that bring the spirit of the greats to your event. Ideal for clubs, festivals, and private parties.',
+    description: 'Presentation of his latest album, featuring his most recent compositions, which showcase his multiple facets that make him a unique and different musician.',
     price: 'Contact for pricing',
     gradient: 'linear-gradient(135deg, rgba(139, 115, 85, 0.2), rgba(205, 133, 63, 0.2))',
     images: [
-      { url: '/images/ElPrimerLlanto1.jpg', alt: 'Jazz quartet performance' },
-      { url: '/images/ElPrimerLlanto2.jpg', alt: 'Jazz club atmosphere' },
+      { url: '/images/ElPrimerLlanto1.JPG', alt: 'Jazz quartet performance' },
+      { url: '/images/ElPrimerLlanto2.JPG', alt: 'Jazz club atmosphere' },
     ]
   },
   {
     title: 'Éxodo',
-    description: 'A unique blend of contemporary and traditional sounds, creating an innovative musical experience. Great for modern venues and cultural events.',
+    description: 'Alejandro shows us here the music that the great guitar masters performed beyond our borders. This concert is a testament to the courage and resilience of those who kept the flame of flamenco alive abroad.',
     price: 'Contact for pricing',
     gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
     images: [
@@ -65,12 +65,12 @@ export const spectacles: Spectacle[] = [
   },
   {
     title: 'Miradas',
-    description: 'A unique blend of contemporary and traditional sounds, creating an innovative musical experience. Great for modern venues and cultural events.',
+    description: 'Accompanied by the dance of Inmaculada Salomón (principal dancer of the Ballet Nacional de España) and the percussion of David Dominguez, Alejandro offers a very different vision from the traditional flamenco guitar and dance show.',
     price: 'Contact for pricing',
     gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
     images: [
-      { url: '/images/Miradas1.jpg', alt: 'Fusion band performance' },
-      { url: '/images/Miradas2.jpg', alt: 'Modern concert setup' },
+      { url: '/images/miradas1.jpg', alt: 'Fusion band performance' },
+      { url: '/images/miradas2.jpg', alt: 'Modern concert setup' },
     ]
   },
 ];

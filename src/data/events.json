@@ -1,0 +1,5514 @@
+{
+  "events": [
+    {
+      "id": "2025-12-22-cordoba-gran-teatro-devenir",
+      "dateISO": "2025-12-22",
+      "year": 2025,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Gran Teatro",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-28-girona-devenir",
+      "dateISO": "2025-11-28",
+      "year": 2025,
+      "country": "España",
+      "city": "Girona",
+      "venue": null,
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-19-logrono-bodegas-antanon-presentacion-el-primer-llanto",
+      "dateISO": "2025-11-19",
+      "year": 2025,
+      "country": "España",
+      "city": "Logroño",
+      "venue": "Bodegas Antañón",
+      "eventName": "Presentación El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-15-gente-gentil-el-primer-llanto",
+      "dateISO": "2025-11-15",
+      "year": 2025,
+      "country": "España",
+      "city": "Gente Gentil",
+      "venue": null,
+      "eventName": "El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-14-cordoba-conservatorio-superior-presentacion-el-primer-llanto",
+      "dateISO": "2025-11-14",
+      "year": 2025,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Conservatorio Superior",
+      "eventName": "Presentación El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-09-madrid-ateneo-el-primer-llanto",
+      "dateISO": "2025-11-09",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Ateneo",
+      "eventName": "El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-11-08-madrid-auditorio-nacional-concierto-de-aranjuez",
+      "dateISO": "2025-11-08",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-24-alicante-casa-del-mediterraneo-miradas",
+      "dateISO": "2025-10-24",
+      "year": 2025,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Casa del Mediterráneo",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-23-alicante-entrevista-alejandro-hurtado-inmaculad",
+      "dateISO": "2025-10-23",
+      "year": 2025,
+      "country": "España",
+      "city": "Alicante",
+      "venue": null,
+      "eventName": "Entrevista Alejandro Hurtado & Inmaculada Salomón",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-22-sevilla-coloquio-con-rafael-riqueni-y-alberto-ga",
+      "dateISO": "2025-10-22",
+      "year": 2025,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Coloquio con Rafael Riqueni y Alberto García Reyes",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-18-agadir-sala-del-ayuntamiento-devenir",
+      "dateISO": "2025-10-18",
+      "year": 2025,
+      "country": "Marruecos",
+      "city": "Agadir",
+      "venue": "Sala del Ayuntamiento",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Congreso mundial de Flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-16-tanger-colegio-espanol-ramon-y-cajal-devenir",
+      "dateISO": "2025-10-16",
+      "year": 2025,
+      "country": "Marruecos",
+      "city": "Tánger",
+      "venue": "Colegio español Ramón y Cajal",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Congreso mundial de Flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-15-fez-salle-battra-devenir",
+      "dateISO": "2025-10-15",
+      "year": 2025,
+      "country": "Marruecos",
+      "city": "Fez",
+      "venue": "Salle Battra",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Congreso mundial de Flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-14-tetuan-centro-cultural-de-tetuan-devenir",
+      "dateISO": "2025-10-14",
+      "year": 2025,
+      "country": "Marruecos",
+      "city": "Tetuán",
+      "venue": "Centro cultural de Tetuán",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Congreso mundial de Flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-13-rabat-salle-bahini-devenir",
+      "dateISO": "2025-10-13",
+      "year": 2025,
+      "country": "Marruecos",
+      "city": "Rabat",
+      "venue": "Salle Bahini",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Congreso mundial de Flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-04-madrid-ateneo-tradicion-y-vanguardia",
+      "dateISO": "2025-10-04",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Ateneo",
+      "eventName": "“Tradición y vanguardia”",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-10-03-lugano-el-primer-llanto",
+      "dateISO": "2025-10-03",
+      "year": 2025,
+      "country": "Suiza",
+      "city": "Lugano",
+      "venue": null,
+      "eventName": "El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [
+        "Guitarras del mundo"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-09-19-jerez-de-la-frontera-expoflamenco-presentacion-el-primer-llanto",
+      "dateISO": "2025-09-19",
+      "year": 2025,
+      "country": "España",
+      "city": "Jerez de la Frontera",
+      "venue": "Expoflamenco",
+      "eventName": "Presentación El primer llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-09-12-malaga-devenir",
+      "dateISO": "2025-09-12",
+      "year": 2025,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-08-07-siguenza-ermita-de-san-roque-recital-de-guitarra",
+      "dateISO": "2025-08-07",
+      "year": 2025,
+      "country": "España",
+      "city": "Sigüenza",
+      "venue": "Ermita de San Roque",
+      "eventName": "Recital de Guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-07-29-granada-auditorio-manuel-de-falla-devenir",
+      "dateISO": "2025-07-29",
+      "year": 2025,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Auditorio Manuel de Falla",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Patricia Guerrero"
+    },
+    {
+      "id": "2025-07-17-barcelona-patio-de-nous-barris-devenir",
+      "dateISO": "2025-07-17",
+      "year": 2025,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Patio de Nous Barris",
+      "eventName": "Devenir",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Patricia Guerrero"
+    },
+    {
+      "id": "2025-07-16-barcelona-museo-de-la-musica-catalana-de-llobet-a-montoya",
+      "dateISO": "2025-07-16",
+      "year": 2025,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Museo de la Música catalana",
+      "eventName": "De Llobet a Montoya",
+      "program": null,
+      "artists": [
+        "Torres (1859)",
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Patricia Guerrero"
+    },
+    {
+      "id": "2025-05-31-alicante-casa-de-andalucia-homenaje-a-mario-escudero",
+      "dateISO": "2025-05-31",
+      "year": 2025,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Casa de Andalucía",
+      "eventName": "Homenaje a Mario Escudero",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1972)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-29-londres-king-place-miradas",
+      "dateISO": "2025-05-29",
+      "year": 2025,
+      "country": "Reino Unido",
+      "city": "Londres",
+      "venue": "King Place",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-17-novelda-casa-museo-modernista-recital-de-guitarra",
+      "dateISO": "2025-05-17",
+      "year": 2025,
+      "country": "España",
+      "city": "Novelda",
+      "venue": "Casa museo modernista",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-14-madrid-auditorio-nacional-homenaje-a-pacode-lucia",
+      "dateISO": "2025-05-14",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Homenaje a Pacode Lucía",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-11-burgos-forum-evolucion-con-miguel-poveda",
+      "dateISO": "2025-05-11",
+      "year": 2025,
+      "country": "España",
+      "city": "Burgos",
+      "venue": "Forum Evolución",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-10-oviedo-auditorio-pricipe-felipe-con-miguel-poveda",
+      "dateISO": "2025-05-10",
+      "year": 2025,
+      "country": "España",
+      "city": "Oviedo",
+      "venue": "Auditorio Prícipe Felipe",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-05-09-vigo-teatro-a-fundacion-con-miguel-poveda",
+      "dateISO": "2025-05-09",
+      "year": 2025,
+      "country": "España",
+      "city": "Vigo",
+      "venue": "Teatro A Fundación",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-04-11-palencia-teatro-principal-arte-flamenco-clasico",
+      "dateISO": "2025-04-11",
+      "year": 2025,
+      "country": "España",
+      "city": "Palencia",
+      "venue": "Teatro Principal",
+      "eventName": "Arte flamenco clásico",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Estela Alonso"
+    },
+    {
+      "id": "2025-04-10-logrono-teatro-breton-arte-flamenco-clasico",
+      "dateISO": "2025-04-10",
+      "year": 2025,
+      "country": "España",
+      "city": "Logroño",
+      "venue": "Teatro Bretón",
+      "eventName": "Arte flamenco clásico",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Estela Alonso"
+    },
+    {
+      "id": "2025-04-02-barcelona-museo-picasso-de-llobet-a-montoya",
+      "dateISO": "2025-04-02",
+      "year": 2025,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Museo Picasso",
+      "eventName": "De Llobet a Montoya",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Patricia Guerrero"
+    },
+    {
+      "id": "2025-03-15-vitoria-centro-civico-hegoalde-con-rocio-luna",
+      "dateISO": "2025-03-15",
+      "year": 2025,
+      "country": "España",
+      "city": "Vitoria",
+      "venue": "Centro cívico Hegoalde",
+      "eventName": "Con Rocío Luna",
+      "program": null,
+      "artists": [
+        "Juan Miguel Gonzalez (2024)"
+      ],
+      "tags": [
+        "Gira del norte"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-03-14-palencia-teatro-principal-con-rocio-luna",
+      "dateISO": "2025-03-14",
+      "year": 2025,
+      "country": "España",
+      "city": "Palencia",
+      "venue": "Teatro Principal",
+      "eventName": "Con Rocío Luna",
+      "program": null,
+      "artists": [
+        "Juan Miguel Gonzalez (2024)"
+      ],
+      "tags": [
+        "Gira del norte"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-03-13-logrono-teatro-breton-con-rocio-luna",
+      "dateISO": "2025-03-13",
+      "year": 2025,
+      "country": "España",
+      "city": "Logroño",
+      "venue": "Teatro Bretón",
+      "eventName": "Con Rocío Luna",
+      "program": null,
+      "artists": [
+        "Juan Miguel Gonzalez (2024)"
+      ],
+      "tags": [
+        "Gira del norte"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-03-12-madrid-auditorio-nacional-recital-de-guitarra",
+      "dateISO": "2025-03-12",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Juan Miguel Gonzalez (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-03-10-museo-de-la-guitarra-museo-de-la-guitarra-recital-de-guitarra",
+      "dateISO": "2025-03-10",
+      "year": 2025,
+      "country": "España",
+      "city": "Museo de la guitarra",
+      "venue": "Museo de la guitarra",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Juan Miguel Gonzalez (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-02-28-madrid-auditorio-la-elipa-recital-de-guitarra",
+      "dateISO": "2025-02-28",
+      "year": 2025,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio La Elipa",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-02-22-alicante-adda-con-ignacio-rodes",
+      "dateISO": "2025-02-22",
+      "year": 2025,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "ADDA",
+      "eventName": "Con Ignacio Rodes",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Master de guitarra de Alicante"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-02-16-londres-barbican-center-concierto-de-aranjuez",
+      "dateISO": "2025-02-16",
+      "year": 2025,
+      "country": "Reino Unido",
+      "city": "Londres",
+      "venue": "Barbican Center",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2025-01-25-alicante-paraninfo-universidad-colaboracion-con-jose-soriano",
+      "dateISO": "2025-01-25",
+      "year": 2025,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Paraninfo Universidad",
+      "eventName": "Colaboración con Jose Soriano",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-12-19-cordoba-gran-teatro-nazareno-y-olivares",
+      "dateISO": "2024-12-19",
+      "year": 2024,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Gran Teatro",
+      "eventName": "Nazareno y olivares",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-12-14-madrid-audiorio-nacional-concierto-de-aranjuez",
+      "dateISO": "2024-12-14",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Audiorio Nacional",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-11-19-madrid-audiorio-nacional-homenaje-a-paco-de-lucia",
+      "dateISO": "2024-11-19",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Audiorio Nacional",
+      "eventName": "Homenaje a Paco de Lucía",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-11-17-zaragoza-auditorio-concierto-de-aranjuez",
+      "dateISO": "2024-11-17",
+      "year": 2024,
+      "country": "España",
+      "city": "Zaragoza",
+      "venue": "Auditorio",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-11-16-puente-genil-nazareno-y-olivares",
+      "dateISO": "2024-11-16",
+      "year": 2024,
+      "country": "España",
+      "city": "Puente Genil",
+      "venue": null,
+      "eventName": "Nazareno y olivares",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-11-14-almeria-museo-de-la-guitarra-recital-de-guitarra",
+      "dateISO": "2024-11-14",
+      "year": 2024,
+      "country": "España",
+      "city": "Almería",
+      "venue": "Museo de la guitarra",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-10-27-alicante-teatro-principal-con-jose-soriano",
+      "dateISO": "2024-10-27",
+      "year": 2024,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Teatro principal",
+      "eventName": "Con José Soriano",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-10-24-barcelona-el-dorado-recital-de-guitarra",
+      "dateISO": "2024-10-24",
+      "year": 2024,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "El Dorado",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Patricia Guerrero"
+    },
+    {
+      "id": "2024-10-08-barcelona-palau-de-la-musica-concierto-de-aranjuez",
+      "dateISO": "2024-10-08",
+      "year": 2024,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Palau de la Música",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Homenaje a Paco de Lucía"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-10-07-madrid-fundacion-juan-march-recital-de-guitarra",
+      "dateISO": "2024-10-07",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Fundación Juan March",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-10-06-madrid-fundacion-juan-march-recital-de-guitarra",
+      "dateISO": "2024-10-06",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Fundación Juan March",
+      "eventName": "Recital de guitarra",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-09-27-chinchon-molino-del-manto-tamiz",
+      "dateISO": "2024-09-27",
+      "year": 2024,
+      "country": "España",
+      "city": "Chinchón",
+      "venue": "Molino del Manto",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-09-26-malaga-sala-maria-cristina-miradas",
+      "dateISO": "2024-09-26",
+      "year": 2024,
+      "country": "España",
+      "city": "Málaga",
+      "venue": "Sala María Cristina",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Festival de guitarra de Mälaga"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-09-24-sevilla-alcazar-tamiz",
+      "dateISO": "2024-09-24",
+      "year": 2024,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": "Alcázar",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Bienal de flamenco de Sevilla"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-09-23-sevilla-cicus-conferencia-nno-ricardo",
+      "dateISO": "2024-09-23",
+      "year": 2024,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": "Cicus",
+      "eventName": "Conferencia \"Nño Ricardo\"",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Bienal de flamenco de Sevilla"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-08-17-riaza-plaza-mayor-tamiz",
+      "dateISO": "2024-08-17",
+      "year": 2024,
+      "country": "España",
+      "city": "Riaza",
+      "venue": "Plaza Mayor",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Festival Amalio Cuenca"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-08-14-puente-genil-caseta-municipal-con-david-pino",
+      "dateISO": "2024-08-14",
+      "year": 2024,
+      "country": "España",
+      "city": "Puente Genil",
+      "venue": "Caseta Municipal",
+      "eventName": "Con David Pino",
+      "program": null,
+      "artists": [
+        "Pepe Romero (2024)"
+      ],
+      "tags": [
+        "Festival de Cane Grande \"Fosforito\""
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-07-16-petrer-castillo-de-petrer-tamiz",
+      "dateISO": "2024-07-16",
+      "year": 2024,
+      "country": "España",
+      "city": "Petrer",
+      "venue": "Castillo de Petrer",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-07-15-granada-palacio-de-carlos-v-miradas",
+      "dateISO": "2024-07-15",
+      "year": 2024,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Palacio de Carlos V",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-06-13-barcelona-palau-de-la-musica-homenaje-a-paco-d-elucia",
+      "dateISO": "2024-06-13",
+      "year": 2024,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Palau de la Müsica",
+      "eventName": "Homenaje a Paco d eLucía",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-23-amsterdam-teatro-torpedo-concierto-de-guitarra",
+      "dateISO": "2024-05-23",
+      "year": 2024,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Teatro torpedo",
+      "eventName": "Concierto de guitarra",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-22-amsterdam-jan-jost-huis-concierto-de-guitarra",
+      "dateISO": "2024-05-22",
+      "year": 2024,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Jan Jost Huis",
+      "eventName": "Concierto de guitarra",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-20-alkmaar-teather-de-terp-concierto-de-guitarra",
+      "dateISO": "2024-05-20",
+      "year": 2024,
+      "country": "Paises Bajos",
+      "city": "Alkmaar",
+      "venue": "Teather de Terp",
+      "eventName": "Concierto de guitarra",
+      "program": null,
+      "artists": [
+        "Manuel Reyes (1987)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-07-benalmadena-castillo-de-el-bil-bil-tamiz",
+      "dateISO": "2024-05-07",
+      "year": 2024,
+      "country": "España",
+      "city": "Benalmádena",
+      "venue": "Castillo de  El-bil-bil",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-04-aicante-auditorio-de-la-cam-tamiz",
+      "dateISO": "2024-05-04",
+      "year": 2024,
+      "country": "España",
+      "city": "Aicante",
+      "venue": "Auditorio de la CAM",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-05-03-madrid-teatros-del-canal-concierto-de-guitarra",
+      "dateISO": "2024-05-03",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatros del Canal",
+      "eventName": "Concierto de guitarra",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Festival  flamenco de Madrid"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con  Patricia Guerrero y Rocío Luna"
+    },
+    {
+      "id": "2024-04-19-madrid-auditorio-nacional-homenaje-a-paco-d-elucia",
+      "dateISO": "2024-04-19",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Homenaje a Paco d eLucía",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-04-17-madrid-auditorio-nacional-concierto-de-aranjuez",
+      "dateISO": "2024-04-17",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-04-06-alicante-auditorio-cam-miradas",
+      "dateISO": "2024-04-06",
+      "year": 2024,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Auditorio  CAM",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-04-04-madrid-real-academia-de-bellas-artes-san-fernando-goya-luz-y-sombras",
+      "dateISO": "2024-04-04",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Real Academia de Bellas Artes San FErnando",
+      "eventName": "Goya, Luz y sombras",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Inmaculada Salomón y Eduardo Martínez"
+    },
+    {
+      "id": "2024-03-23-split-tijardovic-concert-hall-miradas",
+      "dateISO": "2024-03-23",
+      "year": 2024,
+      "country": "Croacia",
+      "city": "Split",
+      "venue": "Tijardovic Concert Hall",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-03-22-zagreb-teatro-lesinski-miradas",
+      "dateISO": "2024-03-22",
+      "year": 2024,
+      "country": "Croacia",
+      "city": "Zagreb",
+      "venue": "Teatro Lesinski",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Festival flamenco Zagreb"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-03-18-badajoz-salon-noble-de-ladiputacion-tamiz",
+      "dateISO": "2024-03-18",
+      "year": 2024,
+      "country": "España",
+      "city": "Badajoz",
+      "venue": "Salón noble de laDiputación",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-03-07-n-york-elabash-recital-hall-miradas",
+      "dateISO": "2024-03-07",
+      "year": 2024,
+      "country": "USA",
+      "city": "N York",
+      "venue": "Elabash Recital Hall",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Flamenco festival"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-03-06-n-york-hispanic-museum-presentacion",
+      "dateISO": "2024-03-06",
+      "year": 2024,
+      "country": "USA",
+      "city": "N York",
+      "venue": "Hispanic Museum",
+      "eventName": "Presentación",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Flamenco festival"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Con Ruben Olmo"
+    },
+    {
+      "id": "2024-03-03-n-york-joe-s-pub-tamiz",
+      "dateISO": "2024-03-03",
+      "year": 2024,
+      "country": "USA",
+      "city": "N York",
+      "venue": "Joe´s pub",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Flamenco festival"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-03-02-miami-arsh-center-miradas",
+      "dateISO": "2024-03-02",
+      "year": 2024,
+      "country": "USA",
+      "city": "Miami",
+      "venue": "Arsh Center",
+      "eventName": "Miradas",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Flamenco festival"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-02-25-el-escorial-real-coliseo-de-carlos-iii-guitarra-desnuda",
+      "dateISO": "2024-02-25",
+      "year": 2024,
+      "country": "España",
+      "city": "El Escorial",
+      "venue": "Real Coliseo de Carlos III",
+      "eventName": "Guitarra desnuda",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [
+        "Guitarra desnuda",
+        "Gerardo Núñez"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-02-15-lucena-teatro-palacio-elisana-presentacionlibro-paco-de-lucena",
+      "dateISO": "2024-02-15",
+      "year": 2024,
+      "country": "España",
+      "city": "Lucena",
+      "venue": "Teatro Palacio Elisana",
+      "eventName": "PresentaciónLibro Paco de Lucena",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-02-01-barcelona-palau-de-la-musica-concierto-de-aranjuez-y-homenaje-a-paco",
+      "dateISO": "2024-02-01",
+      "year": 2024,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Palau de la Müsica",
+      "eventName": "Concierto de Aranjuez y homenaje a Paco de Lucía",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-01-30-madrid-teatro-real-noche-espanola",
+      "dateISO": "2024-01-30",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real",
+      "eventName": "Noche española",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-01-16-coroba-facultad-de-ciencias-del-trabajo-tamiz",
+      "dateISO": "2024-01-16",
+      "year": 2024,
+      "country": "España",
+      "city": "Córoba",
+      "venue": "Facultad de Ciencias del Trabajo",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2024-01-01-madrid-teatro-real-concierto-de-aranjuez",
+      "dateISO": "2024-01-01",
+      "year": 2024,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-12-22-barcelona-sala-jamboree-recital",
+      "dateISO": "2023-12-22",
+      "year": 2023,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Sala Jamboree",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-12-02-barcelona-restaurante-via-venetto-recital-privado",
+      "dateISO": "2023-12-02",
+      "year": 2023,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Restaurante Via Venetto",
+      "eventName": "Recital privado",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-12-01-cordoba-pena-el-almibar-con-david-pino",
+      "dateISO": "2023-12-01",
+      "year": 2023,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Peña el Almibar",
+      "eventName": "Con David Pino",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-11-26-madrid-auditorio-nacional-homenaje-a-paco-d-elucia",
+      "dateISO": "2023-11-26",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Homenaje a Paco d eLucía",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-11-23-jerez-de-de-lafrontera-espacio-expoflamenco-tamiz",
+      "dateISO": "2023-11-23",
+      "year": 2023,
+      "country": "España",
+      "city": "Jerez de de laFrontera",
+      "venue": "Espacio expoflamenco",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-11-18-granada-pena-la-plateria-recital",
+      "dateISO": "2023-11-18",
+      "year": 2023,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Peña la platería",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-11-14-cordoba-conservatorio-superior-tamiz",
+      "dateISO": "2023-11-14",
+      "year": 2023,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Conservatorio Superior",
+      "eventName": "Tamiz",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-11-12-valladolid-auditorio-miguel-delibes-conmiguel-poveda",
+      "dateISO": "2023-11-12",
+      "year": 2023,
+      "country": "España",
+      "city": "Valladolid",
+      "venue": "Auditorio Miguel Delibes",
+      "eventName": "ConMiguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-29-barcelona-auditori-concierto-gitano",
+      "dateISO": "2023-10-29",
+      "year": 2023,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Auditori",
+      "eventName": "Concierto gitano",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Ciutat flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-27-malaga-museo-picasso-recital",
+      "dateISO": "2023-10-27",
+      "year": 2023,
+      "country": "España",
+      "city": "Mälaga",
+      "venue": "Museo Picasso",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-20-vallecas-con-david-pino-cante-en-armonia",
+      "dateISO": "2023-10-20",
+      "year": 2023,
+      "country": "España",
+      "city": "Vallecas",
+      "venue": null,
+      "eventName": "Con David Pino (cante en armonía)",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Suma flamenca"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-19-madrid-teatro-de-la-abadia-maestros",
+      "dateISO": "2023-10-19",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro de la Abadía",
+      "eventName": "Maestros",
+      "program": null,
+      "artists": [
+        "Guitarras de Montoya y Manolo de Huelva"
+      ],
+      "tags": [
+        "Guitarras de Montoya y Manolo de Huelva"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-15-madrid-teatro-lope-de-vega-concierto-de-aranjuez",
+      "dateISO": "2023-10-15",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Lope de Vega",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-10-13-sevilla-espacio-joaquin-turna-recital",
+      "dateISO": "2023-10-13",
+      "year": 2023,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": "Espacio Joaquín Turna",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de esteso",
+        "y guitarras de Montoya y Manolo de Huelva"
+      ],
+      "tags": [
+        "Festival de guitarra de Sevilla"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-09-30-con-raquel-kurpeshoek",
+      "dateISO": "2023-09-30",
+      "year": 2023,
+      "country": "Italia",
+      "city": null,
+      "venue": null,
+      "eventName": "Con Raquel Kurpeshoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-09-29-con-raquel-kurpershoek",
+      "dateISO": "2023-09-29",
+      "year": 2023,
+      "country": "Italia",
+      "city": null,
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-09-23-puente-de-gnenave-conferencia-concierto",
+      "dateISO": "2023-09-23",
+      "year": 2023,
+      "country": "España",
+      "city": "Puente de Gñenave",
+      "venue": null,
+      "eventName": "Conferencia-concierto",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-09-14-santander-plaza-de-toros-con-miguel-poveda",
+      "dateISO": "2023-09-14",
+      "year": 2023,
+      "country": "España",
+      "city": "Santander",
+      "venue": "Plaza de toros",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-08-26-pamplona-teatro-baluarte-alzapua",
+      "dateISO": "2023-08-26",
+      "year": 2023,
+      "country": "España",
+      "city": "Pamplona",
+      "venue": "Teatro Baluarte",
+      "eventName": "Alzapúa",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-08-19-riaza-plaza-mayor-homenaje-a-amalio-cuenca-solo",
+      "dateISO": "2023-08-19",
+      "year": 2023,
+      "country": "España",
+      "city": "Riaza",
+      "venue": "Plaza Mayor",
+      "eventName": "Homenaje a Amalio Cuenca (solo)",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-08-17-alfacar-con-miguel-poveda",
+      "dateISO": "2023-08-17",
+      "year": 2023,
+      "country": "España",
+      "city": "Alfacar",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-08-09-siguenzaguadalajara-recital",
+      "dateISO": "2023-08-09",
+      "year": 2023,
+      "country": "España",
+      "city": "SigüenzaGuadalajara",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2023)*"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Asociación Romanillos-Harris"
+    },
+    {
+      "id": "2023-08-05-amsterdam-muziekgebouw-aan-t-con-raquel-kurpershoek",
+      "dateISO": "2023-08-05",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Muziekgebouw aan 't",
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-07-24-granada-granada-recital",
+      "dateISO": "2023-07-24",
+      "year": 2023,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Granada",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Festival de guitarra de Granada"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-07-21-isla-cristina-con-miguel-poveda",
+      "dateISO": "2023-07-21",
+      "year": 2023,
+      "country": "España",
+      "city": "Isla Cristina",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-07-13-madrid-teatro-real-concierto-de-aranjuez",
+      "dateISO": "2023-07-13",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-07-07-valencia-con-miguel-poveda",
+      "dateISO": "2023-07-07",
+      "year": 2023,
+      "country": "España",
+      "city": "Valencia",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-25-rotterdam-heerenhuyskamerconcert-con-raquel-kurpershoek",
+      "dateISO": "2023-06-25",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Rotterdam",
+      "venue": "Heerenhuyskamerconcert",
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-24-amsterdam-concertgenaal-con-raquel-kurpershoek",
+      "dateISO": "2023-06-24",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Concertgenaal",
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-23-amsterdam-groene-zwaan-con-raquel-kurpershoek",
+      "dateISO": "2023-06-23",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Groene Zwaan",
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-21-amsterdam-injazz-bimhuis-con-raquel-kurpershoek",
+      "dateISO": "2023-06-21",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": "Injazz Bimhuis,",
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-17-malaga-plaza-de-toros-con-miguel-poveda",
+      "dateISO": "2023-06-17",
+      "year": 2023,
+      "country": "España",
+      "city": "Málaga",
+      "venue": "PLaza de toros",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-06-15-malaga-centro-ponpidu-presentacion-disco-maestros-del-arte-cl",
+      "dateISO": "2023-06-15",
+      "year": 2023,
+      "country": "España",
+      "city": "Málaga",
+      "venue": "Centro Ponpidu",
+      "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
+      "program": null,
+      "artists": [
+        "guitarras originales de Montoya y Manolo de Huelva"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-26-malaga-museo-picasso-recital",
+      "dateISO": "2023-05-26",
+      "year": 2023,
+      "country": "España",
+      "city": "Málaga",
+      "venue": "Museo Picasso",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-14-vuren-con-raquel-kurpershoek",
+      "dateISO": "2023-05-14",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Vuren",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-13-rotterdam-con-raquel-kurpershoek",
+      "dateISO": "2023-05-13",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Rotterdam",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-12-veldhoven-con-raquel-kurpershoek",
+      "dateISO": "2023-05-12",
+      "year": 2023,
+      "country": "Paises Bajos",
+      "city": "Veldhoven",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-06-colmenarejo-con-raquel-kurpershoek",
+      "dateISO": "2023-05-06",
+      "year": 2023,
+      "country": "España",
+      "city": "Colmenarejo",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-04-huelva-con-raquel-kurpershoek",
+      "dateISO": "2023-05-04",
+      "year": 2023,
+      "country": "España",
+      "city": "Huelva",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-05-01-madrid-teatro-real-concierto-de-aranjuez",
+      "dateISO": "2023-05-01",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-04-29-zaragoza-auditorio-concierto-de-aranjuez",
+      "dateISO": "2023-04-29",
+      "year": 2023,
+      "country": "España",
+      "city": "Zaragoza",
+      "venue": "Auditorio",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-04-22-osuna-plaza-de-toros-con-miguel-poveda",
+      "dateISO": "2023-04-22",
+      "year": 2023,
+      "country": "España",
+      "city": "Osuna",
+      "venue": "Plaza de toros",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-03-16-barcelona-con-raquel-kurpershoek",
+      "dateISO": "2023-03-16",
+      "year": 2023,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-03-09-circulo-flamenco-circulo-flamenco-presentacion-disco-maestros-del-art",
+      "dateISO": "2023-03-09",
+      "year": 2023,
+      "country": "España",
+      "city": "Círculo flamenco",
+      "venue": "Círculo flamenco",
+      "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-02-17-pozoblanco-con-david-pino",
+      "dateISO": "2023-02-17",
+      "year": 2023,
+      "country": "España",
+      "city": "Pozoblanco",
+      "venue": null,
+      "eventName": "Con David Pino",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-01-27-san-vicente-del-raspeig-recital",
+      "dateISO": "2023-01-27",
+      "year": 2023,
+      "country": "España",
+      "city": "San Vicente del Raspeig",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2023-01-15-madrid-auditorio-nacional-concierto-de-aranjuez",
+      "dateISO": "2023-01-15",
+      "year": 2023,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-12-27-barcelona-con-miguel-poveda",
+      "dateISO": "2022-12-27",
+      "year": 2022,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-12-13-alicante-con-miguel-poveda",
+      "dateISO": "2022-12-13",
+      "year": 2022,
+      "country": "España",
+      "city": "Alicante",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-12-12-cordoba-presentacion-disco-maestros-del-arte-cl",
+      "dateISO": "2022-12-12",
+      "year": 2022,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": null,
+      "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
+      "program": null,
+      "artists": [
+        "guitarras originales de Montoya y Manolo de Huelva"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-12-03-torremolinos-con-miguel-poveda",
+      "dateISO": "2022-12-03",
+      "year": 2022,
+      "country": "España",
+      "city": "Torremolinos",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-11-19-san-vicente-del-raspeig-concierto-de-aranjuez",
+      "dateISO": "2022-11-19",
+      "year": 2022,
+      "country": "España",
+      "city": "San Vicente del Raspeig",
+      "venue": null,
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-11-13-madrid-auditorio-nacional-recital",
+      "dateISO": "2022-11-13",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-11-07-alicante-universidad-conferencia",
+      "dateISO": "2022-11-07",
+      "year": 2022,
+      "country": "España",
+      "city": "Alicante",
+      "venue": "Universidad",
+      "eventName": "Conferencia",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-10-27-alcala-de-henares-recital",
+      "dateISO": "2022-10-27",
+      "year": 2022,
+      "country": "España",
+      "city": "Alcala de Henares",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-10-11-madrid-auditorio-nacional-recital",
+      "dateISO": "2022-10-11",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-10-05-sevilla-con-miguel-poveda",
+      "dateISO": "2022-10-05",
+      "year": 2022,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-10-02-lucena-concierto-de-aranjuez",
+      "dateISO": "2022-10-02",
+      "year": 2022,
+      "country": "España",
+      "city": "Lucena",
+      "venue": null,
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-10-01-montilla-concierto-de-aranjuez",
+      "dateISO": "2022-10-01",
+      "year": 2022,
+      "country": "España",
+      "city": "Montilla",
+      "venue": null,
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-30-posadas-concierto-de-aranjuez",
+      "dateISO": "2022-09-30",
+      "year": 2022,
+      "country": "España",
+      "city": "Posadas",
+      "venue": null,
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-28-madrid-con-raquel-kurpershoek",
+      "dateISO": "2022-09-28",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-27-toledo-con-raquel-kurpershoek",
+      "dateISO": "2022-09-27",
+      "year": 2022,
+      "country": "España",
+      "city": "Toledo",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-26-sevilla-con-raquel-kurpershoek",
+      "dateISO": "2022-09-26",
+      "year": 2022,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-25-madrid-recital",
+      "dateISO": "2022-09-25",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-24-madrid-con-raquel-kurpershoek",
+      "dateISO": "2022-09-24",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-22-sevilla-con-raquel-kurpershoek",
+      "dateISO": "2022-09-22",
+      "year": 2022,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-21-huelva-con-raquel-kurpershoek",
+      "dateISO": "2022-09-21",
+      "year": 2022,
+      "country": "España",
+      "city": "Huelva",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-16-merida-teatro-romano-con-miguel-poveda",
+      "dateISO": "2022-09-16",
+      "year": 2022,
+      "country": "España",
+      "city": "Mérida",
+      "venue": "Teatro Romano",
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-09-15-murcia-fnac-presentacion-disco-maestros-del-arte-cl",
+      "dateISO": "2022-09-15",
+      "year": 2022,
+      "country": "España",
+      "city": "Murcia",
+      "venue": "FNAC",
+      "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-08-14-segovia-con-miguel-poveda",
+      "dateISO": "2022-08-14",
+      "year": 2022,
+      "country": "España",
+      "city": "Segovia",
+      "venue": null,
+      "eventName": "Con Miguel Poveda",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-07-28-puy-leveque-recital",
+      "dateISO": "2022-07-28",
+      "year": 2022,
+      "country": "Francia",
+      "city": "Puy Léveque",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Rene (2018)Agosto"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-07-27-trigueros-con-raquel-kurpershoek",
+      "dateISO": "2022-07-27",
+      "year": 2022,
+      "country": "España",
+      "city": "Trigueros",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-07-07-sevilla-presentacion-disco-maestros-del-arte-cl",
+      "dateISO": "2022-07-07",
+      "year": 2022,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
+      "program": null,
+      "artists": [
+        "guitarras originales de Montoya y Manolo de Huelva"
+      ],
+      "tags": [
+        "Los Jueves de Cajasol"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-07-02-con-raquel-kurpershoek",
+      "dateISO": "2022-07-02",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": null,
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [
+        "Días latinos"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-07-01-con-raquel-kurpershoek",
+      "dateISO": "2022-07-01",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": null,
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [
+        "Días latinos"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-06-29-rotterdam-con-raquel-kurpershoek",
+      "dateISO": "2022-06-29",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": "Rotterdam",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-06-06-con-raquel-kurpershoek",
+      "dateISO": "2022-06-06",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": null,
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-06-01-madrid-auditorio-nacional-concierto-de-aranjuez",
+      "dateISO": "2022-06-01",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-05-21-cehegin-recital",
+      "dateISO": "2022-05-21",
+      "year": 2022,
+      "country": "España",
+      "city": "Cehegín",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-05-20-cordoba-recital",
+      "dateISO": "2022-05-20",
+      "year": 2022,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-05-13-murcia-recital",
+      "dateISO": "2022-05-13",
+      "year": 2022,
+      "country": "España",
+      "city": "Murcia",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-05-04-madrid-teatro-real-concierto-de-aranjuez",
+      "dateISO": "2022-05-04",
+      "year": 2022,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-03-06-rotterdam-con-raquel-kurpershoek",
+      "dateISO": "2022-03-06",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": "Rotterdam",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2022-03-04-amsterdam-con-raquel-kurpershoek",
+      "dateISO": "2022-03-04",
+      "year": 2022,
+      "country": "Paises Bajos",
+      "city": "Amsterdam",
+      "venue": null,
+      "eventName": "Con Raquel Kurpershoek",
+      "program": null,
+      "artists": [
+        "Castaño (2021)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-12-28-cordoba-recital",
+      "dateISO": "2021-12-28",
+      "year": 2021,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-09-30-sevilla-memento-con-mayte-martin",
+      "dateISO": "2021-09-30",
+      "year": 2021,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-09-29-cordoba-gran-teatro-concierto-de-aranjuez",
+      "dateISO": "2021-09-29",
+      "year": 2021,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Gran Teatro",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-09-25-motril-memento-con-mayte-martin",
+      "dateISO": "2021-09-25",
+      "year": 2021,
+      "country": "España",
+      "city": "Motril",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-09-12-granada-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2021-09-12",
+      "year": 2021,
+      "country": "España",
+      "city": "Granada",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-09-10-madrid-recital",
+      "dateISO": "2021-09-10",
+      "year": 2021,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-08-28-priego-de-cordoba-memento-con-mayte-martin",
+      "dateISO": "2021-08-28",
+      "year": 2021,
+      "country": "España",
+      "city": "Priego de Córdoba",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-08-07-jerez-de-lafrontera-deja-vu-con-mayte-martin",
+      "dateISO": "2021-08-07",
+      "year": 2021,
+      "country": "España",
+      "city": "Jerez de laFrontera",
+      "venue": null,
+      "eventName": "\"Deja vu\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-08-06-marbella-memento-con-mayte-martin",
+      "dateISO": "2021-08-06",
+      "year": 2021,
+      "country": "España",
+      "city": "Marbella",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-07-25-granada-pena-la-plateria-recital",
+      "dateISO": "2021-07-25",
+      "year": 2021,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Peña la Platería",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Fesetival de guitarra de Granada"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-07-09-calella-de-la-costa-memento-con-mayte-martin",
+      "dateISO": "2021-07-09",
+      "year": 2021,
+      "country": "España",
+      "city": "Calella de la costa",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-07-08-sant-adria-del-valles-memento-con-mayte-martin",
+      "dateISO": "2021-07-08",
+      "year": 2021,
+      "country": "España",
+      "city": "Sant Adria del Vallés",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-06-12-valladolid-memento-con-mayte-martin",
+      "dateISO": "2021-06-12",
+      "year": 2021,
+      "country": "España",
+      "city": "Valladolid",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-06-08-valencia-con-mayte-martin-y-patricia-guerrero",
+      "dateISO": "2021-06-08",
+      "year": 2021,
+      "country": "España",
+      "city": "Valencia",
+      "venue": null,
+      "eventName": "Con Mayte Martín y Patricia Guerrero",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-06-01-madrid-recital",
+      "dateISO": "2021-06-01",
+      "year": 2021,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-05-30-cordoba-centro-flamenco-fosforito-recital",
+      "dateISO": "2021-05-30",
+      "year": 2021,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Centro flamenco Fosforito",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-05-13-madrid-recital",
+      "dateISO": "2021-05-13",
+      "year": 2021,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Círculo flamenco"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-04-30-hospitalet-de-llobregat-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2021-04-30",
+      "year": 2021,
+      "country": "España",
+      "city": "Hospitalet de Llobregat",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-04-24-malaga-con-mayte-martin-y-patricia-guerrero",
+      "dateISO": "2021-04-24",
+      "year": 2021,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "Con Mayte Martín y Patricia Guerrero",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-04-16-castellon-deja-vu-con-mayte-martin",
+      "dateISO": "2021-04-16",
+      "year": 2021,
+      "country": "España",
+      "city": "Castellón",
+      "venue": null,
+      "eventName": "\"Deja vu\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-04-12-cordoba-recital",
+      "dateISO": "2021-04-12",
+      "year": 2021,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [
+        "Catedra de flamencología"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-03-30-madrid-centro-cultural-moncloa-recital",
+      "dateISO": "2021-03-30",
+      "year": 2021,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Centro cultural Moncloa",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Flamencos en ruta AIE"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-03-14-tarragona-memento-con-mayte-martin",
+      "dateISO": "2021-03-14",
+      "year": 2021,
+      "country": "España",
+      "city": "Tarragona",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-02-27-vitoria-teatro-jesus-ibanes-de-matauko-memento-con-mayte-martin",
+      "dateISO": "2021-02-27",
+      "year": 2021,
+      "country": "España",
+      "city": "Vitoria",
+      "venue": "Teatro Jesús Ibañes de Matauko",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-02-25-logrono-teatro-breton-memento-con-mayte-martin",
+      "dateISO": "2021-02-25",
+      "year": 2021,
+      "country": "España",
+      "city": "Logroño",
+      "venue": "Teatro Bretón",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Sobrinos de Esteso (1974)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-02-05-oviedo-auditorio-principe-felipe-tempo-rubato-sinfonico-con-mayte-mar",
+      "dateISO": "2021-02-05",
+      "year": 2021,
+      "country": "España",
+      "city": "Oviedo",
+      "venue": "Auditorio Principe Felipe",
+      "eventName": "\"Tempo rubato sinfónico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2021-01-02-lloret-de-mar-memento-con-mayte-martin",
+      "dateISO": "2021-01-02",
+      "year": 2021,
+      "country": "España",
+      "city": "Lloret de mar",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-12-17-madrid-teatros-del-canal-deja-vu-con-mayte-martin",
+      "dateISO": "2020-12-17",
+      "year": 2020,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatros del Canal",
+      "eventName": "\"Deja vu\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-12-03-santander-memento-con-mayte-martin",
+      "dateISO": "2020-12-03",
+      "year": 2020,
+      "country": "España",
+      "city": "Santander",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-11-06-segura-de-la-sierra-memento-con-mayte-martin",
+      "dateISO": "2020-11-06",
+      "year": 2020,
+      "country": "España",
+      "city": "Segura de la Sierra",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-10-24-vilanova-i-la-geltru-auditori-eduard-toldra-memento-con-mayte-martin",
+      "dateISO": "2020-10-24",
+      "year": 2020,
+      "country": "España",
+      "city": "Vilanova i la Geltrú",
+      "venue": "Auditori Eduard Toldrá",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-10-03-huelva-memento-con-mayte-martin",
+      "dateISO": "2020-10-03",
+      "year": 2020,
+      "country": "España",
+      "city": "Huelva",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [
+        "Festival flamenco de Huelva"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-10-02-madrid-teatro-fernan-gomez-memento-con-mayte-martin",
+      "dateISO": "2020-10-02",
+      "year": 2020,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Fernán Gómez",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-09-29-ubeda-memento-con-mayte-martin",
+      "dateISO": "2020-09-29",
+      "year": 2020,
+      "country": "España",
+      "city": "Úbeda",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-09-23-barcelona-sede-de-ccoo-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2020-09-23",
+      "year": 2020,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Sede de CCOO",
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-07-23-barcelona-memento-con-mayte-martin",
+      "dateISO": "2020-07-23",
+      "year": 2020,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-07-08-valencia-museo-valenciano-de-etnologia-memento-con-mayte-martin",
+      "dateISO": "2020-07-08",
+      "year": 2020,
+      "country": "España",
+      "city": "Valencia",
+      "venue": "Museo valenciano de etnología",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Festival del Grec"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-03-06-alcala-de-henares-teatro-salon-cervantes-memento-con-mayte-martin",
+      "dateISO": "2020-03-06",
+      "year": 2020,
+      "country": "España",
+      "city": "Alcalá de Henares",
+      "venue": "Teatro Salón Cervantes",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-02-22-el-escorial-real-coliseo-de-carlos-iii-memento-con-mayte-martin",
+      "dateISO": "2020-02-22",
+      "year": 2020,
+      "country": "España",
+      "city": "El Escorial",
+      "venue": "Real Coliseo de Carlos III",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Flamencos en ruta AIE"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-02-21-murcia-teatro-circo-memento-con-mayte-martin",
+      "dateISO": "2020-02-21",
+      "year": 2020,
+      "country": "España",
+      "city": "Murcia",
+      "venue": "Teatro Circo",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-02-20-alcala-de-henares-facultad-de-bellas-artes-recital",
+      "dateISO": "2020-02-20",
+      "year": 2020,
+      "country": "España",
+      "city": "Alcalá de Henares",
+      "venue": "Facultad de Bellas Artes",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Cátedra de Flamencología"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-02-15-leganes-memento-con-mayte-martin",
+      "dateISO": "2020-02-15",
+      "year": 2020,
+      "country": "España",
+      "city": "Leganés",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Flamencos en Ruta"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-02-08-amberes-memento-con-mayte-martin",
+      "dateISO": "2020-02-08",
+      "year": 2020,
+      "country": "Bélgica",
+      "city": "Amberes",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-01-25-sevilla-memento-con-mayte-martin",
+      "dateISO": "2020-01-25",
+      "year": 2020,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2020-01-17-nimes-memento-con-mayte-martin",
+      "dateISO": "2020-01-17",
+      "year": 2020,
+      "country": "Francia",
+      "city": "Nimes",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-11-22-cordoba-teatro-gongora-memento-con-mayte-martin",
+      "dateISO": "2019-11-22",
+      "year": 2019,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Teatro Góngora",
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Castaño (2019)"
+      ],
+      "tags": [
+        "Gala ganadores concurso"
+      ],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-11-09-lleida-memento-con-mayte-martin",
+      "dateISO": "2019-11-09",
+      "year": 2019,
+      "country": "España",
+      "city": "Lleida",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-09-27-alhama-de-murcia-memento-con-mayte-martin",
+      "dateISO": "2019-09-27",
+      "year": 2019,
+      "country": "España",
+      "city": "Alhama de Murcia",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-09-12-sevilla-memento-con-mayte-martin",
+      "dateISO": "2019-09-12",
+      "year": 2019,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-08-31-linares-memento-con-mayte-martin",
+      "dateISO": "2019-08-31",
+      "year": 2019,
+      "country": "España",
+      "city": "Linares",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-08-30-manilva-memento-con-mayte-martin",
+      "dateISO": "2019-08-30",
+      "year": 2019,
+      "country": "España",
+      "city": "Manilva",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-08-24-montilla-memento-con-mayte-martin",
+      "dateISO": "2019-08-24",
+      "year": 2019,
+      "country": "España",
+      "city": "Montilla",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-07-27-paterna-de-la-rivera-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-07-27",
+      "year": 2019,
+      "country": "España",
+      "city": "Paterna de la Rivera",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-06-23-madrid-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-06-23",
+      "year": 2019,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-06-15-alahurin-de-la-torre-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-06-15",
+      "year": 2019,
+      "country": "España",
+      "city": "Alahurín de la Torre",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-25-barcelona-memento-con-mayte-martin",
+      "dateISO": "2019-05-25",
+      "year": 2019,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-18-manresa-tempo-rubato-con-mayte-martin",
+      "dateISO": "2019-05-18",
+      "year": 2019,
+      "country": "España",
+      "city": "Manresa",
+      "venue": null,
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-17-montcada-tempo-rubato-con-mayte-martin",
+      "dateISO": "2019-05-17",
+      "year": 2019,
+      "country": "España",
+      "city": "Montcada",
+      "venue": null,
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-16-lleida-tempo-rubato-con-mayte-martin",
+      "dateISO": "2019-05-16",
+      "year": 2019,
+      "country": "España",
+      "city": "Lleida",
+      "venue": null,
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-10-madrid-auditorio-nacional-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-05-10",
+      "year": 2019,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-09-palma-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2019-05-09",
+      "year": 2019,
+      "country": "España",
+      "city": "Palma",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-05-05-barcelona-memento-con-mayte-martin",
+      "dateISO": "2019-05-05",
+      "year": 2019,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-04-25-barcelona-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-04-25",
+      "year": 2019,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-04-08-granada-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-04-08",
+      "year": 2019,
+      "country": "España",
+      "city": "Granada",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-04-07-malaga-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-04-07",
+      "year": 2019,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-03-30-barcelona-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2019-03-30",
+      "year": 2019,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-03-23-barcelona-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2019-03-23",
+      "year": 2019,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-03-02-banoles-memento-con-mayte-martin",
+      "dateISO": "2019-03-02",
+      "year": 2019,
+      "country": "España",
+      "city": "Bañoles",
+      "venue": null,
+      "eventName": "\"Memento\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-02-08-adra-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2019-02-08",
+      "year": 2019,
+      "country": "España",
+      "city": "Adra",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2019-01-11-roma-deja-vu-con-mayte-martin",
+      "dateISO": "2019-01-11",
+      "year": 2019,
+      "country": "Italia",
+      "city": "Roma",
+      "venue": null,
+      "eventName": "\"Deja vu\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-12-15-fuenlabrada-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-12-15",
+      "year": 2018,
+      "country": "España",
+      "city": "Fuenlabrada",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-12-08-falset-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-12-08",
+      "year": 2018,
+      "country": "España",
+      "city": "Falset",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-11-29-cadiz-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-11-29",
+      "year": 2018,
+      "country": "España",
+      "city": "Cádiz",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-11-28-madrid-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-11-28",
+      "year": 2018,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-11-20-barcelona-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-11-20",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-11-13-barcelona-tempo-rubato-con-mayte-martin",
+      "dateISO": "2018-11-13",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Hermanos Conde (1989)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-10-30-cordoba-teatro-gongora-recital",
+      "dateISO": "2018-10-30",
+      "year": 2018,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": "Teatro Góngora",
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-10-24-malaga-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2018-10-24",
+      "year": 2018,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-09-23-barcelona-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2018-09-23",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-08-21-pamplona-tempo-rubato-con-mayte-martin",
+      "dateISO": "2018-08-21",
+      "year": 2018,
+      "country": "España",
+      "city": "Pamplona",
+      "venue": null,
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-08-14-puente-genil-con-rafael-del-pino-keko",
+      "dateISO": "2018-08-14",
+      "year": 2018,
+      "country": "España",
+      "city": "Puente Genil",
+      "venue": null,
+      "eventName": "Con Rafael del Pino \"keko\"",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-08-04-ojen-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-08-04",
+      "year": 2018,
+      "country": "España",
+      "city": "Ojén",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Rene Baarslag (2018)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-08-02-la-union-recital",
+      "dateISO": "2018-08-02",
+      "year": 2018,
+      "country": "España",
+      "city": "La Unión",
+      "venue": null,
+      "eventName": "Recital",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Gala ganadores concurso"
+    },
+    {
+      "id": "2018-07-28-marchena-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-07-28",
+      "year": 2018,
+      "country": "España",
+      "city": "Marchena",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-07-04-barcelona-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-07-04",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-07-01-barcelona-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-07-01",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-06-30-villafranca-de-los-barros-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-06-30",
+      "year": 2018,
+      "country": "España",
+      "city": "Villafranca de los Barros",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-06-08-madrid-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2018-06-08",
+      "year": 2018,
+      "country": "España",
+      "city": "Madrid",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-06-07-sevilla-con-bernardo-miranda",
+      "dateISO": "2018-06-07",
+      "year": 2018,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": null,
+      "eventName": "Con Bernardo Miranda",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-06-06-malaga-con-bernardo-miranda",
+      "dateISO": "2018-06-06",
+      "year": 2018,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "Con Bernardo Miranda",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-05-18-sabadell-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-05-18",
+      "year": 2018,
+      "country": "España",
+      "city": "Sabadell",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-05-05-cornella-con-david-pino",
+      "dateISO": "2018-05-05",
+      "year": 2018,
+      "country": "España",
+      "city": "Cornellá",
+      "venue": null,
+      "eventName": "Con David Pino",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-05-03-zaragoza-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-05-03",
+      "year": 2018,
+      "country": "España",
+      "city": "Zaragoza",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-04-23-granada-teatro-alhambra-recital-guitarra",
+      "dateISO": "2018-04-23",
+      "year": 2018,
+      "country": "España",
+      "city": "Granada",
+      "venue": "Teatro  Alhambra",
+      "eventName": "Recital guitarra",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-04-07-puente-genil-nazareno-y-olivares-homenaje-a-fosfori",
+      "dateISO": "2018-04-07",
+      "year": 2018,
+      "country": "España",
+      "city": "Puente Genil",
+      "venue": null,
+      "eventName": "\"Nazareno y olivares\" homenaje a Fosforito",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-03-17-tarrasa-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-03-17",
+      "year": 2018,
+      "country": "España",
+      "city": "Tarrasa",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-24-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-02-24",
+      "year": 2018,
+      "country": "España",
+      "city": null,
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-23-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-02-23",
+      "year": 2018,
+      "country": "España",
+      "city": null,
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-20-barcelona-flamenco-clasico-con-mayte-martin",
+      "dateISO": "2018-02-20",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": null,
+      "eventName": "\"Flamenco clásico\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-17-lleida-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2018-02-17",
+      "year": 2018,
+      "country": "España",
+      "city": "Lleida",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-16-barcelona-teatro-apolo-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2018-02-16",
+      "year": 2018,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "Teatro Apolo",
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2018-02-03-puente-genil-con-david-pino",
+      "dateISO": "2018-02-03",
+      "year": 2018,
+      "country": "España",
+      "city": "Puente Genil",
+      "venue": null,
+      "eventName": "Con David Pino, ",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": "Presentación disco David Pino"
+    },
+    {
+      "id": "2018-02-02-madrid-teatro-price-tempo-rubato-con-mayte-martin",
+      "dateISO": "2018-02-02",
+      "year": 2018,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Price",
+      "eventName": "\"Tempo rubato\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2017-12-28-malaga-al-cantar-a-manuel-con-mayte-martin",
+      "dateISO": "2017-12-28",
+      "year": 2017,
+      "country": "España",
+      "city": "Málaga",
+      "venue": null,
+      "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
+      "program": null,
+      "artists": [
+        "Marvi (2016)"
+      ],
+      "tags": [],
+      "capacity": null,
+      "attendance": null,
+      "fee": null,
+      "currency": null,
+      "sources": [],
+      "notes": null
+    }
+  ],
+  "generatedAt": "2025-09-05T09:01:44.974191Z",
+  "version": 1
+}
+
