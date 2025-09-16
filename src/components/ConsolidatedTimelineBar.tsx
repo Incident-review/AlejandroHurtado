@@ -33,33 +33,71 @@ const TimelineBar = ({
   useEffect(() => {
     if (!onYearVisible) return;
 
+    console.log('Setting up intersection observer...');
+    console.log('Available years:', years);
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
+      (entries: IntersectionObserverEntry[]) => {
+        console.log('Intersection observer entries:', entries.length);
+        
+        // Find the section that's closest to the top of the viewport
+        interface ClosestSection {
+          element: Element;
+          top: number;
+        }
+        let closestSection: ClosestSection | null = null;
+        
+        entries.forEach((entry: IntersectionObserverEntry) => {
           if (entry.isIntersecting) {
-            const year = parseInt(entry.target.getAttribute('data-year') || '0', 10);
-            if (year) {
-              onYearVisible(year);
+            const rect = entry.target.getBoundingClientRect();
+            const distanceFromTop = Math.abs(rect.top);
+            
+            if (!closestSection || distanceFromTop < closestSection.top) {
+              closestSection = {
+                element: entry.target,
+                top: distanceFromTop
+              };
             }
           }
         });
+
+        if (closestSection) {
+          const target = closestSection.element as HTMLElement;
+          
+          // Try both possible attribute names
+          const yearAttr = target.getAttribute('data-year') || 
+                          target.getAttribute('data-event-year');
+          
+          if (yearAttr) {
+            const year = parseInt(yearAttr, 10);
+            if (!isNaN(year) && years.includes(year)) {
+              console.log('Year in view:', year);
+              onYearVisible(year);
+            }
+          }
+        }
       },
       {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.5, // Trigger when 50% of the event is visible
+        // Use a larger root margin to detect sections as they approach the viewport
+        rootMargin: '-20% 0px -70% 0px',
+        // Use a single threshold since we're calculating visibility differently
+        threshold: 0.1
       }
     );
 
-    // Observe all event sections
-    const eventSections = document.querySelectorAll('[data-event-year]');
-    eventSections.forEach(section => observer.observe(section));
+    // Observe all year sections
+    const yearSections = document.querySelectorAll('[data-year], [data-event-year]');
+    console.log(`Found ${yearSections.length} year sections to observe`);
+    
+    yearSections.forEach(section => {
+      observer.observe(section);
+    });
 
     return () => {
-      eventSections.forEach(section => observer.unobserve(section));
       observer.disconnect();
     };
-  }, [onYearVisible]);
+  }, [onYearVisible, years]);
 
   // Auto-scroll to the current year
   const scrollToYear = useCallback((year: number) => {
@@ -107,20 +145,50 @@ const TimelineBar = ({
     };
   }, []);
 
-  // Handle keyboard navigation
-  const handleKeyDown = useCallback((e: React.KeyboardEvent, year: number) => {
-    const currentIndex = years.indexOf(year);
-    
-    if (e.key === 'ArrowRight' && currentIndex < years.length - 1) {
-      onYearClick(years[currentIndex + 1]);
-    } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
-      onYearClick(years[currentIndex - 1]);
-    } else if (e.key === 'Home') {
-      onYearClick(years[0]);
-    } else if (e.key === 'End') {
-      onYearClick(years[years.length - 1]);
+  // Keyboard navigation handler (kept for future use)
+  // const handleKeyDown = useCallback((e: React.KeyboardEvent, year: number) => {
+  //   const currentIndex = years.indexOf(year);
+  //   
+  //   if (e.key === 'ArrowRight' && currentIndex < years.length - 1) {
+  //     onYearClick(years[currentIndex + 1]);
+  //   } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+  //     onYearClick(years[currentIndex - 1]);
+  //   } else if (e.key === 'Home') {
+  //     onYearClick(years[0]);
+  //   } else if (e.key === 'End') {
+  //     onYearClick(years[years.length - 1]);
+  //   }
+  // }, [years, onYearClick]);
+
+  // Handle year button click
+  const handleClick = useCallback((year: number) => {
+    if (!isScrolling) {
+      onYearClick(year);
+      scrollToYear(year);
+      
+      // Force update the visible year
+      if (onYearVisible) {
+        onYearVisible(year);
+      }
     }
-  }, [years, onYearClick]);
+  }, [isScrolling, onYearClick, scrollToYear, onYearVisible]);
+
+  // Update active year when visible year changes
+  useEffect(() => {
+    if (visibleYear && visibleYear !== currentYear && !isScrolling) {
+      // Update the current year in the parent component
+      onYearClick(visibleYear);
+      
+      // Ensure the button is scrolled into view
+      if (yearRefs.current[visibleYear]) {
+        yearRefs.current[visibleYear]?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }
+    }
+  }, [visibleYear, currentYear, isScrolling, onYearClick]);
 
   if (years.length === 0) {
     return null;
@@ -166,12 +234,12 @@ const TimelineBar = ({
       borderTop="none"
       borderBottom="1px solid"
       borderColor={theme.borderColor}
-      py={4}
-      px={4}
-      minH="44px"
+      py={6}
+      px={{ base: 8, md: 12 }}
+      minH="64px"
       sx={{
-        paddingLeft: 'calc(50% - 50vw)',
-        paddingRight: 'calc(50% - 50vw)',
+        paddingLeft: 'calc(50% - 50vw + 1rem)',
+        paddingRight: 'calc(50% - 50vw + 1rem)',
         backdropFilter: 'blur(16px)',
         WebkitBackdropFilter: 'blur(16px)',
         '&::before': {
@@ -182,81 +250,69 @@ const TimelineBar = ({
           pointerEvents: 'none',
           zIndex: -1
         },
-        '&::after': {
-          content: '""',
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: '1px',
-          background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent)'
-        }
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
+        msOverflowStyle: 'none',
+        scrollbarWidth: 'none',
       }}
     >
       <Box 
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        h="100%"
         w="100%"
         overflowX="auto"
-        ref={barRef}
-        sx={{
-          scrollbarWidth: 'none',
+        overflowY="hidden"
+        px={4}
+        css={{
+          '& > *:not(:last-child)': {
+            marginRight: '16px',
+          },
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
           msOverflowStyle: 'none',
-          '&::-webkit-scrollbar': { display: 'none' },
-          padding: '8px 6px',
+          scrollbarWidth: 'none',
         }}
+        ref={barRef}
       >
-        <Box
-          display="flex"
-          justifyContent="center"
-          width="max-content"
-          minWidth="100%"
-          padding="0 0px"
-          margin="0 auto"
-          sx={{
-            '& > *:not(:last-child)': {
-              marginRight: '16px',
-            }
-          }}
-        >
-          {years.map((year) => {
-            const isActive = year === currentYear;
-            return (
-              <Button
-                key={year}
-                size={buttonSize}
-                variant={isActive ? 'solid' : 'outline'}
-                fontWeight={isActive ? 'bold' : 'normal'}
-                onClick={() => onYearClick(year)}
-                minW={buttonMinWidth}
-                px={{ base: 2, md: 4 }}
-                py={2}
-                borderWidth={isActive || visibleYear === year ? 2 : 1}
-                borderColor={isActive || visibleYear === year ? theme.borderColorActive : theme.borderColorInactive}
-                bg={isActive || visibleYear === year ? theme.activeBg : 'transparent'}
-                color={isActive || visibleYear === year ? theme.activeColor : theme.inactiveColor}
-                _hover={{ 
-                  bg: isActive || visibleYear === year ? theme.hoverBg : theme.borderColorInactive,
-                  color: theme.hoverColor,
-                  transform: 'translateY(-1px)',
-                  boxShadow: 'md'
-                }}
-                _active={{
-                  transform: 'translateY(0)',
-                  boxShadow: 'sm'
-                }}
-                transition="all 0.2s"
-                borderRadius="full"
-                fontSize={{ base: 'xs', md: 'sm' }}
-                ref={el => { if (el) yearRefs.current[year] = el; }}
-                onKeyDown={(e) => handleKeyDown(e, year)}
-                aria-label={`Filter events from ${year}`}
-                aria-current={year === currentYear || visibleYear === year ? 'true' : 'false'}
-                opacity={visibleYear && visibleYear !== year ? 0.8 : 1}
-              >
-                {year}
-              </Button>
-            );
-          })}
-        </Box>
+        {years.map((year) => {
+          const isActive = year === currentYear || year === visibleYear;
+          return (
+            <Button
+              key={year}
+              ref={el => { if (el) yearRefs.current[year] = el; }}
+              size={buttonSize}
+              minW={buttonMinWidth}
+              variant="ghost"
+              colorScheme={variant === 'dark' ? 'orange' : 'blue'}
+              onClick={() => handleClick(year)}
+              isActive={isActive}
+              _active={{
+                transform: 'scale(0.98)',
+                boxShadow: 'sm',
+              }}
+              transition="all 0.2s"
+              borderRadius="full"
+              fontSize={{ base: 'sm', md: 'md' }}
+              fontWeight={isActive ? 'bold' : 'normal'}
+              px={{ base: 4, md: 5 }}
+              color={isActive ? theme.activeColor : theme.inactiveColor}
+              bg={isActive ? theme.activeBg : 'transparent'}
+              border="1px solid"
+              borderColor={isActive ? theme.borderColorActive : theme.borderColorInactive}
+              _hover={{
+                bg: isActive ? theme.activeBg : 'transparent',
+                color: isActive ? theme.activeColor : theme.inactiveColor,
+              }}
+              position="relative"
+            >
+              {year}
+            </Button>
+          );
+        })}
       </Box>
     </Box>
   );

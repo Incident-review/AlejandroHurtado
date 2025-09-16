@@ -23,9 +23,10 @@ const getEventImage = (eventTitle: string): string => {
 
 interface EventCardProps {
   event: Event;
+  variant?: 'past' | 'upcoming';
 }
 
-const EventCard = ({ event }: EventCardProps) => {
+const EventCard = ({ event, variant = 'upcoming' }: EventCardProps) => {
   // Use the first image from event.media.imageUrls if available, otherwise use the event name to find a matching image
   const eventImage = event.media?.imageUrls?.[0] || getEventImage(event.eventName);
   
@@ -36,47 +37,63 @@ const EventCard = ({ event }: EventCardProps) => {
       display="flex" 
       flexDirection="column"
       bg="rgba(20, 10, 5, 0.2)"
-      borderRadius="xl"
+      borderLeft="4px solid"
+      borderLeftColor={variant === 'past' ? 'orange.500' : 'blue.500'}
+      borderRight="1px solid"
+      borderTop="1px solid"
+      borderBottom="1px solid"
+      borderRightColor="rgba(139, 115, 85, 0.1)"
+      borderTopColor="rgba(139, 115, 85, 0.1)"
+      borderBottomColor="rgba(139, 115, 85, 0.1)"
       overflow="hidden"
-      boxShadow="lg"
-      transition="all 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
-      border="1px solid"
-      borderColor="rgba(139, 115, 85, 0.2)"
+      transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
       backdropFilter="blur(16px) saturate(180%)"
       position="relative"
-      sx={{
-      '&::before': {
-        content: '""',
-        position: 'absolute',
-        inset: 0,
-        borderRadius: 'xl',
-        padding: '1px',
-        background: 'linear-gradient(135deg, rgba(255,140,0,0.15), rgba(139, 69, 19, 0.1), rgba(0,0,0,0.05))',
-        WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-        WebkitMaskComposite: 'xor',
-        maskComposite: 'exclude',
-        pointerEvents: 'none',
-        zIndex: -1,
-        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-      },
-      '&:hover::before': {
-        background: 'linear-gradient(135deg, rgba(255,140,0,0.25), rgba(139, 69, 19, 0.2), rgba(0,0,0,0.1))',
-      }
-      }}
+      zIndex="1"
       _hover={{
-        transform: 'translateY(-6px) scale(1.01)',
-        boxShadow: '0 12px 32px rgba(0, 0, 0, 0.3)',
-        borderColor: 'rgba(205, 133, 63, 0.4)',
+        transform: 'translateY(-4px) scale(1.01)',
+        boxShadow: variant === 'past' 
+          ? '0 8px 24px rgba(237, 137, 54, 0.25)' 
+          : '0 8px 24px rgba(54, 144, 237, 0.25)',
+        borderLeft: '4px solid',
+        borderLeftColor: variant === 'past' ? 'orange.500' : 'blue.500',
+        borderRight: '1px solid',
+        borderTop: '1px solid',
+        borderBottom: '1px solid',
+        borderRightColor: 'rgba(205, 133, 63, 0.6)',
+        borderTopColor: 'rgba(205, 133, 63, 0.6)',
+        borderBottomColor: 'rgba(205, 133, 63, 0.6)',
         bg: 'rgba(30, 15, 5, 0.3)'
+      }}
+      sx={{
+        WebkitBackfaceVisibility: 'hidden',
+        backfaceVisibility: 'hidden',
+        transform: 'translateZ(0)',
+        willChange: 'transform',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          inset: 0,
+          padding: '1px',
+          background: 'transparent',
+          pointerEvents: 'none',
+          zIndex: 1,
+          transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+        },
+        '&:hover::before': {
+          background: variant === 'past' 
+            ? 'linear-gradient(135deg, rgba(255,140,0,0.15), rgba(139, 69, 19, 0.1), rgba(0,0,0,0.05))'
+            : 'linear-gradient(135deg, rgba(54, 144, 237, 0.1), rgba(29, 78, 216, 0.1), rgba(0,0,0,0.05))'
+        }
       }}
     >
       <Box p={4} pb={2} position="relative">
-      <Box
-        position="relative"
-        borderRadius="md"
-        overflow="hidden"
-        border="1px solid"
-        borderColor="rgba(139, 115, 85, 0.6)"
+        <Box
+          position="relative"
+          borderRadius="md"
+          overflow="hidden"
+          border="1px solid"
+          borderColor="rgba(139, 115, 85, 0.6)"
         _hover={{
           borderColor: 'rgba(205, 133, 63, 0.8)',
           '& > div': {

@@ -12,7 +12,7 @@ const createSlug = (title: string): string => {
     .replace(/(^-|-$)/g, '');
 };
 
-const MotionBox = motion(Box);
+const MotionBox = motion.create(Box);
 
 interface Spectacle {
   title: string;

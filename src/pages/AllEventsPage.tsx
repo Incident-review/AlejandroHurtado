@@ -1,4 +1,4 @@
-import { Box, Heading, Spinner, Center } from '@chakra-ui/react';
+import { Box, Heading, Spinner, Center, Container, VStack, Divider, Text } from '@chakra-ui/react';
 import { useMemo, useRef, useState, useEffect, useCallback } from 'react';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
@@ -62,25 +62,72 @@ const AllEventsPage = () => {
     loadEvents();
   }, []);
 
-  const eventsByYear = useMemo(() => groupEventsByYear(unifiedEvents), [unifiedEvents]);
-  const years = useMemo(() => Array.from(eventsByYear.keys()), [eventsByYear]);
+  // Group events by year and separate past/future events
+  const { pastEvents, futureEvents } = useMemo(() => {
+    const now = new Date();
+    return unifiedEvents.reduce((acc, event) => {
+      const eventDate = new Date(event.date);
+      if (eventDate < now) {
+        acc.pastEvents.push(event);
+      } else {
+        acc.futureEvents.push(event);
+      }
+      return acc;
+    }, { pastEvents: [] as Event[], futureEvents: [] as Event[] });
+  }, [unifiedEvents]);
+
+  // Group events by year
+  const pastEventsByYear = useMemo(() => groupEventsByYear(pastEvents), [pastEvents]);
+  const futureEventsByYear = useMemo(() => groupEventsByYear(futureEvents), [futureEvents]);
+
+  const allYears = useMemo(() => {
+    const pastYears = Array.from(pastEventsByYear.keys());
+    const futureYears = Array.from(futureEventsByYear.keys());
+    return Array.from(new Set([...pastYears, ...futureYears])).sort((a, b) => b - a);
+  }, [pastEventsByYear, futureEventsByYear]);
 
   const yearSectionRefs = useRef<{ [year: number]: HTMLDivElement | null }>({});
+  const pastFutureDividerRef = useRef<HTMLDivElement>(null);
   
   // Create ref callback for year sections
   const setYearSectionRef = useCallback((year: number) => (el: HTMLDivElement | null) => {
     yearSectionRefs.current[year] = el;
   }, []);
-  const [currentYear, setCurrentYear] = useState<number>(years[0] ?? new Date().getFullYear());
-  const [visibleYear, setVisibleYear] = useState<number | null>(years[0] ?? null);
+
+  // Auto-scroll to the most recent past event on initial load
+  useEffect(() => {
+    if (pastEvents.length > 0) {
+      const mostRecentPastYear = Math.max(...Array.from(pastEventsByYear.keys()));
+      setTimeout(() => {
+        const ref = yearSectionRefs.current[mostRecentPastYear];
+        if (ref) {
+          ref.scrollIntoView({ behavior: 'auto', block: 'start' });
+          // Scroll up a bit to account for the fixed header
+          window.scrollBy(0, -100);
+        }
+      }, 100);
+    }
+  }, [pastEvents.length, pastEventsByYear]);
+  const [currentYear, setCurrentYear] = useState<number>(allYears[0] ?? new Date().getFullYear());
+  const [visibleYear, setVisibleYear] = useState<number | null>(allYears[0] ?? null);
+  
+  // Debug log when years change
+  useEffect(() => {
+    console.log('Years updated:', allYears);
+    console.log('Current year:', currentYear);
+    console.log('Visible year:', visibleYear);
+  }, [allYears, currentYear, visibleYear]);
 
   // Handle year click - scroll to the selected year's section
   const handleYearClick = useCallback((year: number) => {
+    console.log('Year clicked:', year);
     setCurrentYear(year);
     const ref = yearSectionRefs.current[year];
+    console.log('Year section ref:', ref);
     if (ref) {
       // Add a small delay to ensure the ref is properly set
       setTimeout(() => {
+        console.log('Scrolling to year:', year);
         ref.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 50);
     }
@@ -88,10 +135,150 @@ const AllEventsPage = () => {
 
   // Update current year when visible year changes
   useEffect(() => {
+    console.log('Visible year changed:', visibleYear, 'Current year:', currentYear);
     if (visibleYear && visibleYear !== currentYear) {
+      console.log('Updating current year to:', visibleYear);
       setCurrentYear(visibleYear);
     }
   }, [visibleYear, currentYear]);
+
+  // Function to render events for a specific year
+  const renderYearEvents = (year: number, events: Event[], isPast: boolean) => (
+    <Box 
+      key={year} 
+      ref={setYearSectionRef(year)} 
+      id={`year-${year}`}
+      data-event-year={year}
+      data-year={year}
+      mb={8}
+      pt={8}
+      bg="transparent"
+      scrollMarginTop={`${HEADER_HEIGHT + YEAR_BAR_HEIGHT + 20}px`}
+      position="relative"
+    >
+      <Box 
+        position="absolute" 
+        left={0} 
+        right={0} 
+        top={0} 
+        height="1px" 
+        bg={isPast ? "orange.500" : "blue.400"}
+        opacity={0.5}
+      />
+      <Heading 
+        as="h2" 
+        size="lg" 
+        mb={4} 
+        color="white"
+        textShadow="0 1px 2px rgba(0,0,0,0.5)"
+        position="relative"
+        pl={4}
+        display="flex"
+        alignItems="center"
+      >
+        <Box 
+          as="span" 
+          mr={2} 
+          color={isPast ? "orange.400" : "blue.300"}
+        >
+          {isPast ? '✓' : '→'}
+        </Box>
+        {year}
+        <Box 
+          ml={2} 
+          fontSize="sm" 
+          color={isPast ? "orange.300" : "blue.200"}
+          fontWeight="normal"
+        >
+          ({isPast ? 'Past' : 'Upcoming'})
+        </Box>
+      </Heading>
+      <Box
+        display="grid"
+        gridTemplateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+        gap={4}
+        width="90%"
+        bg="transparent"
+      >
+        {events.map((event: Event) => (
+          <EventCard 
+            key={event.id} 
+            event={event} 
+            variant={isPast ? 'past' : 'upcoming'}
+          />
+        ))}
+      </Box>
+    </Box>
+  );
+
+  // Function to render a year section
+  const renderYearSection = (year: number, events: Event[], isPast: boolean) => (
+    <Box 
+      key={year}
+      ref={setYearSectionRef(year)}
+      id={`year-${year}`}
+      data-event-year={year}
+      data-year={year}
+      mb={8}
+      pt={8}
+      bg="transparent"
+      scrollMarginTop={`${HEADER_HEIGHT + YEAR_BAR_HEIGHT + 20}px`}
+      position="relative"
+    >
+      <Box 
+        position="absolute" 
+        left={0} 
+        right={0} 
+        top={0} 
+        height="1px" 
+        bg={isPast ? "orange.500" : "blue.400"}
+        opacity={0.5}
+      />
+      <Heading 
+        as="h2" 
+        size="lg" 
+        mb={4} 
+        color="white"
+        textShadow="0 1px 2px rgba(0,0,0,0.5)"
+        position="relative"
+        pl={4}
+        display="flex"
+        alignItems="center"
+      >
+        <Box 
+          as="span" 
+          mr={2} 
+          color={isPast ? "orange.400" : "blue.300"}
+        >
+          {isPast ? '✓' : '→'}
+        </Box>
+        {year}
+        <Box 
+          ml={2} 
+          fontSize="sm" 
+          color={isPast ? "orange.300" : "blue.200"}
+          fontWeight="normal"
+        >
+          ({isPast ? 'Past' : 'Upcoming'})
+        </Box>
+      </Heading>
+      <Box
+        display="grid"
+        gridTemplateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+        gap={4}
+        width="100%"
+        bg="transparent"
+      >
+        {events.map((event) => (
+          <EventCard 
+            key={event.id}
+            event={event}
+            variant={isPast ? 'past' : 'upcoming'}
+          />
+        ))}
+      </Box>
+    </Box>
+  );
 
   return (
     <Box minH="100vh" position="relative" overflowX="hidden">
@@ -101,29 +288,25 @@ const AllEventsPage = () => {
         top="0" 
         left="0" 
         right="0" 
-        zIndex="sticky"
-        bg="rgba(0, 0, 0, 0.8)"
-        backdropFilter="blur(8px)"
+        zIndex={1000}
+        bg="rgba(0, 0, 0, 0.9)"
+        backdropFilter="blur(10px)"
+        boxShadow="lg"
       >
-        <Box 
-          h={`${HEADER_HEIGHT}px`} 
-          display="flex" 
-          alignItems="center" 
-          px={{ base: 4, md: 6 }}
-          borderBottom="1px solid"
-          borderColor="rgba(255, 255, 255, 0.1)"
-        >
-          <Heading as="h1" size="lg" color="white">Events</Heading>
-        </Box>
-        <ConsolidatedTimelineBar 
-          years={years} 
-          currentYear={currentYear}
-          visibleYear={visibleYear}
-          onYearClick={handleYearClick}
-          onYearVisible={setVisibleYear}
-          headerHeight={HEADER_HEIGHT}
-          variant="dark"
-        />
+        <Container maxW="container.xl" py={4}>
+          <VStack spacing={0} align="stretch">
+            <Center mb={2}>
+              <Heading as="h1" size="xl" color="white" lineHeight="shorter">Events</Heading>
+            </Center>
+            <ConsolidatedTimelineBar 
+              years={allYears} 
+              currentYear={currentYear}
+              visibleYear={visibleYear}
+              onYearClick={handleYearClick}
+              onYearVisible={setVisibleYear}
+            />
+          </VStack>
+        </Container>
       </Box>
       
       {/* Main content */}
@@ -134,81 +317,66 @@ const AllEventsPage = () => {
         px={{ base: 4, md: 6 }} 
         pt={`${HEADER_HEIGHT + YEAR_BAR_HEIGHT}px`}
         pb={6}
-        minH="100vh"
-        position="relative"
-        bg="transparent"
       >
-        {loading ? (
+        {/* Future Events */}
+        {futureEvents.length > 0 && (
+          <Box mb={12}>
+            <Heading 
+              as="h2" 
+              size="xl" 
+              color="white" 
+              mb={6}
+              display="flex"
+              alignItems="center"
+            >
+              <Box as="span" color="blue.300" mr={3}>→</Box>
+              Upcoming Events
+            </Heading>
+            {Array.from(futureEventsByYear.entries())
+              .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+              .map(([year, events]) => renderYearSection(Number(year), events, false))}
+          </Box>
+        )}
+
+        {/* Past Events */}
+        {pastEvents.length > 0 && (
+          <Box>
+            <Heading 
+              as="h2" 
+              size="xl" 
+              color="white" 
+              mb={6}
+              mt={futureEvents.length > 0 ? 16 : 0}
+              display="flex"
+              alignItems="center"
+            >
+              <Box as="span" color="orange.400" mr={3}>✓</Box>
+              Past Events
+            </Heading>
+            {Array.from(pastEventsByYear.entries())
+              .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+              .map(([year, events]) => renderYearSection(Number(year), events, true))}
+          </Box>
+        )}
+
+        {loading && (
           <Center minH="50vh">
             <Spinner size="xl" color="#cd853f" />
           </Center>
-        ) : error ? (
+        )}
+
+        {error && (
           <Center minH="50vh">
             <Box color="red.500" textAlign="center" p={4}>
               {error}
             </Box>
           </Center>
-        ) : years.length === 0 ? (
+        )}
+
+        {!loading && !error && pastEvents.length === 0 && futureEvents.length === 0 && (
           <Center minH="50vh">
-            <Box>No upcoming events found.</Box>
+            <Box color="white">No events found.</Box>
           </Center>
-        ) : (
-          years.map((year) => {
-            const yearEvents = eventsByYear.get(year)!;
-            return (
-              <Box 
-                key={year} 
-                ref={setYearSectionRef(year)} 
-                id={`year-${year}`}
-                data-event-year={year}
-                data-year={year}
-                mb={8}
-                pt={8}
-                bg="transparent"
-                scrollMarginTop={`${HEADER_HEIGHT + YEAR_BAR_HEIGHT + 20}px`}
-              >
-                <Heading 
-                  as="h2" 
-                  size="lg" 
-                  mb={4} 
-                  color="white"
-                  textShadow="0 1px 2px rgba(0,0,0,0.5)"
-                  position="relative"
-                  pl={4}
-                  _before={{
-                    content: '""',
-                    position: 'absolute',
-                    left: 0,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    width: '4px',
-                    height: '60%',
-                    bgGradient: 'linear(to bottom, #f6d365, #fda085)'
-                  }}
-                >
-                  {year}
-                </Heading>
-                <Box
-                  display="grid"
-                  gridTemplateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-                  gap={4}
-                  width="90%"
-                  bg="transparent"
-                >
-                  {yearEvents.map((event: Event) => (
-                    <Box
-                      key={event.eventNumber}
-                      minW={{ base: '90vw', sm: '320px' }}
-                      maxW={{ base: '90vw', sm: '420px' }}
-                      flex="0 0 auto"
-                    >
-                      <EventCard event={event} />
-                    </Box>
-                  ))}
-                </Box>
-              </Box>
-            );
-          })
         )}
       </Box>
     </Box>
