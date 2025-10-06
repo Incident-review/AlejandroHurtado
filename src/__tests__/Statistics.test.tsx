@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../theme';
-import Statistics from '../components/Statistics';
+import Statistics from '../components/features/events/Statistics';
 
 describe('Statistics component', () => {
   it('should render all statistic labels', () => {

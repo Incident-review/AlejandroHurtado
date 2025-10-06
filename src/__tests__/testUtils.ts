@@ -15,7 +15,8 @@ export const createMockEvent = (overrides: Partial<Event> = {}): Event => {
     status: 'upcoming',
     description: 'Test description',
     shortDescription: 'Test short description',
-    date: now,
+    startDate: now,
+    endDate: new Date(new Date(now).getTime() + 90 * 60000).toISOString(),
     durationMinutes: 90,
     location: {
       country: 'Test Country',
@@ -57,11 +58,12 @@ export const createMockEvent = (overrides: Partial<Event> = {}): Event => {
 /**
  * Creates a mock event with a specific date
  */
-export const createMockEventWithDate = (date: string, overrides: Partial<Event> = {}): Event => 
-  createMockEvent({
-    date,
-    ...overrides,
-  });
+export const createMockEventWithDate = (startDate: string, endDate: string, overrides: Partial<Event> = {}): Event => ({
+  ...createMockEvent(),
+  startDate,
+  endDate,
+  ...overrides
+});
 
 /**
  * Creates a mock event with a specific location

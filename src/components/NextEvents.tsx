@@ -2,7 +2,7 @@ import { Box, Button, Grid, Heading } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import type { Event } from '../types/events';
-import { eventDataService } from '../services/eventDataService';
+import { eventService } from './features/events/eventService';
 import EventCard from './EventCard';
 
 const NextEvents = () => {
@@ -10,8 +10,11 @@ const NextEvents = () => {
 
   useEffect(() => {
     // Get the first 3 upcoming events
-    const events = eventDataService.getUpcomingEvents(3);
-    setUpcomingEvents(events);
+    const fetchUpcomingEvents = async () => {
+      const events = await eventService.getUpcomingEvents(3);
+      setUpcomingEvents(events);
+    };
+    fetchUpcomingEvents();
   }, []);
 
   return (

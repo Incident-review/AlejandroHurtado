@@ -1,30 +1,38 @@
-import type { 
-  Event, 
-  EventFilters as RootEventFilters, 
-  PaginationOptions as RootPaginationOptions, 
-  PaginatedEvents as RootPaginatedEvents 
-} from '../../../types/events';
+import type { Event, EventFilters, PaginationOptions, PaginatedEvents } from '../../../types/events';
 import eventsData from '../../../data/events.json';
-import { mapJsonToEvent } from '../../../utils/mapEventData';
+import { getPastEvents, getUpcomingEvents } from '../../../utils/events';
+import { mapRawEvents } from '../../../utils/mapEventData';
 
 // Map the JSON data to the Event type
-const events = eventsData.events.map((event, index) => 
-  mapJsonToEvent(event, index)
-);
-
-// Re-export types for consistency
-export type EventFilters = RootEventFilters;
-export type PaginationOptions = RootPaginationOptions;
-export type PaginatedEvents = RootPaginatedEvents;
+const events: Event[] = mapRawEvents(eventsData.events as any[]);
 
 /**
- * Service for handling event-related operations
+ * Service for handling all event-related operations
  */
 class EventService {
   private events: Event[];
 
   constructor(initialEvents: Event[]) { 
     this.events = [...initialEvents];
+  }
+
+  // Basic CRUD operations
+  getAllEvents(): Event[] {
+    return [...this.events];
+  }
+
+  /**
+   * Get upcoming events
+   */
+  getUpcomingEvents(limit?: number): Event[] {
+    return getUpcomingEvents(this.events, limit);
+  }
+
+  /**
+   * Get past events
+   */
+  getPastEvents(limit?: number): Event[] {
+    return getPastEvents(this.events, limit);
   }
 
   /**
@@ -51,16 +59,19 @@ class EventService {
   }
 
   /**
-   * Get a single event by eventNumber
+   * Get a single event by id or eventNumber
    */
   public getEventById(id: string | number): Event | undefined {
-    return this.events.find(event => event.eventNumber === Number(id));
+    if (typeof id === 'number' || !isNaN(Number(id))) {
+      return this.events.find(event => event.eventNumber === Number(id));
+    }
+    return this.events.find(event => event.id === id);
   }
 
   /**
    * Get events by year
    */
-  public getEventsByYear(year: number, filters: any = {}): Event[] {
+  public getEventsByYear(year: number, filters: Partial<EventFilters> = {}): Event[] {
     const yearStart = new Date(year, 0, 1).toISOString();
     const yearEnd = new Date(year + 1, 0, 1).toISOString();
     
@@ -71,19 +82,11 @@ class EventService {
   }
 
   /**
-   * Get upcoming events
-   */
-  public getUpcomingEvents(limit?: number): Event[] {
-    const upcoming = this.events.filter(event => new Date(event.date) >= new Date());
-    return limit ? upcoming.slice(0, limit) : upcoming;
-  }
-
-  /**
-   * Get past events
+   * Get events within a date range
    */
   public getEventsByDateRange(startDate: string, endDate: string): Event[] {
     return this.events.filter(event => {
-      const eventDate = new Date(event.date);
+      const eventDate = new Date(event.startDate);
       return eventDate >= new Date(startDate) && eventDate <= new Date(endDate);
     });
   }
@@ -94,7 +97,7 @@ class EventService {
   public getEventYears(): number[] {
     const years = new Set<number>();
     this.events.forEach(event => {
-      years.add(new Date(event.date).getFullYear());
+      years.add(new Date(event.startDate).getFullYear());
     });
     return Array.from(years).sort((a, b) => b - a); // Descending order
   }
@@ -163,13 +166,13 @@ class EventService {
       // Filter by year if provided
       if (filters.year) {
         const years = Array.isArray(filters.year) ? filters.year : [filters.year];
-        const eventYear = new Date(event.date).getFullYear();
+        const eventYear = new Date(event.startDate).getFullYear();
         if (!years.includes(eventYear)) return false;
       }
       // Filter by country
       if (filters.country) {
         const countries = Array.isArray(filters.country) ? filters.country : [filters.country];
-        if (!countries.some(c => c.toLowerCase() === event.location.country.toLowerCase())) {
+        if (!countries.some((c: string) => c.toLowerCase() === event.location.country.toLowerCase())) {
           return false;
         }
       }
@@ -188,8 +191,8 @@ class EventService {
         if (!searchFields.includes(query)) return false;
       }
       // Filter by upcoming/past
-      if (filters.upcomingOnly && new Date(event.date) < new Date()) return false;
-      if (filters.pastOnly && new Date(event.date) >= new Date()) return false;
+      if (filters.upcomingOnly && new Date(event.startDate) < new Date()) return false;
+      if (filters.pastOnly && new Date(event.startDate) >= new Date()) return false;
       
       return true;
     });
@@ -201,7 +204,7 @@ class EventService {
       
       switch (sortBy) {
         case 'date':
-          comparison = new Date(a.date).getTime() - new Date(b.date).getTime();
+          comparison = new Date(a.startDate).getTime() - new Date(b.startDate).getTime();
           break;
         case 'eventName':
           comparison = a.eventName.localeCompare(b.eventName);

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import type { Event, EventFilters, PaginationOptions, PaginatedEvents } from '../../../types/events';
-import eventService from '../services/eventService';
+import { eventService } from './eventService';
 
 interface UseEventsOptions {
   initialFilters?: EventFilters;

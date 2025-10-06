@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Box, Container, Heading, Text, Image, VStack, HStack, Button, Divider } from '@chakra-ui/react';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -15,9 +16,14 @@ interface Spectacle {
   images: SpectacleImage[];
 }
 
-const MotionBox = motion(Box);
+const MotionBox = motion.create(Box);
 
 const SpectacleDetailPage = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { slug } = useParams<{ slug: string }>();
   const spectacle = spectacles.find(s => 
     s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug

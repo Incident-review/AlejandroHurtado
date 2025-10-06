@@ -1,5 +1,8 @@
-import { Box, Image, Heading, Text } from '@chakra-ui/react';
+import { Box, Text, HStack, Icon } from '@chakra-ui/react';
+import { CalendarIcon, InfoIcon } from '@chakra-ui/icons';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import type { Event } from '../types/events';
+import Card from "./Card";
 
 const eventImageMap: Record<string, string> = {
   'Devenir': 'Devenir1.jpeg',
@@ -23,122 +26,77 @@ const getEventImage = (eventTitle: string): string => {
 
 interface EventCardProps {
   event: Event;
-  variant?: 'past' | 'upcoming';
+  variant?: 'event' | 'spectacle' | 'default';
+  isPastEvent?: boolean;
 }
 
-const EventCard = ({ event, variant = 'upcoming' }: EventCardProps) => {
-  // Use the first image from event.media.imageUrls if available, otherwise use the event name to find a matching image
+const EventCard = ({ event, variant = 'event' }: EventCardProps) => {
+  const eventDate = new Date(event.startDate);
+  const isPastEvent = eventDate < new Date();
   const eventImage = event.media?.imageUrls?.[0] || getEventImage(event.eventName);
   
   return (
-    <Box 
-      layerStyle="eventCard" 
-      h="100%" 
-      display="flex" 
-      flexDirection="column"
-      bg="rgba(20, 10, 5, 0.2)"
-      borderLeft="4px solid"
-      borderLeftColor={variant === 'past' ? 'orange.500' : 'blue.500'}
-      borderRight="1px solid"
-      borderTop="1px solid"
-      borderBottom="1px solid"
-      borderRightColor="rgba(139, 115, 85, 0.1)"
-      borderTopColor="rgba(139, 115, 85, 0.1)"
-      borderBottomColor="rgba(139, 115, 85, 0.1)"
-      overflow="hidden"
-      transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-      backdropFilter="blur(16px) saturate(180%)"
+    <Card 
+      variant={variant}
+      title={event.eventName}
+      imageUrl={eventImage}
+      imageAlt={event.eventName}
+      borderColor={isPastEvent ? 'rgba(160, 174, 192, 0.5)' : undefined}
       position="relative"
-      zIndex="1"
-      _hover={{
-        transform: 'translateY(-4px) scale(1.01)',
-        boxShadow: variant === 'past' 
-          ? '0 8px 24px rgba(237, 137, 54, 0.25)' 
-          : '0 8px 24px rgba(54, 144, 237, 0.25)',
-        borderLeft: '4px solid',
-        borderLeftColor: variant === 'past' ? 'orange.500' : 'blue.500',
-        borderRight: '1px solid',
-        borderTop: '1px solid',
-        borderBottom: '1px solid',
-        borderRightColor: 'rgba(205, 133, 63, 0.6)',
-        borderTopColor: 'rgba(205, 133, 63, 0.6)',
-        borderBottomColor: 'rgba(205, 133, 63, 0.6)',
-        bg: 'rgba(30, 15, 5, 0.3)'
-      }}
-      sx={{
-        WebkitBackfaceVisibility: 'hidden',
-        backfaceVisibility: 'hidden',
-        transform: 'translateZ(0)',
-        willChange: 'transform',
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          inset: 0,
-          padding: '1px',
-          background: 'transparent',
-          pointerEvents: 'none',
-          zIndex: 1,
-          transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-        },
-        '&:hover::before': {
-          background: variant === 'past' 
-            ? 'linear-gradient(135deg, rgba(255,140,0,0.15), rgba(139, 69, 19, 0.1), rgba(0,0,0,0.05))'
-            : 'linear-gradient(135deg, rgba(54, 144, 237, 0.1), rgba(29, 78, 216, 0.1), rgba(0,0,0,0.05))'
-        }
-      }}
+      _before={isPastEvent ? {
+        content: '"Past Event"',
+        position: 'absolute',
+        top: 2,
+        right: 2,
+        bg: 'rgba(0, 0, 0, 0.7)',
+        color: 'white',
+        fontSize: 'xs',
+        px: 2,
+        py: 1,
+        borderRadius: 'md',
+        zIndex: 2,
+        backdropFilter: 'blur(4px)'
+      } : {}}
     >
-      <Box p={4} pb={2} position="relative">
-        <Box
-          position="relative"
-          borderRadius="md"
-          overflow="hidden"
-          border="1px solid"
-          borderColor="rgba(139, 115, 85, 0.6)"
-        _hover={{
-          borderColor: 'rgba(205, 133, 63, 0.8)',
-          '& > div': {
-            transform: 'scale(1.05)'
-          }
-        }}
-        transition="all 0.3s ease"
-      >
-        <Image
-          src={eventImage}
-          alt={event.eventName}
-          objectFit="cover"
-          h="200px"
-          w="100%"
-          borderTopRadius="lg"
-          fallbackSrc="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiB2aWV3Qm94PSIwIDAgNDAwIDI1MCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcgaW1hZ2UuLi48L3RleHQ+PC9zdmc+"
-        />
-        <Box
-          position="absolute"
-          top={0}
-          left={0}
-          right={0}
-          bottom={0}
-          bg="linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%)"
-          pointerEvents="none"
-        />
+      <Box mb={4}>
+        <HStack spacing={2} mb={3} color="text.accent">
+          <Icon as={CalendarIcon} boxSize={4} />
+          <Text fontSize="sm">
+            {new Date(event.startDate).toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'short', 
+              day: 'numeric' 
+            })}
+          </Text>
+        </HStack>
+        
+        <HStack spacing={3} mb={event.description ? 3 : 0}>
+          <HStack spacing={2} flexGrow={1}>
+            <Icon as={FaMapMarkerAlt} boxSize={4} color="red.400" />
+            <Box>
+              {event.location.building && (
+                <Text fontWeight="bold" color="text.secondary" fontSize="sm">
+                  {event.location.building}
+                </Text>
+              )}
+              <Text color="text.muted" fontSize="sm">
+                {[event.location.city, event.location.country].filter(Boolean).join(', ')}
+              </Text>
+            </Box>
+          </HStack>
+        </HStack>
+        
+        {event.description && (
+          <HStack spacing={2} mt={3} color="text.secondary">
+            <Icon as={InfoIcon} boxSize={4} />
+            <Text fontSize="sm" fontStyle="italic">
+              {event.description}
+            </Text>
+          </HStack>
+        )}
       </Box>
-      </Box>
-      <Box p={4} pt={2} flex="1" position="relative" zIndex="1">
-      <Heading as="h3" textStyle="cardTitle" color="#faf0c0">
-        {event.eventName}
-      </Heading>
-      <Text textStyle="cardDate" color="#cd853f" fontWeight="bold">
-        {new Date(event.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })}
-      </Text>
-      <Text fontWeight="bold" color="#f0d680">{event.location.building}</Text>
-        <Text color="#e0c66a">{`${event.location.city}, ${event.location.country}`}</Text>
-        {event.description && <Text mt={4} color="#f0d680">{event.description}</Text>}
-      </Box>
-    </Box>
+    </Card>
   );
 };
 
-export default EventCard; 
+export default EventCard;

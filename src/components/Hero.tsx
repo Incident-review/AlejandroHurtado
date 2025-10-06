@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
-import heroImage from '/public/images/imgAlejandro1.webp';
+import heroImage from '/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 

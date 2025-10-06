@@ -1,104 +1,131 @@
-import { Box, Button, HStack } from '@chakra-ui/react';
-import { useEffect, useRef } from 'react';
+import { Box, Button, HStack, useBreakpointValue } from '@chakra-ui/react';
+import { useEffect, useRef, useCallback } from 'react';
 
-interface TimelineBarProps {
+export interface TimelineBarProps {
   years: number[];
   currentYear: number;
   onYearClick: (year: number) => void;
+  headerHeight?: number;
+  stickyOffset?: number;
 }
 
-const TimelineBar = ({ years, currentYear, onYearClick }: TimelineBarProps) => {
+const TimelineBar = ({
+  years,
+  currentYear,
+  onYearClick,
+  headerHeight = 64,
+  stickyOffset = 0,
+}: TimelineBarProps) => {
   const barRef = useRef<HTMLDivElement>(null);
   const yearRefs = useRef<{ [year: number]: HTMLButtonElement | null }>({});
+  const isDesktop = useBreakpointValue({ base: false, md: true });
 
+  // Auto-scroll to the current year
   useEffect(() => {
     const activeBtn = yearRefs.current[currentYear];
     const bar = barRef.current;
+    
     if (activeBtn && bar) {
       const barRect = bar.getBoundingClientRect();
       const btnRect = activeBtn.getBoundingClientRect();
-      const scrollLeft =
+      const scrollLeft = 
         activeBtn.offsetLeft - bar.offsetLeft - barRect.width / 2 + btnRect.width / 2;
-      bar.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+      
+      bar.scrollTo({
+        left: scrollLeft,
+        behavior: 'smooth',
+      });
     }
   }, [currentYear]);
 
+  const handleYearClick = useCallback((year: number) => {
+    onYearClick(year);
+    
+    // Smooth scroll to the year section in the page
+    const element = document.getElementById(`year-${year}`);
+    if (element) {
+      const headerOffset = headerHeight + (stickyOffset || 0);
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }, [onYearClick, headerHeight, stickyOffset]);
+
+  if (years.length === 0) return null;
+
   return (
     <Box
-      id="timeline-bar"
-      position="fixed"
-      top="var(--header-height)+1rem"
-      left={0}
-      w="100vw"
-      zIndex={1200}
-      bg="rgba(255, 84, 5, 0.85)"
-      borderBottom="1px solid"
-      borderColor="rgba(139, 115, 85, 0.6)"
-      py={{ base: 0.5, md: 1 }}
-      boxShadow="xl"
-      overflowX="auto"
       ref={barRef}
+      position="sticky"
+      top={{ base: `${headerHeight}px`, md: `${headerHeight + 16}px` }}
+      left={0}
+      right={0}
+      zIndex={1200}
+      bg="rgba(0, 0, 0, 0.85)"
+      borderBottom="1px solid"
+      borderColor="rgba(255, 255, 255, 0.1)"
+      py={{ base: 2, md: 3 }}
+      boxShadow="lg"
+      overflowX="auto"
       sx={{
-        backdropFilter: 'blur(15px)',
-        scrollbarWidth: 'none', // Firefox
-        '&::-webkit-scrollbar': { display: 'none' }, // Chrome/Safari
-        '&::before': {
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: `
-            radial-gradient(1px 1px at 5px 10px, rgba(139, 115, 85, 0.05), transparent),
-            radial-gradient(1px 1px at 15px 25px, rgba(205, 133, 63, 0.03), transparent),
-            radial-gradient(2px 2px at 25px 35px, rgba(184, 134, 11, 0.02), transparent)
-          `,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '50px 50px',
-          zIndex: 0,
-        }
+        backdropFilter: 'blur(10px)',
+        scrollbarWidth: 'none',
+        '&::-webkit-scrollbar': { display: 'none' },
       }}
     >
-      <Box h={{ base: 1, md: 2 }} />
-      <HStack spacing={2} w="100%" justifyContent="flex-start">
-        {years.map((year) => {
-          const isActive = year === currentYear;
-          return (
-            <Button
-              key={year}
-              size={{ base: 'xs', md: 'sm' }}
-              variant={isActive ? 'solid' : 'outline'}
-              colorScheme="yellow"
-              fontWeight={isActive ? 'bold' : 'normal'}
-              onClick={() => onYearClick(year)}
-              minW={{ base: '48px', md: '56px' }}
-              borderWidth={isActive ? 2 : 1}
-              borderColor={isActive ? '#cd853f' : '#8b7355'}
-              bg={isActive ? '#8b7355' : 'transparent'}
-              color={isActive ? '#faf0c0' : '#f0d680'}
-              _hover={{ 
-                bg: isActive ? '#a0856b' : '#8b7355',
-                color: isActive ? '#faf0c0' : '#faf0c0',
-                transform: 'translateY(-1px)',
-                boxShadow: 'md'
-              }}
-              transition="all 0.3s ease"
-              borderRadius="full"
-              fontSize={{ base: 'xs', md: 'sm' }}
-              ref={el => {
-                yearRefs.current[year] = el;
-              }}
-            >
-              {year}
-            </Button>
-          );
-        })}
+      <HStack
+        spacing={{ base: 4, md: 6 }}
+        px={{ base: 4, md: 8 }}
+        minW="max-content"
+        justify="center"
+      >
+        {years.map((year) => (
+          <Button
+            key={year}
+            ref={el => { if (el) yearRefs.current[year] = el }}
+            variant="ghost"
+            size={isDesktop ? 'md' : 'sm'}
+            color={currentYear === year ? 'white' : 'gray.400'}
+            fontWeight={currentYear === year ? 'bold' : 'normal'}
+            fontSize={isDesktop ? 'lg' : 'md'}
+            p={2}
+            minW="auto"
+            height="auto"
+            borderRadius="md"
+            _hover={{
+              color: 'white',
+              transform: 'translateY(-2px)',
+            }}
+            _active={{
+              color: 'white',
+              transform: 'translateY(0)',
+            }}
+            transition="all 0.2s"
+            onClick={() => handleYearClick(year)}
+            position="relative"
+            _after={{
+              content: '""',
+              position: 'absolute',
+              bottom: '-8px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              width: currentYear === year ? '24px' : '0',
+              height: '3px',
+              bg: 'white',
+              borderRadius: 'full',
+              transition: 'all 0.2s ease-in-out',
+            }}
+          >
+            {year}
+          </Button>
+        ))}
       </HStack>
     </Box>
   );
 };
 
 export default TimelineBar;
-
-// NOTE: TimelineBar now accepts isDesktop and adjusts color/highlight for desktop mode. You can further tweak the colors or styles as desired.

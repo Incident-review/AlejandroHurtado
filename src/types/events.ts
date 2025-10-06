@@ -53,7 +53,7 @@ export interface Event {
   status: EventStatus;
   description?: string;
   shortDescription?: string;
-  date: string; // ISO date string
+  startDate: string; // ISO date string
   endDate?: string; // ISO date string
   durationMinutes?: number;
   
@@ -82,23 +82,21 @@ export interface Event {
   lastModifiedBy?: string;
   
   // Legacy/backward compatibility
-  image?: string; // Legacy field, prefer media.imageUrls[0]
   tourName?: string; // Legacy field
 }
 
 // Type guards
 export function isUpcomingEvent(event: Event): boolean {
-  return new Date(event.date) >= new Date();
+  return new Date(event.startDate) > new Date();
 }
 
 export function isPastEvent(event: Event): boolean {
-  return new Date(event.date) < new Date();
+  return new Date(event.startDate) < new Date();
 }
 
 // Date range type for filtering
 export interface DateRange {
   gte?: string;
-  lte?: string;
   lt?: string;
   gt?: string;
 }
