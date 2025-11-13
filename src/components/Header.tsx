@@ -1,22 +1,24 @@
 import { Box, Flex, Heading, Stack } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
-const navLinks = [
-  { to: '/', label: 'Home', match: /^\/$/ },
-  { to: '/events', label: 'Events', match: /^\/events/ },
-  { to: '/discography', label: 'Discography', match: /^\/discography/ },
-  { to: '/catalog', label: 'Contact & Booking', match: /^\/catalog/ },
-];
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from './LanguageToggle';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isTitleVisible, setIsTitleVisible] = useState(true);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  
+  const navLinks = [
+    { to: '/', label: t('header.home'), key: 'home', match: /^\/$/ },
+    { to: '/events', label: t('header.events'), key: 'events', match: /^\/events/ },
+    { to: '/discography', label: t('header.discography'), key: 'discography', match: /^\/discography/ },
+    { to: '/catalog', label: t('header.contact'), key: 'catalog', match: /^\/catalog/ },
+  ];
 
   useEffect(() => {
-    // Don't add scroll listener if we're on the home page
     if (isHomePage) {
       setIsTitleVisible(true);
       return;
@@ -78,7 +80,7 @@ const Header = () => {
             w="100%"
             textAlign="center"
             py={2}
-            borderBottom="1px solid"
+            //borderBottom="1px solid"
             borderColor="whiteAlpha.200"
             transition="all 0.3s ease-in-out"
             transform={isTitleVisible ? 'translateY(0)' : 'translateY(-100%)'}
@@ -89,7 +91,7 @@ const Header = () => {
           >
             <Heading 
               as="h1" 
-              size={{ base: 'md', md: 'lg' }}
+              size={{ base: 'xl', md: 'lg' }}
               whiteSpace="nowrap"
               overflow="hidden"
               lineHeight="shorter"
@@ -100,98 +102,80 @@ const Header = () => {
               width="auto"
               maxW="100%"
             >
-              Alejandro Hurtado
+              {t('header.title')}
             </Heading>
           </Box>
         )}
 
         {/* Navigation - Always visible */}
-        <Box 
+        <Flex
           w="100%"
-          overflowX="auto"
+          align="center"
+          justify="space-between"
           py={2}
           minH="50px"
-          display="flex"
-          alignItems="center"
           px={{ base: 2, md: 0 }}
-          mx="-8px"
-          css={{
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-            '&::-webkit-scrollbar': {
-              display: 'none',
-            },
-          }}
         >
-          <Stack
-            as="nav"
-            direction="row"
-            spacing={{ base: 2, md: 6 }}
-            justify="space-between"
-            align="center"
-            h="100%"
-            w="100%"
-            px={{ base: 2, md: 4 }}
+          <Box 
+            flex="1"
+            overflowX="auto"
+            css={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              '&::-webkit-scrollbar': {
+                display: 'none',
+              },
+            }}
           >
-            {navLinks.map(link => (
-              <RouterLink 
-                to={link.to} 
-                key={link.to} 
-                style={{ 
-                  display: 'flex', 
-                  textDecoration: 'none',
-                  whiteSpace: 'nowrap',
-                  flex: 1
-                }}
-              >
-                <Box
-                  as="span"
-                  position="relative"
-                  px={{ base: 1, md: 3 }}
-                  py={2}
-                  mx={{ base: 0, md: 1 }}
-                  fontSize={{ base: 'xs', md: 'md' }}
-                  fontWeight="medium"
-                  color={link.match.test(location.pathname) ? '#faf0c0' : 'whiteAlpha.800'}
-                  transition="all 0.2s"
-                  _hover={{
-                    color: '#faf0c0',
-                    '&::after': {
-                      width: '100%',
-                      opacity: 0.8
-                    }
+            <Stack
+              as="nav"
+              direction="row"
+              spacing={{ base: 2, md: 6 }}
+              justify="flex-start"
+              align="center"
+              h="100%"
+              px={{ base: 2, md: 4 }}
+            >
+              {navLinks.map(link => (
+                <RouterLink 
+                  to={link.to} 
+                  key={link.to} 
+                  style={{ 
+                    display: 'flex', 
+                    textDecoration: 'none',
+                    whiteSpace: 'nowrap',
                   }}
-                  _after={{
-                    content: '""',
-                    position: 'absolute',
-                    bottom: 0,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    width: link.match.test(location.pathname) ? '100%' : '0%',
-                    height: '2px',
-                    bg: '#cd853f',
-                    transition: 'all 0.3s ease',
-                    opacity: link.match.test(location.pathname) ? 0.8 : 0
-                  }}
-                  _focus={{
-                    outline: 'none',
-                    color: '#f0d9b5',
-                    '&::after': {
-                      width: '100%',
-                      opacity: 0.8,
-                      bg: '#d4a76a'
-                    }
-                  }}
-                  sx={{
-                    '&.active': {
-                      color: '#f0d9b5',
+                >
+                  <Box
+                    as="span"
+                    position="relative"
+                    px={{ base: 1, md: 3 }}
+                    py={2}
+                    mx={{ base: 0, md: 1 }}
+                    fontSize={{ base: 'xs', md: 'md' }}
+                    fontWeight="medium"
+                    color={link.match.test(location.pathname) ? '#faf0c0' : 'whiteAlpha.800'}
+                    transition="all 0.2s"
+                    _hover={{
+                      color: '#faf0c0',
                       '&::after': {
                         width: '100%',
-                        opacity: 0.8,
-                        bg: '#d4a76a'
+                        opacity: 0.8
                       }
-                    },
-                    '&:focus-visible': {
+                    }}
+                    _after={{
+                      content: '""',
+                      position: 'absolute',
+                      bottom: 0,
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      width: link.match.test(location.pathname) ? '100%' : '0%',
+                      height: '2px',
+                      bg: '#cd853f',
+                      transition: 'all 0.3s ease',
+                      opacity: link.match.test(location.pathname) ? 0.8 : 0
+                    }}
+                    _focus={{
                       outline: 'none',
                       color: '#f0d9b5',
                       '&::after': {
@@ -199,29 +183,51 @@ const Header = () => {
                         opacity: 0.8,
                         bg: '#d4a76a'
                       }
-                    }
-                  }}
-                  className={location.pathname.match(link.match) ? 'active' : ''}
-                >
-                  {link.label}
-                  <Box
-                    className="nav-underline"
-                    position="absolute"
-                    bottom={0}
-                    left="50%"
-                    transform="translateX(-50%)"
-                    w={location.pathname.match(link.match) ? '100%' : '0%'}
-                    h="2px"
-                    bg="#d4a76a"
-                    opacity={location.pathname.match(link.match) ? 1 : 0}
-                    transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-                    borderRadius="full"
-                  />
-                </Box>
-              </RouterLink>
-            ))}
-          </Stack>
-        </Box>
+                    }}
+                    sx={{
+                      '&.active': {
+                        color: '#f0d9b5',
+                        '&::after': {
+                          width: '100%',
+                          opacity: 0.8,
+                          bg: '#d4a76a'
+                        }
+                      },
+                      '&:focus-visible': {
+                        outline: 'none',
+                        color: '#f0d9b5',
+                        '&::after': {
+                          width: '100%',
+                          opacity: 0.8,
+                          bg: '#d4a76a'
+                        }
+                      }
+                    }}
+                    className={location.pathname.match(link.match) ? 'active' : ''}
+                  >
+                    {link.label}
+                    <Box
+                      className="nav-underline"
+                      position="absolute"
+                      bottom={0}
+                      left="50%"
+                      transform="translateX(-50%)"
+                      w={location.pathname.match(link.match) ? '100%' : '0%'}
+                      h="2px"
+                      bg="#d4a76a"
+                      opacity={location.pathname.match(link.match) ? 1 : 0}
+                      transition="all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+                      borderRadius="full"
+                    />
+                  </Box>
+                </RouterLink>
+              ))}
+            </Stack>
+          </Box>
+          <Box flexShrink={0} pr={{ base: 2, md: 4 }}>
+            <LanguageToggle />
+          </Box>
+        </Flex>
       </Flex>
     </Box>
   );

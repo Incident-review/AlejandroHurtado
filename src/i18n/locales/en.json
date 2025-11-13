@@ -1,0 +1,181 @@
+{
+  "header": {
+    "home": "Home",
+    "events": "Events",
+    "discography": "Discography",
+    "contact": "Contact & Booking",
+    "title": "Alejandro Hurtado"
+  },
+  "hero": {
+    "quotes": {
+      "quote1": {
+        "text": "Alejandro Hurtado is destined to occupy a prominent place in the world of flamenco guitar.",
+        "author": "Antonio Fernández Díaz, \"Fosforito\""
+      },
+      "quote2": {
+        "text": "Like all great performers, Alejandro Hurtado makes us rediscover compositions we thought we knew everything about.",
+        "author": "Claude Worms"
+      },
+      "quote3": {
+        "text": "Alejandro confirmed that he is the imminent future and a guitarist more effective than usual.",
+        "author": "Manuel Martín Martín"
+      },
+      "quote4": {
+        "text": "The Alicante native is a guitar player of superior quality, with perfect diction.",
+        "author": "Alejandro Medina"
+      }
+    },
+    "catalogButton": "Catalog & Contact"
+  },
+  "statistics": {
+    "concerts": "Concerts",
+    "concertsDesc": "Total performances",
+    "countries": "Countries",
+    "countriesDesc": "International reach",
+    "cities": "Cities",
+    "citiesDesc": "Cultural destinations",
+    "venues": "Venues",
+    "venuesDesc": "Concert locations",
+    "years": "Years",
+    "yearsDesc": "Professional career",
+    "loading": "Loading performance data..."
+  },
+  "events": {
+    "currentYear": "• Current Year",
+    "noEvents": "No events found.",
+    "loadingEvents": "Loading events...",
+    "failedToLoad": "Failed to load events. Please try again later."
+  },
+  "curriculum": {
+    "title": "Curriculum Vitae",
+    "subtitle": "The story of a passion for flamenco guitar",
+    "sections": {
+      "intro": "Despite his youth, a central figure in today's flamenco concert guitar. His exceptional technique, impeccable execution and incredible expressive power allow him to offer the audience intense sensations in each performance. To this is added his creative talent, visible in his compositions for solo guitar, which consolidate him as an outstanding performer.",
+      "fascination": "The fascination that Alejandro generates in each concert is born from an innate musical talent and an immense capacity for work, driving him to a continuous search for perfection in his lifelong passion: flamenco concert guitar. His approach prioritizes the instrument, avoiding artifices and reclaiming the role of the solo guitar with a sobriety that connects with the tradition of masters like Montoya, Niño Ricardo or Sabicas",
+      "earlyTraining": "He has achieved this challenge thanks to a solid musical training that began at the age of 9 with classical guitar alongside Marco Uceda and Raúl Juan Ruíz at the Conservatory of San Vicente del Raspeig. At the same time, he immersed himself in flamenco guitar with teachers such as Pedro Alarcón, Roberto Sabater, David and Arturo Cerreduela, and received master classes from figures such as Manolo Sanlúcar, José Antonio Rodríguez or Rafael Riqueni.",
+      "higherStudies": "He continued his higher studies at the Superior Conservatory of Music of Córdoba with Paco Serrano and Manolo Franco, without leaving aside the study of classical guitar with professor Pablo Barón, culminating with Honors and Extraordinary End of Career Award, later completing the Flamenco Master's degree at ESMUC.",
+      "awards": "His mastery has earned him more than a dozen awards, including the prestigious Bordón Minero in 2017, the maximum award for flamenco concert guitar..",
+      "accompanist": "As an accompanying guitarist, he has shared the stage with great singers such as Mayte Martín (for whom he has also created arrangements) and Miguel Poveda on international tours. In dance, he has collaborated with figures such as Inmaculada Salomón, Patricia Guerrero, Marco Flores and Belén Maya. His soloist facet, where he truly shines, is increasingly frequent. His classical training translates into an unusual execution cleanliness, without sacrificing the purity and duende of his flamenco touch, acclaimed on the most traditional stages",
+      "performances": "His performances extend throughout Spain and countries such as France, USA, Croatia, Netherlands or Italy, highlighting his presence at the Bienal de Flamenco in Seville, Flamenco Festival in New York and London, and the Guitar Festival of Córdoba. His versatility even leads him to perform the Concierto de Aranjuez with orchestras on stages such as the Teatro Real in Madrid, the Barbican Centre in London, and the Palau de la Música in Barcelona, in addition to his successful version of Sabicas' Gypsy Concert",
+      "discography": "Alejandro Hurtado has three solo albums: \"Maestros del arte clásico flamenco\" (2022), an acclaimed compilation of historical styles, \"Tamiz\" (2023), which includes his own compositions of great purity and contemporary language. \"El Primer Llanto\" (2025), is his third record work in which he explores an avant-garde aesthetic together with forms from the 19th century."
+    },
+    "captions": {
+      "fosforito": "Concert tribute to Fosforito, in which Alejandro participated (Nazareno y olivares)",
+      "cerreduela": "Studying flamenco guitar technique with David Cerreduela",
+      "manoloSanlucar": "With Manolo Sanlucar and Pablo Baron at the Guitar Festival of Cordoba",
+      "riqueni": "With Rafael Riqueni",
+      "joseAntonio": "With Jose Antonio Rodriguez",
+      "vicenteAmigo": "With Vicente Amigo",
+      "mayteMartin": "With Mayte Martin",
+      "miguelPoveda": "With Miguel Poveda",
+      "canizares": "With Cañizares",
+      "serranito": "With Serranito"
+    }
+  },
+  "common": {
+    "language": "Language",
+    "loading": "Loading..."
+  },
+  "albums": {
+    "backToDiscography": "Back to Discography",
+    "aboutAlbum": "About the Album",
+    "tracklist": "Tracklist",
+    "listenOn": "Listen on {{platform}}",
+    "el-primer-llanto": {
+      "title": "El Primer Llanto",
+      "year": "2025",
+      "description": "'El Primer Llanto' is the new proposal by guitarist Alejandro Hurtado, where various forms of expression by the author himself coexist...",
+      "tracklist": ["Track 1", "Track 2", "Track 3"]
+    },
+    "maestros-del-arte-clasico-flamenco": {
+      "title": "Maestros Del Arte Clásico Flamenco",
+      "year": "2022",
+      "description": "In this recording, Alejandro Hurtado presents his magnificent versions of two of the great masters of flamenco guitar...",
+      "tracklist": ["Track 1", "Track 2", "Track 3"]
+    },
+    "tamiz": {
+      "title": "Tamiz",
+      "year": "2023",
+      "description": "This album marks the beginning of guitarist Alejandro Hurtado's career as a composer...",
+      "tracklist": ["Track 1", "Track 2", "Track 3"]
+    }
+  },
+  "catalog": {
+    "title": "Spectacle Catalog",
+    "subtitle": "Explore our diverse range of musical performances. Each show is a unique experience, carefully crafted to captivate and inspire your audience.",
+    "contactInfo": "For bookings and inquiries, please don't hesitate to reach out.",
+    "sendEmail": "Send an Email",
+    "contactEmail": "management@guitarrasonline.com",
+    "contactPhone": "+34 605 671 785",
+    "bookButton": "Book {{title}}",
+    "contactForPricing": "Contact for pricing",
+    "viewDetails": "View Details",
+    "bookNow": "Book Now",
+    "bookingEmailSubject": "Booking Inquiry: {{title}}",
+    "bookingEmailBody": "Hello,\n\nI am interested in booking the \"{{title}}\" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards",
+    "spectacleNotFound": "Spectacle not found",
+    "backToCatalog": "Back to Catalog",
+    "aboutPerformance": "About the Performance",
+    "program": "Program",
+    "programDescription": "Each performance is carefully curated to the venue and audience. The program typically includes a selection of pieces that showcase the full range of {{title}}'s artistic expression, from intimate solo pieces to dynamic ensemble works.",
+    "bookingInfo": "Booking Information",
+    "bookingDescription": "For booking inquiries and availability, please contact us directly.",
+    "sendBookingRequest": "Send Booking Request",
+    "emailUs": "Email Us",
+    "performanceDetails": "Performance Details",
+    "durationLabel": "Duration",
+    "durationValue": "60-90 minutes",
+    "technicalRequirements": "Technical Requirements",
+    "technicalRequirementsValue": "Available upon request",
+    "availabilityLabel": "Availability",
+    "availabilityValue": "Worldwide",
+    "duration": "Duration: 60-90 min",
+    "availability": "Worldwide",
+    "spectacles": {
+      "devenir": {
+        "title": "Devenir",
+        "description": "A dialogue between the guitar and the dance, where the guitar intertwines the deepest flamenco with classical discipline, paving the way for new aesthetics, while the dance reveals what the music suggests.",
+        "image1Alt": "Classical guitar performance",
+        "image2Alt": "Concert hall performance"
+      },
+      "elPrimerLlanto": {
+        "title": "The First Cry",
+        "description": "Presentation of his latest album, featuring his most recent compositions, which showcase his multiple facets that make him a unique and different musician.",
+        "image1Alt": "Jazz quartet performance",
+        "image2Alt": "Jazz club atmosphere"
+      },
+      "exodo": {
+        "title": "Exodus",
+        "description": "Alejandro shows us here the music that the great guitar masters performed beyond our borders. This concert is a testament to the courage and resilience of those who kept the flame of flamenco alive abroad.",
+        "image1Alt": "Fusion band performance",
+        "image2Alt": "Modern concert setup"
+      },
+      "maestrosDelArte": {
+        "title": "Masters of Classical Flamenco Art",
+        "description": "A unique blend of contemporary and traditional sounds, creating an innovative musical experience. Perfect for modern venues and cultural events.",
+        "image1Alt": "Fusion band performance",
+        "image2Alt": "Modern concert setup"
+      },
+      "miradas": {
+        "title": "Glances",
+        "description": "Accompanied by the dance of Inmaculada Salomón (principal dancer of the Spanish National Ballet) and the percussion of David Dominguez, Alejandro offers a very different vision from the traditional flamenco guitar and dance show.",
+        "image1Alt": "Fusion band performance",
+        "image2Alt": "Modern concert setup"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact & Booking",
+    "management": "Management",
+    "email": "management@guitarrasonline.com",
+    "phone": "+34 605 671 785",
+    "inquiryText": "For bookings and inquiries, please don't hesitate to reach out.",
+    "bookingInquiry": "Booking Inquiry: {{title}}",
+    "emailTemplate": {
+      "greeting": "Hello,",
+      "interest": "I am interested in booking the \"{{title}}\" performance.",
+      "request": "Please provide me with more information about availability and pricing.",
+      "closing": "Best regards,"
+    }
+  }
+}

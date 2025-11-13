@@ -2,33 +2,27 @@ import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 import heroImage from '/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // Constants
 const QUOTE_DISPLAY_DURATION = 10000; // 10 seconds
 
-
-
-// Types
-type Quote = {
-  text: string;
-  author: string;
-};
-
-// Data
-const QUOTES: Quote[] = [
-  { text: 'Alejandro Hurtado Está llamado a ocupar un lugar de privilegio en el mundo de la guitarra flamenca.', author: 'Antonio Fernández Díaz, "Fosforito"' },
-  { text: 'Como todos los grandes intérpretes, Alejandro Hurtado nos hace redescubrir composiciones de las que creíamos saberlo todo.', author: 'Claude Worms' },
-  { text: 'Alejandro confirmó que es el futuro inminente y un guitarrista más efectivo de lo habitual.', author: 'Manuel Martín Martín' },
-  { text: 'El alicantino es un tocaor de una calidad superior, de una dicción perfecta.', author: 'Alejandro Medina' },
-];
-
 const Hero = () => {
+  const { t } = useTranslation();
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+  
+  // Get quotes based on current language
+  const quotes = [
+    { text: t('hero.quotes.quote1.text'), author: t('hero.quotes.quote1.author') },
+    { text: t('hero.quotes.quote2.text'), author: t('hero.quotes.quote2.author') },
+    { text: t('hero.quotes.quote3.text'), author: t('hero.quotes.quote3.author') },
+    { text: t('hero.quotes.quote4.text'), author: t('hero.quotes.quote4.author') },
+  ];
 
   // Handle quote rotation
   const nextQuote = useCallback(() => {
-    setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % QUOTES.length);
-  }, []);
+    setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+  }, [quotes.length]);
 
   useEffect(() => {
     const interval = setInterval(nextQuote, QUOTE_DISPLAY_DURATION);
@@ -123,11 +117,11 @@ const Hero = () => {
           position="absolute"
           top={{ base: '50%', md: '55%' }}
           left="50%"
-          transform="translateX(-50%)"
+          transform="translate(-50%, -50%)"
           w="100%" 
           maxW={{ base: '90%', md: '80%' }}
           textAlign="center"
-          p={{ base: 3, md: 4 }}
+          p={{ base: 4, md: 6 }}
           borderRadius="2xl"
           backdropFilter="blur(15px)"
           border="1px solid"
@@ -150,21 +144,21 @@ const Hero = () => {
           <Text 
             as="blockquote"
             color="#faf0c0" 
-            fontSize={{ base: 'sm', md: 'md', lg: 'lg' }}
+            fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
             lineHeight="1.4"
             fontWeight="medium"
-            mb={2}
+            mb={3}
             px={2}
           >
-            "{QUOTES[currentQuoteIndex].text}"
+            "{quotes[currentQuoteIndex].text}"
           </Text>
           <Text 
             color="#cd853f" 
             fontWeight="medium" 
-            fontSize={{ base: 'xs', md: 'sm' }}
+            fontSize={{ base: 'sm', md: 'md' }}
             fontStyle="italic"
           >
-            - {QUOTES[currentQuoteIndex].author}
+            - {quotes[currentQuoteIndex].author}
           </Text>
         </Box>
 
@@ -172,7 +166,7 @@ const Hero = () => {
         <Button
           as={RouterLink}
           to="/catalog"
-          size={{ base: 'sm', md: 'md' }}
+          size={{ base: 'md', md: 'lg' }}
           colorScheme="yellow"
           variant="solid"
           borderRadius="full"
@@ -181,7 +175,9 @@ const Hero = () => {
           color="#faf0c0"
           fontWeight="semibold"
           _hover={{ 
-            bg: 'rgba(139, 115, 85, 0.9)'
+            bg: 'rgba(139, 115, 85, 0.9)',
+            transform: 'translateY(-2px)',
+            boxShadow: '2xl'
           }}
           _active={{
             bg: 'rgba(139, 115, 85, 0.9)'
@@ -189,16 +185,16 @@ const Hero = () => {
           border="2px solid"
           borderColor="#cd853f"
           backdropFilter="blur(10px)"
-          fontSize={{ base: 'sm', md: 'md' }}
-          px={{ base: 6, md: 8 }}
-          py={{ base: 1, md: 2 }}
+          fontSize={{ base: 'md', md: 'lg' }}
+          px={{ base: 8, md: 10 }}
+          py={{ base: 6, md: 2 }}
           position="absolute"
           left="50%"
-          bottom={{ base: '25%', md: '25%' }}
+          bottom={{ base: '20%', md: '20%' }}
           transform="translateX(-50%)"
-          transition="none"
+          transition="all 0.2s"
         >
-          Catalog & Contact
+          {t('hero.catalogButton')}
         </Button>
       </Box>
     </Flex>

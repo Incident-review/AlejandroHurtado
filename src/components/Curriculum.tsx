@@ -1,6 +1,7 @@
 import React, { useRef, useCallback, type ReactNode } from 'react';
 import { Box, Heading, Text, VStack, Divider, Image } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
+import { useTranslation } from 'react-i18next';
 
 type ContentSection = 
   | {
@@ -22,6 +23,7 @@ type ContentSection =
     };
 
 const Curriculum = () => {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   
   // Format text with proper React elements
@@ -55,122 +57,122 @@ const Curriculum = () => {
   const contentSections: ContentSection[] = [
     {
       type: 'quote',
-      content: 'Alejandro Hurtado Está llamado a ocupar un lugar de privilegio en el mundo de la guitarra flamenca.',
-      author: 'Antonio Fernandez Diaz, "Fosforito"',
+      content: t('hero.quotes.quote1.text'),
+      author: t('hero.quotes.quote1.author'),
       align: 'center'
     },
 
     {
       type: 'text',
-      content: 'A pesar de su juventud, una figura central de la guitarra flamenca de concierto actual. Su excepcional técnica, limpieza de ejecución e increíble fuerza expresiva le permiten ofrecer al público sensaciones intensas en cada actuación. A esto se suma su talento creativo, visible en sus composiciones para guitarra solista, que lo consolidan como un intérprete destacado.',
+      content: t('curriculum.sections.intro'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conFosforito.jpg',
-      caption: 'Concierto en homenaje a Fosforito, en el que Alejandro participo (Nazareno y olivares)',
+      caption: t('curriculum.captions.fosforito'),
       align: 'right'
     },
     {
       type: 'text',
-      content: 'La fascinación que Alejandro genera en cada concierto nace de un talento musical innato y una inmensa capacidad de trabajo, impulsándolo a una continua búsqueda de la perfección en su pasión de toda la vida: la guitarra flamenca de concierto. Su enfoque prioriza el instrumento, huyendo de artificios y reivindicando el papel de la guitarra solista con una sobriedad que conecta con la tradición de maestros como Montoya, Niño Ricardo o Sabicas',
+      content: t('curriculum.sections.fascination'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conCerreduela.JPG',
-      caption: 'Estudiando tecnica de guitarra flamenca con David Cerreduela',
+      caption: t('curriculum.captions.cerreduela'),
       align: 'left'
     },
     {
       type: 'text',
-      content: 'Este desafío lo ha logrado gracias a una sólida formación musical que comenzó a los 9 años con la guitarra clásica junto a Marco Uceda y Raúl Juan Ruíz en el Conservatorio de San Vicente del Raspeig. Paralelamente, se sumergió en la guitarra flamenca con maestros como Pedro Alarcón, Roberto Sabater, David y Arturo Cerreduela, y recibió clases magistrales de figuras de la talla de Manolo Sanlúcar, José Antonio Rodríguez o Rafael Riqueni.',
+      content: t('curriculum.sections.earlyTraining'),
       align: 'left'
     },
 
     {
       type: 'image',
       src: '/images/conManoloSanlucaryPabloBaron.JPG',
-      caption: 'Con Manolo Sanlucar y Pablo Baron en el Festival de la guitarra de Cordoba',
+      caption: t('curriculum.captions.manoloSanlucar'),
       align: 'left'
     },
     {
       type: 'text',
-      content: 'Continuó sus estudios superiores en el Conservatorio Superior de Música de Córdoba con Paco Serrano y Manolo Franco, sin dejar de lado el estudio de la guitarra clásica con el catedrático Pablo Barón, culminando con Matrícula de Honor y Premio Extraordinario de Fin de Carrera, realizando posteriormente el Máster Flamenco de la ESMUC.',
+      content: t('curriculum.sections.higherStudies'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conRiqueni2.png',
-      caption: 'Con Rafael Riqueni',
+      caption: t('curriculum.captions.riqueni'),
       align: 'right'
     },
     {
       type: 'text',
-      content: 'Su maestría le ha valido más de una decena de premios, incluyendo el prestigioso Bordón Minero en 2017, el máximo galardón de la guitarra flamenca de concierto..',
+      content: t('curriculum.sections.awards'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conJoseAntonioRodriguez.png',
-      caption: 'Con Jose Antonio Rodriguez',
+      caption: t('curriculum.captions.joseAntonio'),
       align: 'left'
     },
     {
       type: 'quote',
-      content: 'Como todos los grandes intérpretes, Alejandro Hurtado nos hace redescubrir composiciones de las que creíamos saberlo todo.',
-      author: 'Claude Worms',
+      content: t('hero.quotes.quote2.text'),
+      author: t('hero.quotes.quote2.author'),
       align: 'center'
     },
     {
       type: 'image',
       src: '/images/conVicenteAmigoAgosto.jpg',
-      caption: 'Con Vicente Amigo',
+      caption: t('curriculum.captions.vicenteAmigo'),
       align: 'left'
     },
     {
       type: 'text',
-      content: 'Como guitarrista acompañante, ha compartido escenario con grandes del cante como Mayte Martín (para quien además ha creado arreglos) y Miguel Poveda en giras internacionales. En el baile, ha colaborado con figuras como Inmaculada Salomón, Patricia Guerrero, Marco Flores y Belén Maya. Su faceta solista, donde realmente brilla, es cada vez más frecuente. Su formación clásica se traduce en una limpieza de ejecución inusual, sin sacrificar la pureza y el duende de su toque flamenco, aclamado en los escenarios más tradicionales',
+      content: t('curriculum.sections.accompanist'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conMayteMartin.jpg',
-      caption: 'Con Mayte Martin',
+      caption: t('curriculum.captions.mayteMartin'),
       align: 'left'
     },
     {
       type: 'text',
-      content: 'Sus actuaciones se extienden por toda España y países como Francia, EE. UU, Croacia,Paises Bajos o Italia, destacando su presencia en la Bienal de Flamenco de Sevilla, Flamenco Festival de Nueva York y Londres, y el Festival de la Guitarra de Córdoba. Su versatilidad lo lleva incluso a interpretar el Concierto de Aranjuez con orquestas en escenarios como el Teatro Real de Madrid, el Barbican Centre de Londres, y el Palau de la Música de Barcelona, además de su exitosa versión del Gypsy Concert de Sabicas',
+      content: t('curriculum.sections.performances'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conMiguelPoveda.jpg',
-      caption: 'Con Miguel Poveda',
+      caption: t('curriculum.captions.miguelPoveda'),
       align: 'left'
     },
     {
       type: 'text',
-      content: 'Alejandro Hurtado cuenta con tres discos solistas: "Maestros del arte clásico flamenco" (2022),una aclamada recopilación de toques históricos, "Tamiz" (2023), que incluye sus propias composiciones de gran pureza y lenguaje contemporáneo. "El Primer Llanto" (2025), es su tercer trabajo discográfico en el que explora una estética vanguardista junto a formas del siglo XIX.',
+      content: t('curriculum.sections.discography'),
       align: 'left'
     },
     {
       type: 'image',
       src: '/images/conCanizares.png',
-      caption: 'Con Cañizares',
+      caption: t('curriculum.captions.canizares'),
       align: 'center'
     },
     {
       type: 'quote',
-      content: 'Alejandro confirmó que es el futuro inminente y un guitarrista más efectivo de lo habitual.',
-      author: 'Manuel Martín Martín',
+      content: t('hero.quotes.quote3.text'),
+      author: t('hero.quotes.quote3.author'),
       align: 'center'
     },
     {
       type: 'image',
       src: '/images/conSerranito.JPG',
-      caption: 'Con Serranito',
+      caption: t('curriculum.captions.serranito'),
       align: 'left'
     },
     {
@@ -521,13 +523,13 @@ const Curriculum = () => {
                 <Text 
                   fontSize="sm"
                   color="gray.600"
-                  letterSpacing="0.3em"
-                  textTransform="uppercase"
-                  mb={3}
-                  fontFamily="'Crimson Pro', serif"
-                  fontWeight="500"
-                >
-                  Alejandro Hurtado
+                    letterSpacing="0.3em"
+                    textTransform="uppercase"
+                    mb={3}
+                    fontFamily="'Crimson Pro', serif"
+                    fontWeight="500"
+                  >
+                  {t('header.title')}
                 </Text>
                 <Divider borderColor="rgba(0,0,0,0.2)" w="120px" mx="auto" mb={6} borderBottomWidth="1px" />
                 <Heading 
@@ -541,7 +543,7 @@ const Curriculum = () => {
                   mb={4}
                   textShadow="1px 1px 1px rgba(0,0,0,0.05)"
                 >
-                  Curriculum Vitae
+                  {t('curriculum.title')}
                 </Heading>
                 <Text 
                   fontSize="2xl" 
@@ -554,7 +556,7 @@ const Curriculum = () => {
                   mt={6}
                   fontWeight="400"
                 >
-                  Historia de la pasión por la guitarra flamenca
+                  {t('curriculum.subtitle')}
                 </Text>
                 <Divider 
                   borderColor="rgba(0,0,0,0.1)" 

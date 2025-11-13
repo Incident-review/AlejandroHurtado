@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { Box, VStack, Text, Center, Spinner, Container } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
 import { eventService } from '../components/features/events/eventService';
@@ -93,6 +94,7 @@ const TimelineBar = ({
 );
 
 const AllEventsPage = () => {
+  const { t } = useTranslation();
   // State management
   const [loading, setLoading] = useState<boolean>(true);
   const [events, setEvents] = useState<Event[]>([]);
@@ -121,12 +123,12 @@ const AllEventsPage = () => {
         setLoading(false);
       } catch (err) {
         console.error('Error loading events:', err);
-        setError('Failed to load events. Please try again later.');
+        setError(t('events.failedToLoad'));
         setLoading(false);
       }
     };
     loadEvents();
-  }, []);
+  }, [t]);
 
   // Handle year click
   const handleYearClick = (year: number) => {
@@ -284,7 +286,7 @@ const AllEventsPage = () => {
                       bg: 'whiteAlpha.200',
                     } : {}}
                   >
-                    {year} {isCurrentYear && '• Current Year'}
+                    {year} {isCurrentYear && t('events.currentYear')}
                   </Box>
                 </Box>
                 <VStack spacing={6} align="stretch">
@@ -298,7 +300,7 @@ const AllEventsPage = () => {
           
           {events.length === 0 && !loading && (
             <Center minH="50vh">
-              <Text>No events found.</Text>
+              <Text>{t('events.noEvents')}</Text>
             </Center>
           )}
         </Container>

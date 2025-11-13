@@ -1,0 +1,181 @@
+{
+  "header": {
+    "home": "Inicio",
+    "events": "Eventos",
+    "discography": "Discografía",
+    "contact": "Contacto y Contratación",
+    "title": "Alejandro Hurtado"
+  },
+  "hero": {
+    "quotes": {
+      "quote1": {
+        "text": "Alejandro Hurtado está destinado a ocupar un lugar destacado en el mundo de la guitarra flamenca.",
+        "author": "Antonio Fernández Díaz, \"Fosforito\""
+      },
+      "quote2": {
+        "text": "Como todos los grandes intérpretes, Alejandro Hurtado nos hace redescubrir composiciones que creíamos conocer todo sobre ellas.",
+        "author": "Claude Worms"
+      },
+      "quote3": {
+        "text": "Alejandro confirmó que es el futuro inminente y un guitarrista más efectivo de lo habitual.",
+        "author": "Manuel Martín Martín"
+      },
+      "quote4": {
+        "text": "El alicantino es un guitarrista de calidad superior, con una dicción perfecta.",
+        "author": "Alejandro Medina"
+      }
+    },
+    "catalogButton": "Catálogo y Contacto"
+  },
+  "statistics": {
+    "concerts": "Conciertos",
+    "concertsDesc": "Actuaciones totales",
+    "countries": "Países",
+    "countriesDesc": "Alcance internacional",
+    "cities": "Ciudades",
+    "citiesDesc": "Destinos culturales",
+    "venues": "Escenarios",
+    "venuesDesc": "Lugares de concierto",
+    "years": "Años",
+    "yearsDesc": "Carrera profesional",
+    "loading": "Cargando datos de actuaciones..."
+  },
+  "events": {
+    "currentYear": "• Año Actual",
+    "noEvents": "No se encontraron eventos.",
+    "loadingEvents": "Cargando eventos...",
+    "failedToLoad": "Error al cargar eventos. Por favor, inténtelo de nuevo más tarde."
+  },
+  "curriculum": {
+    "title": "Curriculum Vitae",
+    "subtitle": "La historia de una pasión por la guitarra flamenca",
+    "sections": {
+      "intro": "A pesar de su juventud, una figura central en la guitarra de concierto flamenca actual. Su técnica excepcional, ejecución impecable e increíble poder expresivo le permiten ofrecer al público sensaciones intensas en cada actuación. A esto se suma su talento creativo, visible en sus composiciones para guitarra solista, que lo consolidan como un intérprete destacado.",
+      "fascinación": "La fascinación que Alejandro genera en cada concierto nace de un talento musical innato y una inmensa capacidad de trabajo, que lo impulsan a una búsqueda continua de la perfección en su pasión de toda la vida: la guitarra de concierto flamenca. Su enfoque prioriza el instrumento, evitando artificios y reivindicando el papel de la guitarra solista con una sobriedad que conecta con la tradición de maestros como Montoya, Niño Ricardo o Sabicas.",
+      "formaciónInicial": "Ha logrado este reto gracias a una sólida formación musical que comenzó a los 9 años con guitarra clásica junto a Marco Uceda y Raúl Juan Ruíz en el Conservatorio de San Vicente del Raspeig. Al mismo tiempo, se sumergió en la guitarra flamenca con maestros como Pedro Alarcón, Roberto Sabater, David y Arturo Cerreduela, y recibió clases magistrales de figuras como Manolo Sanlúcar, José Antonio Rodríguez o Rafael Riqueni.",
+      "estudiosSuperiores": "Continuó sus estudios superiores en el Conservatorio Superior de Música de Córdoba con Paco Serrano y Manolo Franco, sin descuidar el estudio de la guitarra clásica con el profesor Pablo Barón, culminando con Matrícula de Honor y Premio Fin de Carrera, para posteriormente completar el Máster de Flamenco en la ESMUC.",
+      "premios": "Su maestría le ha valido más de una decena de premios, entre los que destaca el prestigioso Bordón Minero en 2017, máximo galardón a la guitarra de concierto flamenca.",
+      "acompañante": "Como guitarrista acompañante ha compartido escenario con grandes cantaores como Mayte Martín (para quien también ha realizado arreglos) y Miguel Poveda en giras internacionales. En el baile ha colaborado con figuras como Inmaculada Salomón, Patricia Guerrero, Marco Flores y Belén Maya. Su faceta de solista, donde brilla con luz propia, es cada vez más frecuente. Su formación clásica se traduce en una limpieza de ejecución inusual, sin por ello restar pureza y duende a su toque flamenco, aclamado en los escenarios más tradicionales.",
+      "actuaciones": "Sus actuaciones se extienden por toda la geografía española y países como Francia, Estados Unidos, Croacia, Países Bajos o Italia, destacando su presencia en la Bienal de Flamenco de Sevilla, Flamenco Festival de Nueva York y Londres, y el Festival de la Guitarra de Córdoba. Su versatilidad lo lleva incluso a interpretar el Concierto de Aranjuez con orquestas en escenarios como el Teatro Real de Madrid, el Barbican Centre de Londres o el Palau de la Música de Barcelona, además de su exitosa versión del Concierto Gitano de Sabicas.",
+      "discografía": "Alejandro Hurtado cuenta con tres trabajos discográficos en solitario: \"Maestros del arte clásico flamenco\" (2022), una aclamada recopilación de estilos históricos, \"Tamiz\" (2023), que incluye composiciones propias de gran pureza y lenguaje contemporáneo. \"El Primer Llanto\" (2025), es su tercera obra discográfica en la que explora una estética vanguardista junto a formas del siglo XIX."
+    },
+    "captions": {
+      "fosforito": "Homenaje a Fosforito en concierto, en el que participó Alejandro (Nazareno y olivares)",
+      "cerreduela": "Estudiando técnica de guitarra flamenca con David Cerreduela",
+      "manoloSanlucar": "Con Manolo Sanlúcar y Pablo Barón en el Festival de la Guitarra de Córdoba",
+      "riqueni": "Con Rafael Riqueni",
+      "joseAntonio": "Con José Antonio Rodríguez",
+      "vicenteAmigo": "Con Vicente Amigo",
+      "mayteMartin": "Con Mayte Martín",
+      "miguelPoveda": "Con Miguel Poveda",
+      "canizares": "Con Cañizares",
+      "serranito": "Con Serranito"
+    }
+  },
+  "common": {
+    "language": "Idioma",
+    "loading": "Cargando..."
+  },
+  "albums": {
+    "backToDiscography": "Volver a Discografía",
+    "aboutAlbum": "Sobre el Álbum",
+    "tracklist": "Lista de canciones",
+    "listenOn": "Escuchar en {{platform}}",
+    "el-primer-llanto": {
+      "title": "El Primer Llanto",
+      "year": "2025",
+      "description": "'El Primer Llanto' es la nueva propuesta del guitarrista Alejandro Hurtado, donde conviven varias formas de expresión del propio autor...",
+      "tracklist": ["Canción 1", "Canción 2", "Canción 3"]
+    },
+    "maestros-del-arte-clasico-flamenco": {
+      "title": "Maestros Del Arte Clásico Flamenco",
+      "year": "2022",
+      "description": "En esta grabación, Alejandro Hurtado presenta sus magníficas versiones de dos de los grandes maestros de la guitarra flamenca...",
+      "tracklist": ["Canción 1", "Canción 2", "Canción 3"]
+    },
+    "tamiz": {
+      "title": "Tamiz",
+      "year": "2023",
+      "description": "Este álbum marca el inicio de la carrera de Alejandro Hurtado como compositor...",
+      "tracklist": ["Canción 1", "Canción 2", "Canción 3"]
+    }
+  },
+  "catalog": {
+    "title": "Catálogo de Espectáculos",
+    "subtitle": "Explore nuestra diversa gama de actuaciones musicales. Cada espectáculo es una experiencia única, cuidadosamente elaborada para cautivar e inspirar a su audiencia.",
+    "contactInfo": "Para reservas y consultas, no dude en ponerse en contacto.",
+    "sendEmail": "Enviar un correo electrónico",
+    "contactEmail": "management@guitarrasonline.com",
+    "contactPhone": "+34 605 671 785",
+    "bookButton": "Reservar {{title}}",
+    "contactForPricing": "Consultar precio",
+    "viewDetails": "Ver detalles",
+    "bookNow": "Reservar ahora",
+    "bookingEmailSubject": "Consulta de reserva: {{title}}",
+    "bookingEmailBody": "Hola,\n\nEstoy interesado/a en reservar el espectáculo \"{{title}}\".\n\nPor favor, proporcióneme más información sobre disponibilidad y precios.\n\nUn saludo,",
+    "spectacleNotFound": "Espectáculo no encontrado",
+    "backToCatalog": "Volver al catálogo",
+    "aboutPerformance": "Sobre el espectáculo",
+    "program": "Programa",
+    "programDescription": "Cada actuación se adapta cuidadosamente al lugar y al público. El programa incluye típicamente una selección de piezas que muestran toda la gama de la expresión artística de {{title}}, desde piezas íntimas en solitario hasta obras dinámicas en conjunto.",
+    "bookingInfo": "Información de reservas",
+    "bookingDescription": "Para consultas sobre reservas y disponibilidad, póngase en contacto con nosotros directamente.",
+    "sendBookingRequest": "Enviar solicitud de reserva",
+    "emailUs": "Envíenos un correo",
+    "performanceDetails": "Detalles de la actuación",
+    "durationLabel": "Duración",
+    "durationValue": "60-90 minutos",
+    "technicalRequirements": "Requisitos técnicos",
+    "technicalRequirementsValue": "Disponible bajo petición",
+    "availabilityLabel": "Disponibilidad",
+    "availabilityValue": "A nivel mundial",
+    "duration": "Duración: 60-90 min",
+    "availability": "A nivel mundial",
+    "spectacles": {
+      "devenir": {
+        "title": "Devenir",
+        "description": "Un diálogo entre la guitarra y el baile, donde la guitarra entrelaza el flamenco más profundo con la disciplina clásica, abriendo camino a nuevas estéticas, mientras el baile revela lo que la música sugiere.",
+        "image1Alt": "Actuación de guitarra clásica",
+        "image2Alt": "Actuación en sala de conciertos"
+      },
+      "elPrimerLlanto": {
+        "title": "El Primer Llanto",
+        "description": "Presentación de su último álbum, con sus composiciones más recientes que muestran sus múltiples facetas que lo convierten en un músico único y diferente.",
+        "image1Alt": "Actuación de cuarteto de jazz",
+        "image2Alt": "Ambiente de club de jazz"
+      },
+      "exodo": {
+        "title": "Éxodo",
+        "description": "Alejandro nos muestra aquí la música que los grandes maestros de la guitarra interpretaron más allá de nuestras fronteras. Este concierto es un testimonio del valor y la resistencia de quienes mantuvieron viva la llama del flamenco en el extranjero.",
+        "image1Alt": "Actuación de banda de fusión",
+        "image2Alt": "Escenario de concierto moderno"
+      },
+      "maestrosDelArte": {
+        "title": "Maestros del Arte Clásico Flamenco",
+        "description": "Una mezcla única de sonidos contemporáneos y tradicionales, creando una experiencia musical innovadora. Perfecto para espacios modernos y eventos culturales.",
+        "image1Alt": "Actuación de banda de fusión",
+        "image2Alt": "Escenario de concierto moderno"
+      },
+      "miradas": {
+        "title": "Miradas",
+        "description": "Acompañado por el baile de Inmaculada Salomón (bailaora principal del Ballet Nacional de España) y la percusión de David Domínguez, Alejandro ofrece una visión muy diferente del espectáculo tradicional de guitarra y baile flamenco.",
+        "image1Alt": "Actuación de banda de fusión",
+        "image2Alt": "Escenario de concierto moderno"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto y Contratación",
+    "management": "Representación",
+    "email": "management@guitarrasonline.com",
+    "phone": "+34 605 671 785",
+    "inquiryText": "Para reservas y consultas, no dude en ponerse en contacto.",
+    "bookingInquiry": "Consulta de reserva: {{title}}",
+    "emailTemplate": {
+      "greeting": "Hola,",
+      "interest": "Estoy interesado/a en reservar el espectáculo \"{{title}}\".",
+      "request": "Por favor, proporcióneme más información sobre disponibilidad y precios.",
+      "closing": "Un saludo,"
+    }
+  }
+}

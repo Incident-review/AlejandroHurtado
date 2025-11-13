@@ -1,20 +1,14 @@
 import { Box, Heading, Text, SimpleGrid, VStack, Button, useBreakpointValue, Link as ChakraLink } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import SpectacleCard from '../components/SpectacleCard';
 import type { SpectacleImage } from '../components/SpectacleCard';
-
-// Function to create URL-friendly slugs from spectacle titles
-const createSlug = (title: string): string => {
-  return title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-};
 
 const MotionBox = motion.create(Box);
 
 interface Spectacle {
+  id: string;
   title: string;
   description: string;
   price: string;
@@ -22,65 +16,77 @@ interface Spectacle {
   images: SpectacleImage[];
 }
 
-export const spectacles: Spectacle[] = [
+// Translation-aware function to get spectacles data
+export const getSpectacles = (t: any): Spectacle[] => [
   {
-    title: 'Devenir',
-    description: 'A dialogue between the guitar and the dance, where the guitar intertwines the deepest flamenco with classical discipline, paving the way for new aesthetics, while the dance reveals what the music suggests.',
-    price: 'Contact for pricing',
+    id: 'devenir',
+    title: t('catalog.spectacles.devenir.title', 'Devenir'),
+    description: t('catalog.spectacles.devenir.description', 'A dialogue between the guitar and the dance, where the guitar intertwines the deepest flamenco with classical discipline, paving the way for new aesthetics, while the dance reveals what the music suggests.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
     gradient: 'linear-gradient(135deg, rgba(199, 144, 129, 0.2), rgba(223, 165, 121, 0.2))',
     images: [
-      { url: '/images/Devenir1.jpeg', alt: 'Classical guitar performance' },
-      { url: '/images/Devenir2.jpg', alt: 'Concert hall performance' },
+      { url: '/images/Devenir1.jpeg', alt: t('catalog.spectacles.devenir.image1Alt', 'Classical guitar performance') },
+      { url: '/images/Devenir2.jpg', alt: t('catalog.spectacles.devenir.image2Alt', 'Concert hall performance') },
     ]
   },
   {
-    title: 'El primer llanto',
-    description: 'Presentation of his latest album, featuring his most recent compositions, which showcase his multiple facets that make him a unique and different musician.',
-    price: 'Contact for pricing',
+    id: 'el-primer-llanto',
+    title: t('catalog.spectacles.elPrimerLlanto.title', 'El primer llanto'),
+    description: t('catalog.spectacles.elPrimerLlanto.description', 'Presentation of his latest album, featuring his most recent compositions, which showcase his multiple facets that make him a unique and different musician.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
     gradient: 'linear-gradient(135deg, rgba(139, 115, 85, 0.2), rgba(205, 133, 63, 0.2))',
     images: [
-      { url: '/images/ElPrimerLlanto1.JPG', alt: 'Jazz quartet performance' },
-      { url: '/images/ElPrimerLlanto2.JPG', alt: 'Jazz club atmosphere' },
+      { url: '/images/ElPrimerLlanto1.JPG', alt: t('catalog.spectacles.elPrimerLlanto.image1Alt', 'Jazz quartet performance') },
+      { url: '/images/ElPrimerLlanto2.JPG', alt: t('catalog.spectacles.elPrimerLlanto.image2Alt', 'Jazz club atmosphere') },
     ]
   },
   {
-    title: 'Éxodo',
-    description: 'Alejandro shows us here the music that the great guitar masters performed beyond our borders. This concert is a testament to the courage and resilience of those who kept the flame of flamenco alive abroad.',
-    price: 'Contact for pricing',
+    id: 'exodo',
+    title: t('catalog.spectacles.exodo.title', 'Éxodo'),
+    description: t('catalog.spectacles.exodo.description', 'Alejandro shows us here the music that the great guitar masters performed beyond our borders. This concert is a testament to the courage and resilience of those who kept the flame of flamenco alive abroad.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
     gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
     images: [
-      { url: '/images/Exodo1.jpg', alt: 'Fusion band performance' },
-      { url: '/images/Exodo2.jpg', alt: 'Modern concert setup' },
+      { url: '/images/Exodo1.jpg', alt: t('catalog.spectacles.exodo.image1Alt', 'Fusion band performance') },
+      { url: '/images/Exodo2.jpg', alt: t('catalog.spectacles.exodo.image2Alt', 'Modern concert setup') },
     ]
   },
   {
-    title: 'Maestros del Arte Clásico Flamenco',
-    description: 'A unique blend of contemporary and traditional sounds, creating an innovative musical experience. Great for modern venues and cultural events.',
-    price: 'Contact for pricing',
+    id: 'maestros-del-arte-clasico-flamenco',
+    title: t('catalog.spectacles.maestrosDelArte.title', 'Maestros del Arte Clásico Flamenco'),
+    description: t('catalog.spectacles.maestrosDelArte.description', 'A unique blend of contemporary and traditional sounds, creating an innovative musical experience. Great for modern venues and cultural events.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
     gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
     images: [
-      { url: '/images/MaestrosDelArteClasicoFlamenco1.jpg', alt: 'Fusion band performance' },
-      { url: '/images/MaestrosDelArteClasicoFlamenco2.jpeg', alt: 'Modern concert setup' },
+      { url: '/images/MaestrosDelArteClasicoFlamenco1.jpg', alt: t('catalog.spectacles.maestrosDelArte.image1Alt', 'Fusion band performance') },
+      { url: '/images/MaestrosDelArteClasicoFlamenco2.jpeg', alt: t('catalog.spectacles.maestrosDelArte.image2Alt', 'Modern concert setup') },
     ]
   },
   {
-    title: 'Miradas',
-    description: 'Accompanied by the dance of Inmaculada Salomón (principal dancer of the Ballet Nacional de España) and the percussion of David Dominguez, Alejandro offers a very different vision from the traditional flamenco guitar and dance show.',
-    price: 'Contact for pricing',
+    id: 'miradas',
+    title: t('catalog.spectacles.miradas.title', 'Miradas'),
+    description: t('catalog.spectacles.miradas.description', 'Accompanied by the dance of Inmaculada Salomón (principal dancer of the Ballet Nacional de España) and the percussion of David Dominguez, Alejandro offers a very different vision from the traditional flamenco guitar and dance show.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
     gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
     images: [
-      { url: '/images/miradas1.jpg', alt: 'Fusion band performance' },
-      { url: '/images/miradas2.jpg', alt: 'Modern concert setup' },
+      { url: '/images/miradas1.jpg', alt: t('catalog.spectacles.miradas.image1Alt', 'Fusion band performance') },
+      { url: '/images/miradas2.jpg', alt: t('catalog.spectacles.miradas.image2Alt', 'Modern concert setup') },
     ]
   },
 ];
 
-const CatalogPage = () => {
-  const handleBooking = (spectacle: typeof spectacles[0]) => {
-    const emailSubject = `Booking Inquiry: ${spectacle.title}`;
-    const emailBody = `Hello,\n\nI am interested in booking the "${spectacle.title}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards`;
+import { useMemo } from 'react';
 
-    const mailtoLink = `mailto:artist@email.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+function CatalogPage() {
+  const { t } = useTranslation();
+  
+  const spectacles = useMemo(() => getSpectacles(t), [t]);
+
+  const handleBooking = (spectacle: typeof spectacles[0]) => {
+    const emailSubject = t('catalog.bookingEmailSubject', 'Booking Inquiry: {{title}}', { title: spectacle.title });
+    const emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards', { title: spectacle.title });
+
+    const mailtoLink = `mailto:management@guitarrasonline.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
   };
 
@@ -104,7 +110,7 @@ const CatalogPage = () => {
             mb={6}
             lineHeight="tall"
           >
-            Spectacle Catalog
+            {t('catalog.title', 'Spectacle Catalog')}
           </Heading>
           <Text 
             textAlign="center" 
@@ -114,8 +120,7 @@ const CatalogPage = () => {
             fontSize="lg"
             mb={8}
           >
-            Explore our diverse range of musical performances. Each show is a unique experience, 
-            carefully crafted to captivate and inspire your audience.
+            {t('catalog.subtitle', 'Explore our diverse range of musical performances. Each show is a unique experience, carefully crafted to captivate and inspire your audience.')}
           </Text>
         </MotionBox>
 
@@ -143,11 +148,11 @@ const CatalogPage = () => {
           >
             <VStack spacing={3}>
               <Text fontSize="xl" fontWeight="bold" color="#f5f5dc">
-                management@guitarrasonline.com
+                {t('catalog.contactEmail', 'management@guitarrasonline.com')}
               </Text>
-              <Text fontSize="xl" color="#f5f5dc">+34 605 671 785</Text>
+              <Text fontSize="xl" color="#f5f5dc">{t('catalog.contactPhone', '+34 605 671 785')}</Text>
               <Text fontSize="md" color="gray.400" mt={2}>
-                For bookings and inquiries, please don't hesitate to reach out.
+                {t('catalog.contactInfo', 'For bookings and inquiries, please don\'t hesitate to reach out.')}
               </Text>
               <Button
                 as="a"
@@ -161,7 +166,7 @@ const CatalogPage = () => {
                   transform: 'translateY(-2px)'
                 }}
               >
-                Send an Email
+                {t('catalog.sendEmail', 'Send an Email')}
               </Button>
             </VStack>
           </Box>
@@ -203,7 +208,7 @@ const CatalogPage = () => {
             >
               <ChakraLink 
                 as={RouterLink} 
-                to={`/catalog/${createSlug(spec.title)}`}
+                to={`/catalog/${spec.id}`}
                 _hover={{ textDecoration: 'none' }}
               >
                 <SpectacleCard 
@@ -235,7 +240,7 @@ const CatalogPage = () => {
                     transform: 'translateY(-2px)'
                   }}
                 >
-                  Book {spec.title}
+                  {t('catalog.bookButton', 'Book {{title}}', { title: spec.title })}
                 </Button>
               </Box>
             </Box>

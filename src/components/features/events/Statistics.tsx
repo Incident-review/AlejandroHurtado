@@ -1,6 +1,7 @@
 import { Box, SimpleGrid, Text, useBreakpointValue } from '@chakra-ui/react';
 import { useEffect, useMemo, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { eventService } from './eventService';
 import type { Event } from './events';
 
@@ -159,6 +160,7 @@ const usePerformanceStats = (): [PerformanceStats | null, boolean] => {
 };
 
 const Statistics = () => {
+  const { t } = useTranslation();
   const [stats, isLoading] = usePerformanceStats();
 
   const statItems = useMemo<StatItem[]>(() => {
@@ -167,37 +169,37 @@ const Statistics = () => {
     return [
       {
         value: stats.totalConcerts,
-        label: 'Concerts',
-        description: 'Total performances'
+        label: t('statistics.concerts'),
+        description: t('statistics.concertsDesc')
       },
       {
         value: stats.countriesPerformed,
-        label: 'Countries',
-        description: 'International reach'
+        label: t('statistics.countries'),
+        description: t('statistics.countriesDesc')
       },
       {
         value: stats.citiesVisited,
-        label: 'Cities',
-        description: 'Cultural destinations'
+        label: t('statistics.cities'),
+        description: t('statistics.citiesDesc')
       },
       {
         value: stats.uniqueVenues,
-        label: 'Venues',
-        description: 'Concert locations'
+        label: t('statistics.venues'),
+        description: t('statistics.venuesDesc')
       },
       {
         value: stats.yearsActive,
-        label: 'Years',
-        description: 'Professional career'
+        label: t('statistics.years'),
+        description: t('statistics.yearsDesc')
       }
     ];
-  }, [stats]);
+  }, [stats, t]);
 
   if (isLoading || !stats) {
     return (
       <Box py={20} w="full" position="relative" bg="transparent">
         <Box maxW="6xl" mx="auto" px={{ base: 6, md: 8 }}>
-          <Text textAlign="center" color="gray.400">Loading performance data...</Text>
+          <Text textAlign="center" color="gray.400">{t('statistics.loading')}</Text>
         </Box>
       </Box>
     );

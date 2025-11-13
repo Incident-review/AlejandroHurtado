@@ -3,12 +3,14 @@ import { Box, Container, Heading, Text, Image, VStack, HStack, Button, Divider }
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaCalendarAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 // This data should ideally be fetched from a service or CMS
-import { spectacles } from './CatalogPage';
+import { getSpectacles } from './CatalogPage';
 import type { SpectacleImage } from '../components/SpectacleCard';
 
 interface Spectacle {
+  id: string;
   title: string;
   description: string;
   price: string;
@@ -18,31 +20,37 @@ interface Spectacle {
 
 const MotionBox = motion.create(Box);
 
-const SpectacleDetailPage = () => {
+function SpectacleDetailPage() {
+  const { t } = useTranslation();
+  
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Use translation-aware spectacles
+  const spectacles = getSpectacles(t);
+
   const { slug } = useParams<{ slug: string }>();
-  const spectacle = spectacles.find(s => 
+  const spectacle = spectacles.find(s =>
+    s.id === slug ||
     s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug
   ) as Spectacle | undefined;
 
   if (!spectacle) {
     return (
       <Box textAlign="center" py={20}>
-        <Text>Spectacle not found</Text>
+        <Text>{t('catalog.spectacleNotFound', 'Spectacle not found')}</Text>
         <Button as={RouterLink} to="/catalog" mt={4} colorScheme="orange">
-          Back to Catalog
+          {t('catalog.backToCatalog', 'Back to Catalog')}
         </Button>
       </Box>
     );
   }
 
   const handleBooking = () => {
-    const emailSubject = `Booking Inquiry: ${spectacle.title}`;
-    const emailBody = `Hello,\n\nI am interested in booking the "${spectacle.title}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards`;
+    const emailSubject = t('catalog.bookingEmailSubject', 'Booking Inquiry: {{title}}', { title: spectacle.title });
+    const emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards', { title: spectacle.title });
     window.location.href = `mailto:management@guitarrasonline.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
   };
 
@@ -57,7 +65,7 @@ const SpectacleDetailPage = () => {
         mb={8}
         pl={0}
       >
-        Back to Catalog
+        {t('catalog.backToCatalog', 'Back to Catalog')}
       </Button>
 
       <MotionBox
@@ -97,11 +105,11 @@ const SpectacleDetailPage = () => {
               <HStack spacing={4} color="whiteAlpha.800">
                 <HStack>
                   <FaCalendarAlt />
-                  <Text>Duration: 60-90 min</Text>
+                  <Text>{t('catalog.duration', 'Duration: 60-90 min')}</Text>
                 </HStack>
                 <HStack>
                   <FaMapMarkerAlt />
-                  <Text>Worldwide</Text>
+                  <Text>{t('catalog.availability', 'Worldwide')}</Text>
                 </HStack>
               </HStack>
             </Box>
@@ -118,7 +126,7 @@ const SpectacleDetailPage = () => {
               <VStack spacing={6} align="stretch">
                 <Box>
                   <Heading as="h2" size="lg" mb={4} color="orange.300">
-                    About the Performance
+                    {t('catalog.aboutPerformance', 'About the Performance')}
                   </Heading>
                   <Text lineHeight="tall">
                     {spectacle.description}
@@ -129,13 +137,10 @@ const SpectacleDetailPage = () => {
 
                 <Box>
                   <Heading as="h2" size="lg" mb={4} color="orange.300">
-                    Program
+                    {t('catalog.program', 'Program')}
                   </Heading>
                   <Text lineHeight="tall">
-                    Each performance is carefully curated to the venue and audience. 
-                    The program typically includes a selection of pieces that showcase 
-                    the full range of {spectacle.title}'s artistic expression, from 
-                    intimate solo pieces to dynamic ensemble works.
+                    {t('catalog.programDescription', 'Each performance is carefully curated to the venue and audience. The program typically includes a selection of pieces that showcase the full range of {{title}}\'s artistic expression, from intimate solo pieces to dynamic ensemble works.', { title: spectacle.title })}
                   </Text>
                 </Box>
               </VStack>
@@ -155,10 +160,10 @@ const SpectacleDetailPage = () => {
               <VStack spacing={6} align="stretch">
                 <Box>
                   <Text fontSize="lg" fontWeight="bold" mb={2}>
-                    Booking Information
+                    {t('catalog.bookingInfo', 'Booking Information')}
                   </Text>
                   <Text color="gray.400" mb={4}>
-                    For booking inquiries and availability, please contact us directly.
+                    {t('catalog.bookingDescription', 'For booking inquiries and availability, please contact us directly.')}
                   </Text>
                   <VStack spacing={4} align="stretch">
                     <Button 
@@ -168,7 +173,7 @@ const SpectacleDetailPage = () => {
                       size="lg"
                       w="100%"
                     >
-                      Send Booking Request
+                      {t('catalog.sendBookingRequest', 'Send Booking Request')}
                     </Button>
                     <Button 
                       as="a"
@@ -178,7 +183,7 @@ const SpectacleDetailPage = () => {
                       size="lg"
                       w="100%"
                     >
-                      Email Us
+                      {t('catalog.emailUs', 'Email Us')}
                     </Button>
                   </VStack>
                 </Box>
@@ -187,20 +192,20 @@ const SpectacleDetailPage = () => {
 
                 <Box>
                   <Text fontSize="lg" fontWeight="bold" mb={4}>
-                    Performance Details
+                    {t('catalog.performanceDetails', 'Performance Details')}
                   </Text>
                   <VStack spacing={3} align="stretch">
                     <Box>
-                      <Text fontSize="sm" color="gray.400">Duration</Text>
-                      <Text>60-90 minutes</Text>
+                      <Text fontSize="sm" color="gray.400">{t('catalog.durationLabel', 'Duration')}</Text>
+                      <Text>{t('catalog.durationValue', '60-90 minutes')}</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="sm" color="gray.400">Technical Requirements</Text>
-                      <Text>Available upon request</Text>
+                      <Text fontSize="sm" color="gray.400">{t('catalog.technicalRequirements', 'Technical Requirements')}</Text>
+                      <Text>{t('catalog.technicalRequirementsValue', 'Available upon request')}</Text>
                     </Box>
                     <Box>
-                      <Text fontSize="sm" color="gray.400">Availability</Text>
-                      <Text>Worldwide</Text>
+                      <Text fontSize="sm" color="gray.400">{t('catalog.availabilityLabel', 'Availability')}</Text>
+                      <Text>{t('catalog.availabilityValue', 'Worldwide')}</Text>
                     </Box>
                   </VStack>
                 </Box>
@@ -212,7 +217,7 @@ const SpectacleDetailPage = () => {
           {spectacle.images && spectacle.images.length > 1 && (
             <Box mt={12}>
               <Heading as="h2" size="lg" mb={6} color="orange.300">
-                Gallery
+                {t('catalog.gallery', 'Gallery')}
               </Heading>
               <Box
                 display="grid"
