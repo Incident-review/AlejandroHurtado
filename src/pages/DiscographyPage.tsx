@@ -5,27 +5,31 @@ import { useTranslation } from 'react-i18next';
 // Album data type
 type Album = {
   slug: string;
+  title: string;
   imageUrl: string;
   spotifyUrl: string;
   appleMusicUrl: string;
 };
 
-// Function to get albums
-const getAlbums = (): Album[] => [
+// Function to get albums with translations
+const getAlbums = (t: (key: string, defaultValue: string) => string): Album[] => [
   {
     slug: 'el-primer-llanto',
+    title: t('discography.albums.elPrimerLlanto.title', 'El Primer Llanto'),
     imageUrl: '/images/discography/portada-primer-llanto.jpg',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
   {
     slug: 'tamiz',
+    title: t('discography.albums.tamiz.title', 'Tamiz'),
     imageUrl: '/images/discography/portada-tamiz.jpeg',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
   {
     slug: 'maestros-del-arte-clasico-flamenco',
+    title: t('discography.albums.maestros.title', 'Maestros del Arte Clásico Flamenco'),
     imageUrl: '/images/discography/portada-maestros.jpeg',
     spotifyUrl: '#',
     appleMusicUrl: '#',
@@ -34,7 +38,7 @@ const getAlbums = (): Album[] => [
 
 const DiscographyPage = () => {
   const { t } = useTranslation();
-  const albums = getAlbums();
+  const albums = getAlbums(t);
 
   // Helper function to get album title
   const getAlbumTitle = (slug: string) => {
