@@ -1,4 +1,4 @@
-import { Button, useToast } from '@chakra-ui/react';
+import { Button, useToast, HStack, Box, Text } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
@@ -15,44 +15,84 @@ const LanguageToggle = () => {
     }
   }, [i18n]);
   
-  const toggleLanguage = () => {
-    const newLang = currentLanguage === 'es' ? 'en' : 'es';
-    i18n.changeLanguage(newLang).then(() => {
-      localStorage.setItem('i18nextLng', newLang);
-      toast({
-        title: t('languageChanged', { lng: newLang, language: newLang === 'es' ? 'Español' : 'English' }),
-        status: 'success',
-        duration: 2000,
-        isClosable: true,
-        position: 'top',
-      });
-    });
-  };
+  // Removed toggleLanguage function as we now have individual handlers for each button
+
+  const isSpanish = currentLanguage === 'es';
 
   return (
-    <Button
-      aria-label={t('common.language')}
-      onClick={toggleLanguage}
-      size="sm"
-      variant="ghost"
-      color="white"
-      _hover={{
-        bg: 'whiteAlpha.300',
-        color: '#faf0c0',
-        transform: 'scale(1.05)',
-      }}
-      fontSize="sm"
-      fontWeight="semibold"
-      px={3}
-      py={2}
+    <HStack 
+      spacing={0}
       border="1px solid"
-      borderColor="whiteAlpha.300"
+      borderColor="whiteAlpha.400"
       borderRadius="md"
-      transition="all 0.2s"
-      minW="60px"
+      bg="blackAlpha.500"
+      overflow="hidden"
+      height="32px"
     >
-      {currentLanguage === 'es' ? '🇪🇸 ES' : '🇬🇧 EN'}
-    </Button>
+      <Button
+        aria-label="Switch to Spanish"
+        onClick={() => i18n.changeLanguage('es').then(() => {
+          localStorage.setItem('i18nextLng', 'es');
+          toast({
+            title: t('languageChanged', { lng: 'es', language: 'Español' }),
+            status: 'success',
+            duration: 2000,
+            isClosable: true,
+            position: 'top',
+          });
+        })}
+        size="sm"
+        variant="ghost"
+        color={isSpanish ? 'white' : 'whiteAlpha.700'}
+        bg={isSpanish ? 'whiteAlpha.300' : 'transparent'}
+        _hover={{
+          bg: isSpanish ? 'whiteAlpha.400' : 'whiteAlpha.200',
+        }}
+        fontSize="md"
+        fontWeight="medium"
+        px={3}
+        py={0}
+        h="100%"
+        borderRadius="none"
+        transition="all 0.2s"
+      >
+        <Text as="span" fontSize="lg" mr={1}>🇪🇸</Text>
+        <Text as="span" fontSize="xs">ES</Text>
+      </Button>
+      
+      <Box h="60%" w="1px" bg="whiteAlpha.400" />
+      
+      <Button
+        aria-label="Switch to English"
+        onClick={() => i18n.changeLanguage('en').then(() => {
+          localStorage.setItem('i18nextLng', 'en');
+          toast({
+            title: t('languageChanged', { lng: 'en', language: 'English' }),
+            status: 'success',
+            duration: 2000,
+            isClosable: true,
+            position: 'top',
+          });
+        })}
+        size="sm"
+        variant="ghost"
+        color={!isSpanish ? 'white' : 'whiteAlpha.700'}
+        bg={!isSpanish ? 'whiteAlpha.300' : 'transparent'}
+        _hover={{
+          bg: !isSpanish ? 'whiteAlpha.400' : 'whiteAlpha.200',
+        }}
+        fontSize="md"
+        fontWeight="medium"
+        px={3}
+        py={0}
+        h="100%"
+        borderRadius="none"
+        transition="all 0.2s"
+      >
+        <Text as="span" fontSize="lg" mr={1}>🇬🇧</Text>
+        <Text as="span" fontSize="xs">EN</Text>
+      </Button>
+    </HStack>
   );
 };
 

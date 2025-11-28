@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Box, VStack, Text, Center, Spinner, Container } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import type { Event } from '../types/events';
@@ -103,8 +103,38 @@ const AllEventsPage = () => {
   const yearRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Group events by year
-  const eventsByYear = useMemo(() => groupEventsByYear(events), [events]);
+  // Helper function to check if an event is in the past
+  const isEventPast = (event: Event) => {
+    if (!event.startDate) return false;
+    const eventDate = new Date(event.startDate);
+    const now = new Date();
+    // Set time to start of day for accurate date comparison
+    now.setHours(0, 0, 0, 0);
+    return eventDate < now;
+  };
+
+  // Group events by year and sort them by date
+  const eventsByYear = useMemo(() => {
+    if (!events) return new Map<number, Event[]>();
+    
+    // Sort events by date (newest first)
+    const sortedEvents = [...events].sort((a, b) => {
+      const dateA = a.startDate ? new Date(a.startDate).getTime() : 0;
+      const dateB = b.startDate ? new Date(b.startDate).getTime() : 0;
+      return dateB - dateA; // Sort newest first
+    });
+    
+    // Debug log to verify sorting and past events
+    console.log('Sorted events:', sortedEvents.map(e => ({
+      id: e.id,
+      startDate: e.startDate,
+      name: e.eventName,
+      isPast: isEventPast(e)
+    })));
+    
+    return groupEventsByYear(sortedEvents);
+  }, [events]);
+
   const years = useMemo(() => Array.from(eventsByYear.keys()), [eventsByYear]);
 
   // Set initial year to the most recent year with events
@@ -290,9 +320,132 @@ const AllEventsPage = () => {
                   </Box>
                 </Box>
                 <VStack spacing={6} align="stretch">
-                  {yearEvents.map(event => (
-                    <EventCard key={event.id} event={event} />
-                  ))}
+                  {yearEvents.map((event, index, array) => {
+                    const isPast = isEventPast(event);
+                    const nextEvent = array[index + 1];
+                    const isLastPastEvent = isPast && nextEvent && !isEventPast(nextEvent);
+                    const isLastEventOfYear = index === array.length - 1;
+                    const currentYear = Number(year);
+                    const nextYearEvents = Array.from(eventsByYear.entries())
+                      .find(([y]) => y < currentYear);
+                    const hasFutureEventsInPastYear = nextYearEvents && 
+                      nextYearEvents[1].some(e => !isEventPast(e));
+                    
+                    const shouldShowDivider = isLastPastEvent || 
+                      (isLastEventOfYear && hasFutureEventsInPastYear);
+                    
+                    return (
+                      <React.Fragment key={event.id}>
+                        <EventCard 
+                          event={event} 
+                          isPastEvent={isPast}
+                        />
+                        {shouldShowDivider && (
+                          <Box 
+                            position="relative" 
+                            my={10}
+                            px={4}
+                            h="3px"
+                          >
+                            {/* Main divider line */}
+                            <Box 
+                              position="absolute"
+                              left={0}
+                              right={0}
+                              top="50%"
+                              h="2px"
+                              bgGradient="linear(to-r, transparent, white, transparent)"
+                              zIndex={1}
+                            />
+                            {/* NOW label */}
+                            <Box
+                              position="absolute"
+                              left="50%"
+                              top="50%"
+                              transform="translate(-50%, -50%)"
+                              bg="black"
+                              color="white"
+                              px={4}
+                              py={1}
+                              fontSize="xs"
+                              fontWeight="bold"
+                              borderRadius="full"
+                              border="1px solid rgba(255,255,255,0.5)"
+                              zIndex={2}
+                              fontFamily="mono"
+                              letterSpacing="0.1em"
+                              textTransform="uppercase"
+                              boxShadow="0 0 10px rgba(0,0,0,0.7)"
+                            >
+                              NOW
+                            </Box>
+                            {/* Glow effect */}
+                            <Box
+                              position="absolute"
+                              left="50%"
+                              top="50%"
+                              transform="translate(-50%, -50%)"
+                              w="100px"
+                              h="20px"
+                              bg="rgba(255,255,255,0.1)"
+                              filter="blur(10px)"
+                              zIndex={0}
+                            />
+                          </Box>
+                        )}
+                      </React.Fragment>
+                    );
+                  })}
+                  {/* Add divider at the end of the year if there are past events in the next year */}
+                  {yearEvents.length > 0 && (() => {
+                    const lastEvent = yearEvents[yearEvents.length - 1];
+                    const isLastEventPast = isEventPast(lastEvent);
+                    const currentYear = Number(year);
+                    const nextYearEvents = Array.from(eventsByYear.entries())
+                      .find(([y]) => y < currentYear)?.[1] || [];
+                    const hasFutureEventsInPastYear = nextYearEvents.some(e => !isEventPast(e));
+                    
+                    return isLastEventPast && hasFutureEventsInPastYear && (
+                      <Box 
+                        position="relative" 
+                        my={10}
+                        px={4}
+                        h="3px"
+                        key={`year-divider-${year}`}
+                      >
+                        <Box 
+                          position="absolute"
+                          left={0}
+                          right={0}
+                          top="50%"
+                          h="2px"
+                          bgGradient="linear(to-r, transparent, white, transparent)"
+                          zIndex={1}
+                        />
+                        <Box
+                          position="absolute"
+                          left="50%"
+                          top="50%"
+                          transform="translate(-50%, -50%)"
+                          bg="black"
+                          color="white"
+                          px={4}
+                          py={1}
+                          fontSize="xs"
+                          fontWeight="bold"
+                          borderRadius="full"
+                          border="1px solid rgba(255,255,255,0.5)"
+                          zIndex={2}
+                          fontFamily="mono"
+                          letterSpacing="0.1em"
+                          textTransform="uppercase"
+                          boxShadow="0 0 10px rgba(0,0,0,0.7)"
+                        >
+                          NOW
+                        </Box>
+                      </Box>
+                    );
+                  })()}
                 </VStack>
               </Box>
             );

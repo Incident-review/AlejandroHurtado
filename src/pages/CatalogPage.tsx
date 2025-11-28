@@ -62,17 +62,7 @@ export const getSpectacles = (t: any): Spectacle[] => [
       { url: '/images/MaestrosDelArteClasicoFlamenco2.jpeg', alt: t('catalog.spectacles.maestrosDelArte.image2Alt', 'Modern concert setup') },
     ]
   },
-  {
-    id: 'miradas',
-    title: t('catalog.spectacles.miradas.title', 'Miradas'),
-    description: t('catalog.spectacles.miradas.description', 'Accompanied by the dance of Inmaculada Salomón (principal dancer of the Ballet Nacional de España) and the percussion of David Dominguez, Alejandro offers a very different vision from the traditional flamenco guitar and dance show.'),
-    price: t('catalog.contactForPricing', 'Contact for pricing'),
-    gradient: 'linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(218, 165, 32, 0.2))',
-    images: [
-      { url: '/images/miradas1.jpg', alt: t('catalog.spectacles.miradas.image1Alt', 'Fusion band performance') },
-      { url: '/images/miradas2.jpg', alt: t('catalog.spectacles.miradas.image2Alt', 'Modern concert setup') },
-    ]
-  },
+
 ];
 
 import { useMemo } from 'react';

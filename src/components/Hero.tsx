@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
+import { Global, css } from '@emotion/react';
 import heroImage from '/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
@@ -30,8 +31,14 @@ const Hero = () => {
   }, [nextQuote]);
 
   return (
-    <Flex
-      direction={{ base: 'column', md: 'row' }}
+    <>
+      <Global
+        styles={css`
+          @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        `}
+      />
+      <Flex
+        direction={{ base: 'column', md: 'row' }}
       align="flex-start"
       justify="flex-start"
       minH="auto"
@@ -123,10 +130,11 @@ const Hero = () => {
           textAlign="center"
           p={{ base: 4, md: 6 }}
           borderRadius="2xl"
-          backdropFilter="blur(15px)"
+          backdropFilter="blur(10px)"
           border="1px solid"
-          borderColor="rgba(139, 115, 85, 0.6)"
-          boxShadow="2xl"
+          borderColor="rgba(205, 170, 125, 0.4)"
+          bg="rgba(30, 20, 10, 0.7)"
+          boxShadow="dark-lg"
           sx={{
             '&::before': {
               content: '""',
@@ -143,20 +151,27 @@ const Hero = () => {
         >
           <Text 
             as="blockquote"
-            color="#faf0c0" 
+            color="#ffffff" 
             fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
-            lineHeight="1.4"
-            fontWeight="medium"
-            mb={3}
+            lineHeight="1.6"
+            fontFamily="'Cormorant Garamond', serif"
+            fontWeight={400}
+            fontStyle="italic"
+            mb={4}
             px={2}
+            textShadow="0 2px 4px rgba(0,0,0,0.5)"
           >
             "{quotes[currentQuoteIndex].text}"
           </Text>
           <Text 
-            color="#cd853f" 
-            fontWeight="medium" 
-            fontSize={{ base: 'sm', md: 'md' }}
-            fontStyle="italic"
+            color="#f8e5b5" 
+            fontFamily="'Cormorant Garamond', serif"
+            fontWeight={600}
+            fontSize={{ base: 'md', md: 'lg' }}
+            fontStyle="normal"
+            letterSpacing="0.05em"
+            textTransform="uppercase"
+            textShadow="0 1px 2px rgba(0,0,0,0.5)"
           >
             - {quotes[currentQuoteIndex].author}
           </Text>
@@ -174,14 +189,6 @@ const Hero = () => {
           bg="rgba(139, 115, 85, 0.9)"
           color="#faf0c0"
           fontWeight="semibold"
-          _hover={{ 
-            bg: 'rgba(139, 115, 85, 0.9)',
-            transform: 'translateY(-2px)',
-            boxShadow: '2xl'
-          }}
-          _active={{
-            bg: 'rgba(139, 115, 85, 0.9)'
-          }}
           border="2px solid"
           borderColor="#cd853f"
           backdropFilter="blur(10px)"
@@ -192,12 +199,22 @@ const Hero = () => {
           left="50%"
           bottom={{ base: '20%', md: '20%' }}
           transform="translateX(-50%)"
-          transition="all 0.2s"
+          _hover={{
+            transform: 'translateX(-50%)',
+            boxShadow: 'xl',
+            bg: 'rgba(139, 115, 85, 0.9)'
+          }}
+          _active={{
+            transform: 'translateX(-50%)',
+            boxShadow: 'xl',
+            bg: 'rgba(139, 115, 85, 0.9)'
+          }}
         >
           {t('hero.catalogButton')}
         </Button>
       </Box>
     </Flex>
+    </>
   );
 };
 

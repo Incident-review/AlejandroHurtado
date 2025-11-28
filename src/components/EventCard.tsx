@@ -41,8 +41,14 @@ const EventCard = ({ event, variant = 'event' }: EventCardProps) => {
       title={event.eventName}
       imageUrl={eventImage}
       imageAlt={event.eventName}
-      borderColor={isPastEvent ? 'rgba(160, 174, 192, 0.5)' : undefined}
+      borderColor={isPastEvent ? 'rgba(160, 174, 192, 0.3)' : undefined}
       position="relative"
+      opacity={isPastEvent ? 0.7 : 1}
+      transition="opacity 0.2s ease-in-out"
+      _hover={{
+        opacity: isPastEvent ? 0.85 : 1,
+        boxShadow: isPastEvent ? 'md' : 'lg'
+      }}
       _before={isPastEvent ? {
         content: '"Past Event"',
         position: 'absolute',
@@ -74,8 +80,13 @@ const EventCard = ({ event, variant = 'event' }: EventCardProps) => {
           <HStack spacing={2} flexGrow={1}>
             <Icon as={FaMapMarkerAlt} boxSize={4} color="red.400" />
             <Box>
-              {event.location.building && (
-                <Text fontWeight="bold" color="text.secondary" fontSize="sm">
+              {event.location.venue && (
+                <Text fontWeight="bold" color="text.secondary" fontSize="sm" mb={1}>
+                  {event.location.venue}
+                </Text>
+              )}
+              {event.location.building && event.location.building !== event.location.venue && (
+                <Text fontWeight="medium" color="text.secondary" fontSize="sm" mb={1}>
                   {event.location.building}
                 </Text>
               )}
