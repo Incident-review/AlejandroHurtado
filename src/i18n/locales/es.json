@@ -3,7 +3,7 @@
     "home": "Inicio",
     "events": "Eventos",
     "discography": "Discografía",
-    "contact": "Contacto y Contratación",
+    "contact": "Contacto",
     "title": "Alejandro Hurtado"
   },
   "hero": {
@@ -105,6 +105,38 @@
     "title": "Catálogo de Espectáculos",
     "subtitle": "Explore nuestra diversa gama de actuaciones musicales. Cada espectáculo es una experiencia única, cuidadosamente elaborada para cautivar e inspirar a su audiencia.",
     "contactInfo": "Para reservas y consultas, no dude en ponerse en contacto.",
+    "repertoire": {
+      "conciertoAranjuez": {
+        "title": "Concierto de Aranjuez",
+        "description": "La obra más representativa para guitarra y orquesta, estrenada en Barcelona en 1940. Alejandro Hurtado ofrece una interpretación fresca que se mantiene fiel a la partitura de Rodrigo, aportando su fraseo personal y dinámicas a esta icónica pieza.",
+        "duration": "22 min"
+      },
+      "gypsyConcert": {
+        "title": "Concierto Gitano",
+        "description": "Compuesto entre 1975-76, este concierto consta de cuatro movimientos basados en composiciones originales de Sabicas: Guajira, Soleá, Rondeña y Zapateado. Enrique Escudé Cofiner creó las partes orquestales, introducciones y pasajes de enlace, resultando en una obra que combina el virtuosismo flamenco con la riqueza orquestal.",
+        "duration": "25 min"
+      },
+      "romanza": {
+        "title": "Romanza",
+        "description": "Segundo movimiento del 'Concertino para guitarra y orquesta' compuesto durante el exilio parisino de Bacarisse. Esta pieza melancólica y nostálgica está considerada una de las más bellas del repertorio clásico, inspirada en los sentimientos de lejanía de la patria del compositor.",
+        "duration": "8 min"
+      },
+      "fantasiaGentilhombre": {
+        "title": "Fantasía para un Gentilhombre",
+        "description": "Compuesta en 1954 por encargo de Andrés Segovia, este concierto se basa en temas del guitarrista español del siglo XVII Gaspar Sanz. Rodrigo crea un diálogo perfecto entre el lenguaje armónico del siglo XX y el espíritu de los bailes españoles del siglo XVII.",
+        "duration": "20 min"
+      },
+      "conciertoFlamenco": {
+        "title": "Concierto en Flamenco",
+        "description": "Obra maestra que combina cuatro estilos flamencos (fandangos, seguiriyas, alegrías y bulerías) con orquestación sinfónica. La magistral orquestación de Federico Moreno Torroba se creó sobre las grabaciones originales de Sabicas, resultando en una de las obras más significativas para guitarra flamenca y orquesta.",
+        "duration": "28 min"
+      },
+      "medea": {
+        "title": "Medea",
+        "description": "Concebida para el Ballet Nacional con coreografía de José Granero en 1984, por encargo del Ministerio de Cultura. En 2002, Sanlúcar adaptó la tragedia de Eurípides para guitarra y orquesta sinfónica, creando una de las mejores orquestaciones flamencas de nuestro tiempo.",
+        "duration": "35 min"
+      }
+    },
     "sendEmail": "Enviar un correo electrónico",
     "contactEmail": "management@guitarrasonline.com",
     "contactPhone": "+34 605 671 785",

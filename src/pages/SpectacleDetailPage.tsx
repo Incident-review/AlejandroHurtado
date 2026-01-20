@@ -1,9 +1,23 @@
-import { useEffect } from 'react';
-import { Box, Container, Heading, Text, Image, VStack, HStack, Button, Divider } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaCalendarAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
+import { 
+  Box, 
+  Container, 
+  Heading, 
+  Text, 
+  Image, 
+  VStack, 
+  HStack, 
+  Button, 
+  Divider, 
+  Collapse, 
+  Checkbox, 
+  useDisclosure 
+} from '@chakra-ui/react';
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 
 // This data should ideally be fetched from a service or CMS
 import { getSpectacles } from './CatalogPage';
@@ -22,6 +36,17 @@ const MotionBox = motion.create(Box);
 
 function SpectacleDetailPage() {
   const { t } = useTranslation();
+  const [selectedRepertoire, setSelectedRepertoire] = useState<string[]>([]);
+  const { isOpen, onToggle } = useDisclosure();
+  
+  // Handle repertoire selection
+  const handleRepertoireToggle = (itemId: string) => {
+    setSelectedRepertoire(prev => 
+      prev.includes(itemId)
+        ? prev.filter(id => id !== itemId)
+        : [...prev, itemId]
+    );
+  };
   
   // Scroll to top when component mounts
   useEffect(() => {
@@ -50,7 +75,20 @@ function SpectacleDetailPage() {
 
   const handleBooking = () => {
     const emailSubject = t('catalog.bookingEmailSubject', 'Booking Inquiry: {{title}}', { title: spectacle.title });
-    const emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards', { title: spectacle.title });
+    
+    let emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.', { title: spectacle.title });
+    
+    // Add selected repertoire to email if any
+    if (spectacle.id === 'conciertos-con-orquesta' && selectedRepertoire.length > 0) {
+      const selectedItems = selectedRepertoire
+        .map(id => `• ${t(`catalog.repertoire.${id}.title`)} (${t(`catalog.repertoire.${id}.duration`)})`)
+        .join('\n');
+      
+      emailBody += '\n\n' + t('catalog.selectedRepertoire', 'Selected Repertoire:') + '\n' + selectedItems;
+    }
+    
+    emailBody += '\n\nPlease provide me with more information about availability and pricing.\n\nBest regards';
+    
     window.location.href = `mailto:management@guitarrasonline.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
   };
 
@@ -139,9 +177,47 @@ function SpectacleDetailPage() {
                   <Heading as="h2" size="lg" mb={4} color="orange.300">
                     {t('catalog.program', 'Program')}
                   </Heading>
-                  <Text lineHeight="tall">
+                  <Text lineHeight="tall" mb={4}>
                     {t('catalog.programDescription', 'Each performance is carefully curated to the venue and audience. The program typically includes a selection of pieces that showcase the full range of {{title}}\'s artistic expression, from intimate solo pieces to dynamic ensemble works.', { title: spectacle.title })}
                   </Text>
+                  
+                  {spectacle.id === 'conciertos-con-orquesta' && (
+                    <Box mt={6}>
+                      <Heading as="h3" size="md" mb={4} color="orange.200">
+                        {t('catalog.repertoireOptions', 'Repertoire Options')}
+                      </Heading>
+                      <Text mb={4} color="gray.300">
+                        {t('catalog.repertoireIntro', 'This performance features a selection of traditional and contemporary flamenco pieces. You can choose your preferred repertoire when making a booking.')}
+                      </Text>
+                      <VStack align="stretch" spacing={8}>
+                        {['conciertoAranjuez', 'gypsyConcert', 'romanza', 'fantasiaGentilhombre', 'conciertoFlamenco', 'medea'].map((pieceId) => (
+                          <Box 
+                            key={`showcase-${pieceId}`}
+                            borderLeft="4px solid"
+                            borderColor="orange.500"
+                            pl={4}
+                            py={3}
+                            bg="rgba(0,0,0,0.1)"
+                            borderRadius="md"
+                          >
+                            <HStack justifyContent="space-between" alignItems="flex-start">
+                              <Box>
+                                <Text fontSize="xl" fontWeight="bold" color="orange.300">
+                                  {t(`catalog.repertoire.${pieceId}.title`)}
+                                </Text>
+                              </Box>
+                              <Text fontSize="sm" color="gray.400" bg="rgba(0,0,0,0.3)" px={2} py={1} borderRadius="md">
+                                {t(`catalog.repertoire.${pieceId}.duration`)}
+                              </Text>
+                            </HStack>
+                            <Text mt={3} fontSize="md" color="gray.300">
+                              {t(`catalog.repertoire.${pieceId}.description`)}
+                            </Text>
+                          </Box>
+                        ))}
+                      </VStack>
+                    </Box>
+                  )}
                 </Box>
               </VStack>
             </Box>
@@ -165,6 +241,65 @@ function SpectacleDetailPage() {
                   <Text color="gray.400" mb={4}>
                     {t('catalog.bookingDescription', 'For booking inquiries and availability, please contact us directly.')}
                   </Text>
+                  
+                  {spectacle.id === 'conciertos-con-orquesta' && (
+                    <Box mb={6}>
+                      <Text fontSize="sm" color="gray.300" mb={2}>
+                        {t('catalog.selectRepertoire', 'Select pieces for your performance:')}
+                      </Text>
+                      <Button 
+                        onClick={onToggle} 
+                        size="sm" 
+                        variant="outline" 
+                        colorScheme="orange" 
+                        rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                        width="100%"
+                        mb={3}
+                      >
+                        {isOpen ? t('catalog.hideRepertoire', 'Hide Selection') : t('catalog.viewRepertoire', 'View Available Pieces')}
+                        {selectedRepertoire.length > 0 && ` (${selectedRepertoire.length} ${t('catalog.selected', 'selected')})`}
+                      </Button>
+                      
+                      <Collapse in={isOpen} animateOpacity>
+                        <Box 
+                          borderWidth="1px" 
+                          borderRadius="md" 
+                          p={4}
+                          maxH="400px"
+                          overflowY="auto"
+                        >
+                          <VStack align="stretch" spacing={4}>
+                            {['conciertoAranjuez', 'gypsyConcert', 'romanza', 'fantasiaGentilhombre', 'conciertoFlamenco', 'medea'].map((pieceId) => (
+                              <Box 
+                                key={pieceId}
+                                border="1px solid"
+                                borderColor="orange.200"
+                                p={3}
+                                borderRadius="md"
+                                _hover={{ bg: 'whiteAlpha.50' }}
+                              >
+                                <Checkbox
+                                  isChecked={selectedRepertoire.includes(pieceId)}
+                                  onChange={() => handleRepertoireToggle(pieceId)}
+                                  colorScheme="orange"
+                                  size="lg"
+                                >
+                                  <VStack align="flex-start" spacing={0} ml={2}>
+                                    <Text fontWeight="bold">
+                                      {t(`catalog.repertoire.${pieceId}.title`)}
+                                    </Text>
+                                    <Text fontSize="sm" color="gray.400">
+                                      {t(`catalog.repertoire.${pieceId}.duration`)}
+                                    </Text>
+                                  </VStack>
+                                </Checkbox>
+                              </Box>
+                            ))}
+                          </VStack>
+                        </Box>
+                      </Collapse>
+                    </Box>
+                  )}
                   <VStack spacing={4} align="stretch">
                     <Button 
                       leftIcon={<FaEnvelope />} 

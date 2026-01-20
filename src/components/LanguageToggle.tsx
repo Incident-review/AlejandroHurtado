@@ -27,7 +27,7 @@ const LanguageToggle = () => {
       borderRadius="md"
       bg="blackAlpha.500"
       overflow="hidden"
-      height="32px"
+      height="28px"
     >
       <Button
         aria-label="Switch to Spanish"
@@ -41,23 +41,20 @@ const LanguageToggle = () => {
             position: 'top',
           });
         })}
-        size="sm"
+        size="xs"
         variant="ghost"
         color={isSpanish ? 'white' : 'whiteAlpha.700'}
         bg={isSpanish ? 'whiteAlpha.300' : 'transparent'}
         _hover={{
           bg: isSpanish ? 'whiteAlpha.400' : 'whiteAlpha.200',
         }}
-        fontSize="md"
-        fontWeight="medium"
-        px={3}
-        py={0}
+        p={0}
+        minW="30px"
         h="100%"
         borderRadius="none"
         transition="all 0.2s"
       >
-        <Text as="span" fontSize="lg" mr={1}>🇪🇸</Text>
-        <Text as="span" fontSize="xs">ES</Text>
+        <Text as="span" fontSize="md">🇪🇸</Text>
       </Button>
       
       <Box h="60%" w="1px" bg="whiteAlpha.400" />
@@ -74,23 +71,20 @@ const LanguageToggle = () => {
             position: 'top',
           });
         })}
-        size="sm"
+        size="xs"
         variant="ghost"
         color={!isSpanish ? 'white' : 'whiteAlpha.700'}
         bg={!isSpanish ? 'whiteAlpha.300' : 'transparent'}
         _hover={{
           bg: !isSpanish ? 'whiteAlpha.400' : 'whiteAlpha.200',
         }}
-        fontSize="md"
-        fontWeight="medium"
-        px={3}
-        py={0}
+        p={0}
+        minW="30px"
         h="100%"
         borderRadius="none"
         transition="all 0.2s"
       >
-        <Text as="span" fontSize="lg" mr={1}>🇬🇧</Text>
-        <Text as="span" fontSize="xs">EN</Text>
+        <Text as="span" fontSize="md">🇬🇧</Text>
       </Button>
     </HStack>
   );

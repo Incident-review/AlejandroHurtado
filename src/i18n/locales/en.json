@@ -3,7 +3,7 @@
     "home": "Home",
     "events": "Events",
     "discography": "Discography",
-    "contact": "Contact & Booking",
+    "contact": "Contact",
     "title": "Alejandro Hurtado"
   },
   "hero": {
@@ -104,6 +104,38 @@
     "title": "Spectacle Catalog",
     "subtitle": "Explore our diverse range of musical performances. Each show is a unique experience, carefully crafted to captivate and inspire your audience.",
     "contactInfo": "For bookings and inquiries, please don't hesitate to reach out.",
+    "repertoire": {
+      "conciertoAranjuez": {
+        "title": "Concierto de Aranjuez",
+        "description": "The most representative work for guitar and orchestra, premiered in Barcelona in 1940. Alejandro Hurtado offers a fresh interpretation that remains faithful to Rodrigo's score while bringing his personal phrasing and dynamics to this iconic piece.",
+        "duration": "22 min"
+      },
+      "gypsyConcert": {
+        "title": "Gypsy Concert",
+        "description": "Composed in 1975-76, this concert features four movements based on Sabicas' original compositions: Guajira, Soleá, Rondeña, and Zapateado. Enrique Escudé Cofiner created the orchestral parts, introductions, and linking sections, resulting in a work that combines flamenco virtuosity with orchestral richness.",
+        "duration": "25 min"
+      },
+      "romanza": {
+        "title": "Romanza",
+        "description": "The second movement of the 'Concertino for Guitar and Orchestra' composed during Bacarisse's Parisian exile. This melancholic and nostalgic piece is considered one of the most beautiful in the classical repertoire, inspired by the composer's feelings of distance from his homeland.",
+        "duration": "8 min"
+      },
+      "fantasiaGentilhombre": {
+        "title": "Fantasía para un Gentilhombre",
+        "description": "Composed in 1954 at the request of Andrés Segovia, this concerto is based on themes by the 17th-century Spanish guitarist Gaspar Sanz. Rodrigo creates a perfect dialogue between 20th-century harmonic language and the spirit of 17th-century Spanish dances.",
+        "duration": "20 min"
+      },
+      "conciertoFlamenco": {
+        "title": "Concierto en Flamenco",
+        "description": "A masterpiece combining four flamenco styles (fandangos, seguiriyas, alegrías, and bulerías) with symphonic orchestration. Federico Moreno Torroba's masterful orchestration was created over Sabicas' original recordings, resulting in one of the most significant works for flamenco guitar and orchestra.",
+        "duration": "28 min"
+      },
+      "medea": {
+        "title": "Medea",
+        "description": "Conceived for the Ballet Nacional with choreography by José Granero in 1984, and commissioned by the Ministry of Culture. In 2002, Sanlúcar adapted Euripides' tragedy for guitar and symphony orchestra, creating one of the finest flamenco orchestrations of our time.",
+        "duration": "35 min"
+      }
+    },
     "sendEmail": "Send an Email",
     "contactEmail": "management@guitarrasonline.com",
     "contactPhone": "+34 605 671 785",

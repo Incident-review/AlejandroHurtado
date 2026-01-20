@@ -62,19 +62,61 @@ export const getSpectacles = (t: any): Spectacle[] => [
       { url: '/images/MaestrosDelArteClasicoFlamenco2.jpeg', alt: t('catalog.spectacles.maestrosDelArte.image2Alt', 'Modern concert setup') },
     ]
   },
+  {
+    id: 'conciertos-con-orquesta',
+    title: t('catalog.spectacles.conciertosOrquesta.title', 'Conciertos con orquesta'),
+    description: t('catalog.spectacles.conciertosOrquesta.description', 'Experience the grandeur of classical and flamenco guitar with full orchestra. This performance showcases masterpieces from the guitar repertoire, featuring works by Rodrigo, Sabicas, Bacarisse, and more, performed with the rich textures of a full orchestral accompaniment.'),
+    price: t('catalog.contactForPricing', 'Contact for pricing'),
+    gradient: 'linear-gradient(135deg, rgba(75, 0, 130, 0.2), rgba(138, 43, 226, 0.2))',
+    images: [
+      { url: '/images/teatroReal.jpeg', alt: t('catalog.spectacles.conciertosOrquesta.image1Alt', 'Orchestra performance at Teatro Real') },
+      { url: '/images/teatroReal2.jpg', alt: t('catalog.spectacles.conciertosOrquesta.image2Alt', 'Concert with orchestra') },
+    ]
+  }
 
 ];
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 
 function CatalogPage() {
   const { t } = useTranslation();
   
   const spectacles = useMemo(() => getSpectacles(t), [t]);
+  const [selectedRepertoire, setSelectedRepertoire] = useState<{[key: string]: string[]}>({});
+
+  const handleRepertoireSelect = (spectacleId: string, items: string[]) => {
+    setSelectedRepertoire((prev: { [key: string]: string[] }) => ({
+      ...prev,
+      [spectacleId]: items
+    }));
+  };
 
   const handleBooking = (spectacle: typeof spectacles[0]) => {
     const emailSubject = t('catalog.bookingEmailSubject', 'Booking Inquiry: {{title}}', { title: spectacle.title });
-    const emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.\n\nPlease provide me with more information about availability and pricing.\n\nBest regards', { title: spectacle.title });
+    
+    let emailBody = t('catalog.bookingEmailBody', 'Hello,\n\nI am interested in booking the "{{title}}" performance.', { title: spectacle.title });
+    
+    // Add selected repertoire to email if any
+    if (spectacle.id === 'nazareno-y-olivares' && selectedRepertoire[spectacle.id]?.length > 0) {
+      const repertoireList = selectedRepertoire[spectacle.id]
+        .map((id: string) => {
+          // Map the repertoire ID to a human-readable name
+          const repertoireMap: {[key: string]: string} = {
+            'tientos-tangos': 'Tientos y Tangos (12 min)',
+            'solea': 'Soleá por Bulerías (10 min)',
+            'alegrias': 'Alegrías de Cádiz (8 min)',
+            'taranta': 'Taranta (7 min)',
+            'fandangos': 'Fandangos de Huelva (9 min)',
+            'bulerias': 'Bulerías (15 min)'
+          };
+          return `• ${repertoireMap[id] || id}`;
+        })
+        .join('\n');
+      
+      emailBody += '\n\nSelected Repertoire:\n' + repertoireList;
+    }
+    
+    emailBody += '\n\nPlease provide me with more information about availability and pricing.\n\nBest regards';
 
     const mailtoLink = `mailto:management@guitarrasonline.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
@@ -202,12 +244,15 @@ function CatalogPage() {
                 _hover={{ textDecoration: 'none' }}
               >
                 <SpectacleCard 
+                  key={spec.id}
+                  id={spec.id}
                   title={spec.title}
                   description={spec.description}
                   price={spec.price}
                   images={spec.images}
                   gradient={spec.gradient}
                   flex={1}
+                  onRepertoireSelect={(items) => spec.id && handleRepertoireSelect(spec.id, items)}
                 />
               </ChakraLink>
               <Box 
