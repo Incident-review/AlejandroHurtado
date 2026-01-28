@@ -23,7 +23,6 @@ const Card = forwardRef<CardProps, 'div'>(({
   variant = 'default',
   children,
   footer,
-  gradient,
   ...props
 }, ref) => {
   const styles = useStyleConfig('Card', { variant }) as { container: Record<string, unknown> };
@@ -33,6 +32,12 @@ const Card = forwardRef<CardProps, 'div'>(({
     ...styles.container,
     borderColor: props.borderColor || styles.container.borderColor,
   };
+
+  // Compute intrinsic dimensions to reduce layout shift
+  const numericImageHeight = typeof imageHeight === 'number'
+    ? imageHeight
+    : parseInt(String(imageHeight), 10) || undefined;
+  const intrinsicWidth = numericImageHeight ? Math.round(numericImageHeight * (16 / 9)) : undefined;
 
   return (
     <Box
@@ -82,6 +87,10 @@ const Card = forwardRef<CardProps, 'div'>(({
                 objectFit="cover"
                 h="100%"
                 w="100%"
+                loading="lazy"
+                decoding="async"
+                htmlHeight={numericImageHeight}
+                htmlWidth={intrinsicWidth}
                 transition="transform 0.5s ease"
                 fallbackSrc="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMjUwIiB2aWV3Qm94PSIwIDAgNDAwIDI1MCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcgaW1hZ2UuLi48L3RleHQ+PC9zdmc+"
               />

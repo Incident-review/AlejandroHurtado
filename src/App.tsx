@@ -7,6 +7,8 @@ import DiscographyPage from './pages/DiscographyPage';
 import AlbumDetailPage from './pages/AlbumDetailPage';
 import CatalogPage from './pages/CatalogPage';
 import SpectacleDetailPage from './pages/SpectacleDetailPage';
+import CookiePolicy from './pages/CookiePolicy';
+import CookieConsent from './components/CookieConsent';
 
 import AnimatedBackground from './components/AnimatedBackground';
 
@@ -25,8 +27,10 @@ function App() {
               <Route path="/discography/:slug" element={<AlbumDetailPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/catalog/:slug" element={<SpectacleDetailPage />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
             </Routes>
           </Box>
+          <CookieConsent />
         </Router>
       </Box>
     </Box>

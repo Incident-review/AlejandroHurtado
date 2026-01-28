@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import { Global, css } from '@emotion/react';
 import heroImage from '/images/imgAlejandro1.webp';
 import { useEffect, useState, useCallback } from 'react';
@@ -97,13 +97,20 @@ const Hero = () => {
           right={0}
           bottom={0}
         >
-          <Image
+          <img
             src={heroImage}
             alt="Artist performing"
-            w="100%"
-            h="100%"
-            objectFit="cover"
-            objectPosition="center 30%"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
+            style={{ 
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center 30%'
+            }}
           />
         </Box>
         {/* Overlay sutil para mejorar legibilidad */}

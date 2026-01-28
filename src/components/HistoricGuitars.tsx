@@ -16,7 +16,7 @@ const guitars: Guitar[] = [
     id: 'montoya-santos-1916',
     name: 'Santos Hernández (Montoya)',
     year: '1916',
-    imageUrl: '/images/ElPrimerLlanto.jpeg', // Using existing image as placeholder
+    imageUrl: '/images/ElPrimerLlanto1.webp', // Using existing image as placeholder
     description: 'Built by Santos Hernández in the workshop of Manuel Ramírez, this guitar belonged to Ramón Montoya.',
     videoUrl: 'https://www.youtube.com/watch?v=example1', // Replace with actual video URL
   },
@@ -24,7 +24,7 @@ const guitars: Guitar[] = [
     id: 'huelva-santos-1937',
     name: 'Santos Hernández (Huelva)',
     year: '1937',
-    imageUrl: '/images/MaestrosDelArteClasicoFlamenco.jpeg', // Using existing image as placeholder
+    imageUrl: '/images/MaestrosDelArteClasicoFlamenco1.webp', // Using existing image as placeholder
     description: 'Built by Santos Hernández, this guitar belonged to Manolo de Huelva.',
     videoUrl: 'https://www.youtube.com/watch?v=example2', // Replace with actual video URL
   },

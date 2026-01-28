@@ -16,21 +16,21 @@ const getAlbums = (t: (key: string, defaultValue: string) => string): Album[] =>
   {
     slug: 'el-primer-llanto',
     title: t('discography.albums.elPrimerLlanto.title', 'El Primer Llanto'),
-    imageUrl: '/images/discography/portada-primer-llanto.jpg',
+    imageUrl: '/images/discography/portada-primer-llanto.webp',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
   {
     slug: 'tamiz',
     title: t('discography.albums.tamiz.title', 'Tamiz'),
-    imageUrl: '/images/discography/portada-tamiz.jpeg',
+    imageUrl: '/images/discography/portada-tamiz.webp',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
   {
     slug: 'maestros-del-arte-clasico-flamenco',
     title: t('discography.albums.maestros.title', 'Maestros del Arte Clásico Flamenco'),
-    imageUrl: '/images/discography/portada-maestros.jpeg',
+    imageUrl: '/images/discography/portada-maestros.webp',
     spotifyUrl: '#',
     appleMusicUrl: '#',
   },
@@ -82,6 +82,10 @@ const DiscographyPage = () => {
                 objectFit="cover" 
                 w="100%" 
                 h="100%"
+                loading="lazy"
+                decoding="async"
+                htmlWidth={800}
+                htmlHeight={600}
                 fallbackSrc="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmcgYWxidW0gY292ZXIuLi48L3RleHQ+PC9zdmc+"
                 onError={(e) => {
                   e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM4ODgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkltYWdlIG5vdCBmb3VuZDwvdGV4dD48L3N2Zz4=';

@@ -17,13 +17,16 @@ type Album = {
 const getAlbums = (): Album[] => [
   {
     slug: 'el-primer-llanto',
-    imageUrl: '/images/discography/portada-primer-llanto.jpg',
+    imageUrl: '/images/discography/portada-primer-llanto.webp',
     spotifyUrl: 'https://open.spotify.com/album/3f6rzCyuCXylIkOQIqbWcl?si=R93CYCAETbW4PY_g0EMogQ',
-    appleMusicUrl: '#',
+    appleMusicUrl: 'https://music.apple.com/es/album/el-primer-llanto/1818632388',
+    deezerUrl: 'https://www.deezer.com/es/album/767143221',
+    purchaseUrl: 'https://www.elflamencovive.com/spanish/alejandro-hurtado-el-primer-llanto-vinilo-lp.html'
+    
   },
   {
     slug: 'tamiz',
-    imageUrl: '/images/discography/portada-tamiz.jpeg',
+    imageUrl: '/images/discography/portada-tamiz.webp',
     spotifyUrl: 'https://open.spotify.com/intl-es/album/724s9QHvml2PuuHAKSGGPj?si=Wpr7PjhzRWigpaFj0D0NCQ',
     appleMusicUrl: 'https://music.apple.com/es/album/tamiz/1696107483',
     deezerUrl: 'https://www.deezer.com/es/album/326614797',
@@ -31,7 +34,7 @@ const getAlbums = (): Album[] => [
   },
   {
     slug: 'maestros-del-arte-clasico-flamenco',
-    imageUrl: '/images/discography/portada-maestros.jpeg',
+    imageUrl: '/images/discography/portada-maestros.webp',
     spotifyUrl: 'https://open.spotify.com/intl-es/album/0DEiTTgDBrNTcKzJGoKqiw?si=2cmd9zNESTCiQhJaZ1zeTg',
     appleMusicUrl: 'https://music.apple.com/es/album/maestros-del-arte-cl%C3%A1sico-flamenco/1629017454',
     deezerUrl: 'https://www.deezer.com/es/album/326614797',
@@ -71,6 +74,9 @@ const AlbumDetailPage = () => {
               objectFit="cover" 
               shadow="2xl" 
               aspectRatio="1"
+              htmlWidth={800}
+              htmlHeight={800}
+              decoding="async"
             />
             <VStack align="center" spacing={4} maxW="3xl" mx="auto">
               <Heading 

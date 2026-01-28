@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import type { Event } from '../types/events';
 import EventCard from '../components/EventCard';
 import { eventService } from '../components/features/events/eventService';
-import AnimatedBackground from '../components/AnimatedBackground';
+//import AnimatedBackground from '../components/AnimatedBackground';
 
 // Constants
 const HEADER_HEIGHT = 64;
@@ -96,9 +96,9 @@ const TimelineBar = ({
 const AllEventsPage = () => {
   const { t } = useTranslation();
   // State management
-  const [loading, setLoading] = useState<boolean>(true);
-  const [events, setEvents] = useState<Event[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [loading] = useState<boolean>(false);
+  const [events] = useState<Event[]>(() => eventService.getAllEvents());
+  const [error] = useState<string | null>(null);
   const [currentYear, setCurrentYear] = useState<number | null>(null);
   const yearRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
   const containerRef = useRef<HTMLDivElement>(null);
@@ -145,20 +145,21 @@ const AllEventsPage = () => {
   }, [years, currentYear]);
 
   // Load events on mount
-  useEffect(() => {
-    const loadEvents = async () => {
-      try {
-        const allEvents = await eventService.getAllEvents();
-        setEvents(allEvents);
-        setLoading(false);
-      } catch (err) {
-        console.error('Error loading events:', err);
-        setError(t('events.failedToLoad'));
-        setLoading(false);
-      }
-    };
-    loadEvents();
-  }, [t]);
+  // (Removed: events are initialized synchronously)
+  // useEffect(() => {
+  //   const loadEvents = async () => {
+  //     try {
+  //       const allEvents = await eventService.getAllEvents();
+  //       setEvents(allEvents);
+  //       setLoading(false);
+  //     } catch (err) {
+  //       console.error('Error loading events:', err);
+  //       setError(t('events.failedToLoad'));
+  //       setLoading(false);
+  //     }
+  //   };
+  //   loadEvents();
+  // }, [t]);
 
   // Handle year click
   const handleYearClick = (year: number) => {
@@ -231,7 +232,6 @@ const AllEventsPage = () => {
 
   return (
     <Box position="relative" minH="100vh" bg="transparent" color="white">
-      <AnimatedBackground />
       
       {/* Year selector */}
       <TimelineBar 

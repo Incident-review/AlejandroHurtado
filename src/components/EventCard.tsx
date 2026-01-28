@@ -5,11 +5,11 @@ import type { Event } from '../types/events';
 import Card from "./Card";
 
 const eventImageMap: Record<string, string> = {
-  'Devenir': 'Devenir1.jpeg',
-  'El Primer Llanto': 'ElPrimerLlanto1.JPG',
-  'Éxodo': 'Exodo1.jpg',
-  'Maestros del Arte Clásico Flamenco': 'MaestrosDelArteClasicoFlamenco1.jpg',
-  'Miradas': 'miradas1.jpg'
+  'Devenir': 'Devenir1.webp',
+  'El Primer Llanto': 'ElPrimerLlanto1.webp',
+  'Éxodo': 'Exodo1.webp',
+  'Maestros del Arte Clásico Flamenco': 'MaestrosDelArteClasicoFlamenco1.webp',
+  'Miradas': 'miradas1.webp'
 };
 
 const getRandomImage = () => {

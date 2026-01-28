@@ -34,7 +34,7 @@ interface Spectacle {
 
 const MotionBox = motion.create(Box);
 
-function SpectacleDetailPage() {
+const SpectacleDetailPage = () => {
   const { t } = useTranslation();
   const [selectedRepertoire, setSelectedRepertoire] = useState<string[]>([]);
   const { isOpen, onToggle } = useDisclosure();
@@ -127,6 +127,11 @@ function SpectacleDetailPage() {
                 w="100%"
                 h={{ base: '50vh', md: '60vh' }}
                 objectFit="cover"
+                loading="eager"
+                //fetchpriority="high"
+                decoding="async"
+                htmlWidth={1920}
+                htmlHeight={1080}
               />
             )}
             <Box
@@ -378,6 +383,10 @@ function SpectacleDetailPage() {
                       w="100%"
                       h="250px"
                       objectFit="cover"
+                      loading="lazy"
+                      decoding="async"
+                      htmlWidth={800}
+                      htmlHeight={600}
                     />
                   </Box>
                 ))}

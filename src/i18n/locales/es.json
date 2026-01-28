@@ -74,7 +74,8 @@
   },
   "common": {
     "language": "Idioma",
-    "loading": "Cargando..."
+    "loading": "Cargando...",
+    "close": "Cerrar"
   },
   "albums": {
     "backToDiscography": "Volver a Discografía",
@@ -211,5 +212,10 @@
       "request": "Por favor, proporcióneme más información sobre disponibilidad y precios.",
       "closing": "Un saludo,"
     }
+  },
+  "cookieConsent": {
+    "message": "Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, acepta nuestro uso de cookies.",
+    "learnMore": "Más información",
+    "accept": "Aceptar"
   }
 }
