@@ -184,7 +184,7 @@ function SpectacleDetailPage() {
                   {spectacle.id === 'conciertos-con-orquesta' && (
                     <Box mt={6}>
                       <Heading as="h3" size="md" mb={4} color="orange.200">
-                        {t('catalog.repertoireOptions', 'Repertoire Options')}
+                        {t('catalog.repertoireOptions', 'Repertoire')}
                       </Heading>
                       <Text mb={4} color="gray.300">
                         {t('catalog.repertoireIntro', 'This performance features a selection of traditional and contemporary flamenco pieces. You can choose your preferred repertoire when making a booking.')}
