@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import AllEventsPage from './pages/AllEventsPage';
 import HomePage from './pages/HomePage';
@@ -33,6 +34,7 @@ function App() {
           <CookieConsent />
         </Router>
       </Box>
+      <Analytics />
     </Box>
   );
 }
