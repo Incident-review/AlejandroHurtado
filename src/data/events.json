@@ -1,8 +1,8 @@
 {
   "events": [
     {
-      "id": "2026-10-30-madrid-teatros-del-canal-doncellas",
-      "dateISO": "2026-10-30",
+      "id": "2026-10-31-madrid-teatros-del-canal-doncellas",
+      "dateISO": "2026-10-31",
       "year": 2026,
       "country": "España",
       "city": "Madrid",
@@ -71,6 +71,20 @@
       "notes": "Part of Bienal de Flamenco de Sevilla"
     },
     {
+      "id": "2026-09-12-cordoba-coplas-del-querer",
+      "dateISO": "2026-09-12",
+      "year": 2026,
+      "country": "España",
+      "city": "Córdoba",
+      "venue": null,
+      "eventName": "Coplas del Querer",
+      "program": null,
+      "artists": ["Miguel Poveda"],
+      "tags": [],
+      "sources": [],
+      "notes": "Con Miguel Poveda"
+    },
+    {
       "id": "2026-09-19-20-sevilla-bienal-flamenco-devenir-guitarra",
       "dateISO": "2026-09-19",
       "endDateISO": "2026-09-20",
@@ -127,6 +141,20 @@
       "tags": [],
       "sources": [],
       "notes": "Guest appearance by Patricia Guerrero"
+    },
+    {
+      "id": "2026-07-31-ubeda-plaza-toros-coplas-del-querer",
+      "dateISO": "2026-07-31",
+      "year": 2026,
+      "country": "España",
+      "city": "Úbeda",
+      "venue": "Plaza de Toros de Úbeda",
+      "eventName": "Coplas del Querer",
+      "program": null,
+      "artists": ["Miguel Poveda"],
+      "tags": [],
+      "sources": [],
+      "notes": "Con Miguel Poveda"
     },
     {
       "id": "2026-06-20-cordoba-noche-blanca-nazareno-olivares",
@@ -199,6 +227,20 @@
       "notes": "Round table discussion as part of Festival de la Guitarra de Madrid"
     },
     {
+      "id": "2026-03-10-madrid-teatros-del-canal-presentacion-festival-guitarra",
+      "dateISO": "2026-03-10",
+      "year": 2026,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatros del Canal",
+      "eventName": "Presentación Festival de la Guitarra de Madrid",
+      "program": null,
+      "artists": [],
+      "tags": ["festival", "guitar"],
+      "sources": [],
+      "notes": null
+    },
+    {
       "id": "2026-03-18-alicante-auditorio-conservatorio-miradas",
       "dateISO": "2026-03-18",
       "year": 2026,
@@ -227,6 +269,35 @@
       "notes": null
     },
     {
+      "id": "2026-03-21-madrid-teatro-real-concierto-aranjuez",
+      "dateISO": "2026-03-21",
+      "year": 2026,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Teatro Real de Madrid",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [],
+      "tags": ["classical"],
+      "sources": [],
+      "notes": null
+    },
+    {
+      "id": "2026-03-25-26-jaen-conservatorio-superior-master-class",
+      "dateISO": "2026-03-25",
+      "endDateISO": "2026-03-26",
+      "year": 2026,
+      "country": "España",
+      "city": "Jaén",
+      "venue": "Conservatorio Superior de Jaén",
+      "eventName": "Master Class",
+      "program": null,
+      "artists": [],
+      "tags": ["masterclass", "education"],
+      "sources": [],
+      "notes": "Two-day masterclass"
+    },
+    {
       "id": "2026-02-24-jerez-teatro-villamarta-doncellas",
       "dateISO": "2026-02-24",
       "year": 2026,
@@ -243,6 +314,20 @@
       "currency": null,
       "sources": [],
       "notes": "Part of Festival de Jerez"
+    },
+    {
+      "id": "2026-05-21-barcelona-el-dorado-primer-llanto",
+      "dateISO": "2026-05-21",
+      "year": 2026,
+      "country": "España",
+      "city": "Barcelona",
+      "venue": "El Dorado",
+      "eventName": "El Primer Llanto",
+      "program": null,
+      "artists": [],
+      "tags": [],
+      "sources": [],
+      "notes": null
     },
     {
       "id": "2025-12-22-cordoba-gran-teatro-devenir",

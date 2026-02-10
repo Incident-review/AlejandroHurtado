@@ -6,7 +6,6 @@ import EventCard from '../components/EventCard';
 import { eventService } from '../components/features/events/eventService';
 //import AnimatedBackground from '../components/AnimatedBackground';
 
-// Constants
 const HEADER_HEIGHT = 64;
 const TIMELINE_BAR_HEIGHT = 60; // Height of the timeline bar
 
