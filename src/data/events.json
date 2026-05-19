@@ -71,12 +71,40 @@
       "notes": "Part of Bienal de Flamenco de Sevilla"
     },
     {
+      "id": "2026-09-04-malaga-pepe-romero-guitar-festival",
+      "dateISO": "2026-09-04",
+      "year": 2026,
+      "country": "España",
+      "city": "Málaga",
+      "venue": "Pepe Romero Guitar Festival",
+      "eventName": "Alejandro Hurtado & Inmaculada Salomón",
+      "program": null,
+      "artists": ["Inmaculada Salomón"],
+      "tags": ["festival", "guitar"],
+      "sources": [],
+      "notes": null
+    },
+    {
       "id": "2026-09-12-cordoba-coplas-del-querer",
       "dateISO": "2026-09-12",
       "year": 2026,
       "country": "España",
       "city": "Córdoba",
       "venue": null,
+      "eventName": "Coplas del Querer",
+      "program": null,
+      "artists": ["Miguel Poveda"],
+      "tags": [],
+      "sources": [],
+      "notes": "Con Miguel Poveda"
+    },
+    {
+      "id": "2026-09-18-sevilla-plaza-toros-maestranza-coplas-querer",
+      "dateISO": "2026-09-18",
+      "year": 2026,
+      "country": "España",
+      "city": "Sevilla",
+      "venue": "Plaza de toros de la Maestranza",
       "eventName": "Coplas del Querer",
       "program": null,
       "artists": ["Miguel Poveda"],
@@ -98,6 +126,20 @@
       "tags": ["bienal-flamenco"],
       "sources": [],
       "notes": "Two-day event as part of Bienal de Flamenco de Sevilla"
+    },
+    {
+      "id": "2026-08-29-pamplona-festival-flamenco-on-fire-recital-guitarra",
+      "dateISO": "2026-08-29",
+      "year": 2026,
+      "country": "España",
+      "city": "Pamplona",
+      "venue": "Festival Flamenco On Fire",
+      "eventName": "Recital de Guitarra",
+      "program": null,
+      "artists": [],
+      "tags": ["festival", "guitar"],
+      "sources": [],
+      "notes": null
     },
     {
       "id": "2026-07-29-granada-festival-guitarra-aranjuez",
@@ -171,6 +213,20 @@
       "notes": "Tribute to Fosforito at Noche Blanca de Córdoba"
     },
     {
+      "id": "2026-06-11-arahal-festival-algurugu-recital-guitarra",
+      "dateISO": "2026-06-11",
+      "year": 2026,
+      "country": "España",
+      "city": "Arahal (Sevilla)",
+      "venue": "Festival Algurugú",
+      "eventName": "Recital de Guitarra",
+      "program": null,
+      "artists": [],
+      "tags": ["festival", "guitar"],
+      "sources": [],
+      "notes": null
+    },
+    {
       "id": "2026-06-09-alicante-master-guitarra-clasica",
       "dateISO": "2026-06-09",
       "year": 2026,
@@ -183,6 +239,20 @@
       "tags": ["masterclass", "education"],
       "sources": [],
       "notes": "Guitar masterclass"
+    },
+    {
+      "id": "2026-04-24-madrid-auditorio-nacional-homenaje-paco-lucia",
+      "dateISO": "2026-04-24",
+      "year": 2026,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional",
+      "eventName": "Homenaje a Paco de Lucía",
+      "program": null,
+      "artists": ["David Domínguez"],
+      "tags": ["tribute"],
+      "sources": [],
+      "notes": null
     },
     {
       "id": "2026-04-23-madrid-auditorio-nacional-aranjuez",
@@ -314,6 +384,20 @@
       "currency": null,
       "sources": [],
       "notes": "Part of Festival de Jerez"
+    },
+    {
+      "id": "2026-05-28-madrid-auditorio-nacional-musica-aranjuez",
+      "dateISO": "2026-05-28",
+      "year": 2026,
+      "country": "España",
+      "city": "Madrid",
+      "venue": "Auditorio Nacional de Música",
+      "eventName": "Concierto de Aranjuez",
+      "program": null,
+      "artists": [],
+      "tags": ["classical"],
+      "sources": [],
+      "notes": null
     },
     {
       "id": "2026-05-21-barcelona-el-dorado-primer-llanto",
