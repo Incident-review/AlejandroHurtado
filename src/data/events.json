@@ -241,9 +241,9 @@
       "notes": "Guitar masterclass"
     },
     {
-      "id": "2026-04-24-madrid-auditorio-nacional-homenaje-paco-lucia",
-      "dateISO": "2026-04-24",
-      "year": 2026,
+      "id": "2027-04-24-madrid-auditorio-nacional-homenaje-paco-lucia",
+      "dateISO": "2027-04-24",
+      "year": 2027,
       "country": "España",
       "city": "Madrid",
       "venue": "Auditorio Nacional",
@@ -386,9 +386,9 @@
       "notes": "Part of Festival de Jerez"
     },
     {
-      "id": "2026-05-28-madrid-auditorio-nacional-musica-aranjuez",
-      "dateISO": "2026-05-28",
-      "year": 2026,
+      "id": "2027-05-28-madrid-auditorio-nacional-musica-aranjuez",
+      "dateISO": "2027-05-28",
+      "year": 2027,
       "country": "España",
       "city": "Madrid",
       "venue": "Auditorio Nacional de Música",
@@ -603,9 +603,7 @@
       "eventName": "Devenir",
       "program": null,
       "artists": [],
-      "tags": [
-        "Congreso mundial de Flamenco"
-      ],
+      "tags": ["Congreso mundial de Flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -623,9 +621,7 @@
       "eventName": "Devenir",
       "program": null,
       "artists": [],
-      "tags": [
-        "Congreso mundial de Flamenco"
-      ],
+      "tags": ["Congreso mundial de Flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -643,9 +639,7 @@
       "eventName": "Devenir",
       "program": null,
       "artists": [],
-      "tags": [
-        "Congreso mundial de Flamenco"
-      ],
+      "tags": ["Congreso mundial de Flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -663,9 +657,7 @@
       "eventName": "Devenir",
       "program": null,
       "artists": [],
-      "tags": [
-        "Congreso mundial de Flamenco"
-      ],
+      "tags": ["Congreso mundial de Flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -683,9 +675,7 @@
       "eventName": "Devenir",
       "program": null,
       "artists": [],
-      "tags": [
-        "Congreso mundial de Flamenco"
-      ],
+      "tags": ["Congreso mundial de Flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -721,9 +711,7 @@
       "eventName": "El primer llanto",
       "program": null,
       "artists": [],
-      "tags": [
-        "Guitarras del mundo"
-      ],
+      "tags": ["Guitarras del mundo"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -776,9 +764,7 @@
       "venue": "Ermita de San Roque",
       "eventName": "Recital de Guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -796,9 +782,7 @@
       "venue": "Auditorio Manuel de Falla",
       "eventName": "Devenir",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -816,9 +800,7 @@
       "venue": "Patio de Nous Barris",
       "eventName": "Devenir",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -836,10 +818,7 @@
       "venue": "Museo de la Música catalana",
       "eventName": "De Llobet a Montoya",
       "program": null,
-      "artists": [
-        "Torres (1859)",
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Torres (1859)", "Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -857,9 +836,7 @@
       "venue": "Casa de Andalucía",
       "eventName": "Homenaje a Mario Escudero",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1972)"
-      ],
+      "artists": ["Sobrinos de Esteso (1972)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -877,9 +854,7 @@
       "venue": "King Place",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -897,9 +872,7 @@
       "venue": "Casa museo modernista",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -917,9 +890,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Homenaje a Pacode Lucía",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -937,9 +908,7 @@
       "venue": "Forum Evolución",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -957,9 +926,7 @@
       "venue": "Auditorio Prícipe Felipe",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -977,9 +944,7 @@
       "venue": "Teatro A Fundación",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -997,9 +962,7 @@
       "venue": "Teatro Principal",
       "eventName": "Arte flamenco clásico",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1017,9 +980,7 @@
       "venue": "Teatro Bretón",
       "eventName": "Arte flamenco clásico",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1037,9 +998,7 @@
       "venue": "Museo Picasso",
       "eventName": "De Llobet a Montoya",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1057,12 +1016,8 @@
       "venue": "Centro cívico Hegoalde",
       "eventName": "Con Rocío Luna",
       "program": null,
-      "artists": [
-        "Juan Miguel Gonzalez (2024)"
-      ],
-      "tags": [
-        "Gira del norte"
-      ],
+      "artists": ["Juan Miguel Gonzalez (2024)"],
+      "tags": ["Gira del norte"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1079,12 +1034,8 @@
       "venue": "Teatro Principal",
       "eventName": "Con Rocío Luna",
       "program": null,
-      "artists": [
-        "Juan Miguel Gonzalez (2024)"
-      ],
-      "tags": [
-        "Gira del norte"
-      ],
+      "artists": ["Juan Miguel Gonzalez (2024)"],
+      "tags": ["Gira del norte"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1101,12 +1052,8 @@
       "venue": "Teatro Bretón",
       "eventName": "Con Rocío Luna",
       "program": null,
-      "artists": [
-        "Juan Miguel Gonzalez (2024)"
-      ],
-      "tags": [
-        "Gira del norte"
-      ],
+      "artists": ["Juan Miguel Gonzalez (2024)"],
+      "tags": ["Gira del norte"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1123,9 +1070,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Juan Miguel Gonzalez (2024)"
-      ],
+      "artists": ["Juan Miguel Gonzalez (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1143,9 +1088,7 @@
       "venue": "Museo de la guitarra",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Juan Miguel Gonzalez (2024)"
-      ],
+      "artists": ["Juan Miguel Gonzalez (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1163,9 +1106,7 @@
       "venue": "Auditorio La Elipa",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1183,12 +1124,8 @@
       "venue": "ADDA",
       "eventName": "Con Ignacio Rodes",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Master de guitarra de Alicante"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Master de guitarra de Alicante"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1205,9 +1142,7 @@
       "venue": "Barbican Center",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1225,9 +1160,7 @@
       "venue": "Paraninfo Universidad",
       "eventName": "Colaboración con Jose Soriano",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1245,9 +1178,7 @@
       "venue": "Gran Teatro",
       "eventName": "Nazareno y olivares",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1265,9 +1196,7 @@
       "venue": "Audiorio Nacional",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1285,9 +1214,7 @@
       "venue": "Audiorio Nacional",
       "eventName": "Homenaje a Paco de Lucía",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1305,9 +1232,7 @@
       "venue": "Auditorio",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1325,9 +1250,7 @@
       "venue": null,
       "eventName": "Nazareno y olivares",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1345,9 +1268,7 @@
       "venue": "Museo de la guitarra",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1365,9 +1286,7 @@
       "venue": "Teatro principal",
       "eventName": "Con José Soriano",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1385,9 +1304,7 @@
       "venue": "El Dorado",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1405,12 +1322,8 @@
       "venue": "Palau de la Música",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Homenaje a Paco de Lucía"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Homenaje a Paco de Lucía"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1427,9 +1340,7 @@
       "venue": "Fundación Juan March",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1447,9 +1358,7 @@
       "venue": "Fundación Juan March",
       "eventName": "Recital de guitarra",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1467,9 +1376,7 @@
       "venue": "Molino del Manto",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
+      "artists": ["Pepe Romero (2024)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1487,12 +1394,8 @@
       "venue": "Sala María Cristina",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Festival de guitarra de Mälaga"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Festival de guitarra de Mälaga"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1509,12 +1412,8 @@
       "venue": "Alcázar",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Bienal de flamenco de Sevilla"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Bienal de flamenco de Sevilla"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1531,12 +1430,8 @@
       "venue": "Cicus",
       "eventName": "Conferencia \"Nño Ricardo\"",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Bienal de flamenco de Sevilla"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Bienal de flamenco de Sevilla"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1553,12 +1448,8 @@
       "venue": "Plaza Mayor",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Festival Amalio Cuenca"
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Festival Amalio Cuenca"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1575,12 +1466,8 @@
       "venue": "Caseta Municipal",
       "eventName": "Con David Pino",
       "program": null,
-      "artists": [
-        "Pepe Romero (2024)"
-      ],
-      "tags": [
-        "Festival de Cane Grande \"Fosforito\""
-      ],
+      "artists": ["Pepe Romero (2024)"],
+      "tags": ["Festival de Cane Grande \"Fosforito\""],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1597,9 +1484,7 @@
       "venue": "Castillo de Petrer",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1617,9 +1502,7 @@
       "venue": "Palacio de Carlos V",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1637,9 +1520,7 @@
       "venue": "Palau de la Müsica",
       "eventName": "Homenaje a Paco d eLucía",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1657,9 +1538,7 @@
       "venue": "Teatro torpedo",
       "eventName": "Concierto de guitarra",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1677,9 +1556,7 @@
       "venue": "Jan Jost Huis",
       "eventName": "Concierto de guitarra",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1697,9 +1574,7 @@
       "venue": "Teather de Terp",
       "eventName": "Concierto de guitarra",
       "program": null,
-      "artists": [
-        "Manuel Reyes (1987)"
-      ],
+      "artists": ["Manuel Reyes (1987)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1717,9 +1592,7 @@
       "venue": "Castillo de  El-bil-bil",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1737,9 +1610,7 @@
       "venue": "Auditorio de la CAM",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1757,12 +1628,8 @@
       "venue": "Teatros del Canal",
       "eventName": "Concierto de guitarra",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Festival  flamenco de Madrid"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Festival  flamenco de Madrid"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1779,9 +1646,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Homenaje a Paco d eLucía",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1799,9 +1664,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1819,9 +1682,7 @@
       "venue": "Auditorio  CAM",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1839,9 +1700,7 @@
       "venue": "Real Academia de Bellas Artes San FErnando",
       "eventName": "Goya, Luz y sombras",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1859,9 +1718,7 @@
       "venue": "Tijardovic Concert Hall",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1879,12 +1736,8 @@
       "venue": "Teatro Lesinski",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Festival flamenco Zagreb"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Festival flamenco Zagreb"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1901,9 +1754,7 @@
       "venue": "Salón noble de laDiputación",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -1921,12 +1772,8 @@
       "venue": "Elabash Recital Hall",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Flamenco festival"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Flamenco festival"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1943,12 +1790,8 @@
       "venue": "Hispanic Museum",
       "eventName": "Presentación",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Flamenco festival"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Flamenco festival"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1965,12 +1808,8 @@
       "venue": "Joe´s pub",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Flamenco festival"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Flamenco festival"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -1987,12 +1826,8 @@
       "venue": "Arsh Center",
       "eventName": "Miradas",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Flamenco festival"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Flamenco festival"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2009,13 +1844,8 @@
       "venue": "Real Coliseo de Carlos III",
       "eventName": "Guitarra desnuda",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
-      "tags": [
-        "Guitarra desnuda",
-        "Gerardo Núñez"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
+      "tags": ["Guitarra desnuda", "Gerardo Núñez"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2032,9 +1862,7 @@
       "venue": "Teatro Palacio Elisana",
       "eventName": "PresentaciónLibro Paco de Lucena",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2052,9 +1880,7 @@
       "venue": "Palau de la Müsica",
       "eventName": "Concierto de Aranjuez y homenaje a Paco de Lucía",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2072,9 +1898,7 @@
       "venue": "Teatro Real",
       "eventName": "Noche española",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2092,9 +1916,7 @@
       "venue": "Facultad de Ciencias del Trabajo",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)"
-      ],
+      "artists": ["Rene Baarslag (2023)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2112,9 +1934,7 @@
       "venue": "Teatro Real",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2132,9 +1952,7 @@
       "venue": "Sala Jamboree",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2152,9 +1970,7 @@
       "venue": "Restaurante Via Venetto",
       "eventName": "Recital privado",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2172,9 +1988,7 @@
       "venue": "Peña el Almibar",
       "eventName": "Con David Pino",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2192,9 +2006,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Homenaje a Paco d eLucía",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2212,9 +2024,7 @@
       "venue": "Espacio expoflamenco",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2232,9 +2042,7 @@
       "venue": "Peña la platería",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2252,9 +2060,7 @@
       "venue": "Conservatorio Superior",
       "eventName": "Tamiz",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2272,9 +2078,7 @@
       "venue": "Auditorio Miguel Delibes",
       "eventName": "ConMiguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2292,12 +2096,8 @@
       "venue": "Auditori",
       "eventName": "Concierto gitano",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Ciutat flamenco"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Ciutat flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2314,9 +2114,7 @@
       "venue": "Museo Picasso",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2334,12 +2132,8 @@
       "venue": null,
       "eventName": "Con David Pino (cante en armonía)",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Suma flamenca"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Suma flamenca"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2356,12 +2150,8 @@
       "venue": "Teatro de la Abadía",
       "eventName": "Maestros",
       "program": null,
-      "artists": [
-        "Guitarras de Montoya y Manolo de Huelva"
-      ],
-      "tags": [
-        "Guitarras de Montoya y Manolo de Huelva"
-      ],
+      "artists": ["Guitarras de Montoya y Manolo de Huelva"],
+      "tags": ["Guitarras de Montoya y Manolo de Huelva"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2378,9 +2168,7 @@
       "venue": "Teatro Lope de Vega",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2402,9 +2190,7 @@
         "Sobrinos de esteso",
         "y guitarras de Montoya y Manolo de Huelva"
       ],
-      "tags": [
-        "Festival de guitarra de Sevilla"
-      ],
+      "tags": ["Festival de guitarra de Sevilla"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2421,9 +2207,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpeshoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2441,9 +2225,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2461,9 +2243,7 @@
       "venue": null,
       "eventName": "Conferencia-concierto",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2481,9 +2261,7 @@
       "venue": "Plaza de toros",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2501,9 +2279,7 @@
       "venue": "Teatro Baluarte",
       "eventName": "Alzapúa",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2521,9 +2297,7 @@
       "venue": "Plaza Mayor",
       "eventName": "Homenaje a Amalio Cuenca (solo)",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2541,9 +2315,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2561,9 +2333,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2023)*"
-      ],
+      "artists": ["Rene Baarslag (2023)*"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2581,9 +2351,7 @@
       "venue": "Muziekgebouw aan 't",
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2601,12 +2369,8 @@
       "venue": "Granada",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Festival de guitarra de Granada"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Festival de guitarra de Granada"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -2623,9 +2387,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2643,9 +2405,7 @@
       "venue": "Teatro Real",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2663,9 +2423,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2683,9 +2441,7 @@
       "venue": "Heerenhuyskamerconcert",
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2703,9 +2459,7 @@
       "venue": "Concertgenaal",
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2723,9 +2477,7 @@
       "venue": "Groene Zwaan",
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2743,9 +2495,7 @@
       "venue": "Injazz Bimhuis,",
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2763,9 +2513,7 @@
       "venue": "PLaza de toros",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2783,9 +2531,7 @@
       "venue": "Centro Ponpidu",
       "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
       "program": null,
-      "artists": [
-        "guitarras originales de Montoya y Manolo de Huelva"
-      ],
+      "artists": ["guitarras originales de Montoya y Manolo de Huelva"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2803,9 +2549,7 @@
       "venue": "Museo Picasso",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2823,9 +2567,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2843,9 +2585,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2863,9 +2603,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2883,9 +2621,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2903,9 +2639,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2923,9 +2657,7 @@
       "venue": "Teatro Real",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2943,9 +2675,7 @@
       "venue": "Auditorio",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2963,9 +2693,7 @@
       "venue": "Plaza de toros",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -2983,9 +2711,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3003,9 +2729,7 @@
       "venue": "Círculo flamenco",
       "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3023,9 +2747,7 @@
       "venue": null,
       "eventName": "Con David Pino",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3043,9 +2765,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3063,9 +2783,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3083,9 +2801,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3103,9 +2819,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3123,9 +2837,7 @@
       "venue": null,
       "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
       "program": null,
-      "artists": [
-        "guitarras originales de Montoya y Manolo de Huelva"
-      ],
+      "artists": ["guitarras originales de Montoya y Manolo de Huelva"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3143,9 +2855,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3163,9 +2873,7 @@
       "venue": null,
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3183,9 +2891,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3203,9 +2909,7 @@
       "venue": "Universidad",
       "eventName": "Conferencia",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3223,9 +2927,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3243,9 +2945,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3263,9 +2963,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3283,9 +2981,7 @@
       "venue": null,
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3303,9 +2999,7 @@
       "venue": null,
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3323,9 +3017,7 @@
       "venue": null,
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3343,9 +3035,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3363,9 +3053,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3383,9 +3071,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3403,9 +3089,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3423,9 +3107,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3443,9 +3125,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3463,9 +3143,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3483,9 +3161,7 @@
       "venue": "Teatro Romano",
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3503,9 +3179,7 @@
       "venue": "FNAC",
       "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3523,9 +3197,7 @@
       "venue": null,
       "eventName": "Con Miguel Poveda",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3543,9 +3215,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Rene (2018)Agosto"
-      ],
+      "artists": ["Rene (2018)Agosto"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3563,9 +3233,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3583,12 +3251,8 @@
       "venue": null,
       "eventName": "Presentación disco \"Maestros del arte clásico flamenco\"",
       "program": null,
-      "artists": [
-        "guitarras originales de Montoya y Manolo de Huelva"
-      ],
-      "tags": [
-        "Los Jueves de Cajasol"
-      ],
+      "artists": ["guitarras originales de Montoya y Manolo de Huelva"],
+      "tags": ["Los Jueves de Cajasol"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -3605,12 +3269,8 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
-      "tags": [
-        "Días latinos"
-      ],
+      "artists": ["Castaño (2021)"],
+      "tags": ["Días latinos"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -3627,12 +3287,8 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
-      "tags": [
-        "Días latinos"
-      ],
+      "artists": ["Castaño (2021)"],
+      "tags": ["Días latinos"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -3649,9 +3305,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3669,9 +3323,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3689,9 +3341,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3709,9 +3359,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3729,9 +3377,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3749,9 +3395,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3769,9 +3413,7 @@
       "venue": "Teatro Real",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3789,9 +3431,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3809,9 +3449,7 @@
       "venue": null,
       "eventName": "Con Raquel Kurpershoek",
       "program": null,
-      "artists": [
-        "Castaño (2021)"
-      ],
+      "artists": ["Castaño (2021)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3829,9 +3467,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3849,9 +3485,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3869,9 +3503,7 @@
       "venue": "Gran Teatro",
       "eventName": "Concierto de Aranjuez",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3889,9 +3521,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3909,9 +3539,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3929,9 +3557,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3949,9 +3575,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3969,9 +3593,7 @@
       "venue": null,
       "eventName": "\"Deja vu\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -3989,9 +3611,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4009,12 +3629,8 @@
       "venue": "Peña la Platería",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Fesetival de guitarra de Granada"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Fesetival de guitarra de Granada"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4031,9 +3647,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4051,9 +3665,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4071,9 +3683,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4091,9 +3701,7 @@
       "venue": null,
       "eventName": "Con Mayte Martín y Patricia Guerrero",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4111,9 +3719,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4131,9 +3737,7 @@
       "venue": "Centro flamenco Fosforito",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4151,12 +3755,8 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Círculo flamenco"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Círculo flamenco"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4173,9 +3773,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4193,9 +3791,7 @@
       "venue": null,
       "eventName": "Con Mayte Martín y Patricia Guerrero",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4213,9 +3809,7 @@
       "venue": null,
       "eventName": "\"Deja vu\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4233,12 +3827,8 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
-      "tags": [
-        "Catedra de flamencología"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
+      "tags": ["Catedra de flamencología"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4255,12 +3845,8 @@
       "venue": "Centro cultural Moncloa",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Flamencos en ruta AIE"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Flamencos en ruta AIE"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4277,9 +3863,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4297,9 +3881,7 @@
       "venue": "Teatro Jesús Ibañes de Matauko",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4317,9 +3899,7 @@
       "venue": "Teatro Bretón",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Sobrinos de Esteso (1974)"
-      ],
+      "artists": ["Sobrinos de Esteso (1974)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4337,9 +3917,7 @@
       "venue": "Auditorio Principe Felipe",
       "eventName": "\"Tempo rubato sinfónico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4357,9 +3935,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4377,9 +3953,7 @@
       "venue": "Teatros del Canal",
       "eventName": "\"Deja vu\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4397,9 +3971,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4417,9 +3989,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4437,9 +4007,7 @@
       "venue": "Auditori Eduard Toldrá",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4457,12 +4025,8 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
-      "tags": [
-        "Festival flamenco de Huelva"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
+      "tags": ["Festival flamenco de Huelva"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4479,9 +4043,7 @@
       "venue": "Teatro Fernán Gómez",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4499,9 +4061,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4519,9 +4079,7 @@
       "venue": "Sede de CCOO",
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4539,9 +4097,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4559,12 +4115,8 @@
       "venue": "Museo valenciano de etnología",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Festival del Grec"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Festival del Grec"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4581,9 +4133,7 @@
       "venue": "Teatro Salón Cervantes",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4601,12 +4151,8 @@
       "venue": "Real Coliseo de Carlos III",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Flamencos en ruta AIE"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Flamencos en ruta AIE"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4623,9 +4169,7 @@
       "venue": "Teatro Circo",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4643,12 +4187,8 @@
       "venue": "Facultad de Bellas Artes",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Cátedra de Flamencología"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Cátedra de Flamencología"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4665,12 +4205,8 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Flamencos en Ruta"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Flamencos en Ruta"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4687,9 +4223,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4707,9 +4241,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4727,9 +4259,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
+      "artists": ["Castaño (2019)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4747,12 +4277,8 @@
       "venue": "Teatro Góngora",
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Castaño (2019)"
-      ],
-      "tags": [
-        "Gala ganadores concurso"
-      ],
+      "artists": ["Castaño (2019)"],
+      "tags": ["Gala ganadores concurso"],
       "capacity": null,
       "attendance": null,
       "fee": null,
@@ -4769,9 +4295,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4789,9 +4313,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4809,9 +4331,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4829,9 +4349,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4849,9 +4367,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4869,9 +4385,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4889,9 +4403,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4909,9 +4421,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4929,9 +4439,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4949,9 +4457,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4969,9 +4475,7 @@
       "venue": null,
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -4989,9 +4493,7 @@
       "venue": null,
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5009,9 +4511,7 @@
       "venue": null,
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5029,9 +4529,7 @@
       "venue": "Auditorio Nacional",
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5049,9 +4547,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5069,9 +4565,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5089,9 +4583,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5109,9 +4601,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5129,9 +4619,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5149,9 +4637,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5169,9 +4655,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5189,9 +4673,7 @@
       "venue": null,
       "eventName": "\"Memento\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5209,9 +4691,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5229,9 +4709,7 @@
       "venue": null,
       "eventName": "\"Deja vu\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5249,9 +4727,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5269,9 +4745,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5289,9 +4763,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5309,9 +4781,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5329,9 +4799,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5349,9 +4817,7 @@
       "venue": null,
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Hermanos Conde (1989)"
-      ],
+      "artists": ["Hermanos Conde (1989)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5369,9 +4835,7 @@
       "venue": "Teatro Góngora",
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5389,9 +4853,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5409,9 +4871,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5429,9 +4889,7 @@
       "venue": null,
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5449,9 +4907,7 @@
       "venue": null,
       "eventName": "Con Rafael del Pino \"keko\"",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5469,9 +4925,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Rene Baarslag (2018)"
-      ],
+      "artists": ["Rene Baarslag (2018)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5489,9 +4943,7 @@
       "venue": null,
       "eventName": "Recital",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5509,9 +4961,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5529,9 +4979,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5549,9 +4997,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5569,9 +5015,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5589,9 +5033,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5609,9 +5051,7 @@
       "venue": null,
       "eventName": "Con Bernardo Miranda",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5629,9 +5069,7 @@
       "venue": null,
       "eventName": "Con Bernardo Miranda",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5649,9 +5087,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5669,9 +5105,7 @@
       "venue": null,
       "eventName": "Con David Pino",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5689,9 +5123,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5709,9 +5141,7 @@
       "venue": "Teatro  Alhambra",
       "eventName": "Recital guitarra",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5729,9 +5159,7 @@
       "venue": null,
       "eventName": "\"Nazareno y olivares\" homenaje a Fosforito",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5749,9 +5177,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5769,9 +5195,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5789,9 +5213,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5809,9 +5231,7 @@
       "venue": null,
       "eventName": "\"Flamenco clásico\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5829,9 +5249,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5849,9 +5267,7 @@
       "venue": "Teatro Apolo",
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5869,9 +5285,7 @@
       "venue": null,
       "eventName": "Con David Pino, ",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5889,9 +5303,7 @@
       "venue": "Teatro Price",
       "eventName": "\"Tempo rubato\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5909,9 +5321,7 @@
       "venue": null,
       "eventName": "\"Al cantar a Manuel\", con Mayte Martín",
       "program": null,
-      "artists": [
-        "Marvi (2016)"
-      ],
+      "artists": ["Marvi (2016)"],
       "tags": [],
       "capacity": null,
       "attendance": null,
@@ -5924,4 +5334,3 @@
   "generatedAt": "2025-09-05T09:01:44.974191Z",
   "version": 1
 }
-
